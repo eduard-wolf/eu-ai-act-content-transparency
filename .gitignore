@@ -1,0 +1,9 @@
+# Interne Vorabrecherchen, Strategie- und Kontext-Dateien — NIE veroeffentlichen.
+# Enthalten Konkurrenzanalyse, Positionierung und Arbeitsnotizen; das spaetere
+# oeffentliche Repo entsteht ausschliesslich aus neu geschriebenen, getrackten Dateien.
+recherche/
+CLAUDE.md
+
+# Betriebssystem / Editor
+.DS_Store
+*.swp
