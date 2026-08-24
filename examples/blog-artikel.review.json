@@ -1,0 +1,25 @@
+{
+  "content_path": "examples/blog-artikel.md",
+  "content_sha256": "67c02162e5e822899e5ec284e771d503fdd26dd5869c1b030ec18ad8d3c8471c",
+  "reviewed_at": "2026-08-22",
+  "reviewer": {
+    "name": "Erika Beispiel (Demo-Datensatz)",
+    "role": "Redakteurin Lokales",
+    "fachkompetenz": "Kommunalpolitik und Verwaltungshandeln; berichtet seit 2019 über Gemeinderatssitzungen und kommunale Bauvorhaben"
+  },
+  "editorial_responsibility": {
+    "traeger": "Beispielbacher Lokalredaktion (Demo-Datensatz)",
+    "kontakt_oeffentlich": "https://example.org/impressum"
+  },
+  "pruefung": {
+    "faktencheck": true,
+    "quellen_geprueft": true,
+    "aenderungen_vorgenommen": "Abstimmungsergebnis am Sitzungsprotokoll korrigiert (11:4 statt der im Entwurf genannten 12:3), Zustandsnote und Gewichtsbeschränkung am Prüfbericht abgeglichen, eine nicht belegte Kostenangabe zur Behelfsbrücke gestrichen, Termin der Bürgersprechstunde bei der Verwaltung rückbestätigt."
+  },
+  "scope": {
+    "einstufung": "Text, veröffentlicht, informiert über eine Angelegenheit von öffentlichem Interesse (Gemeinderatsbeschluss, kommunale Infrastruktur) — Art. 50 Abs. 4 UAbs. 2 einschlägig; redaktionelle Ausnahme greift, daher keine Kennzeichnung",
+    "labels_erforderlich": [],
+    "begruendung": "Alle drei Merkmale des Anwendungsbereichs liegen vor (Rn. 130-131). Die Ausnahme trägt, weil eine fachkundige Person die Substanz geprüft hat und der Faktencheck als Mindestanforderung erfüllt ist (Rn. 133-134) und weil die redaktionelle Verantwortung benannt und über das Impressum öffentlich auffindbar ist (Rn. 138). Die Freigabe war der letzte inhaltsändernde Schritt; danach hat kein KI-System den Text mehr angefasst (Rn. 136) — der Hash in diesem Record bindet genau diese Fassung. Der Beitrag enthält weder Bild noch Audio noch Video, ein Deepfake-Test entfällt."
+  },
+  "ki_beteiligung": "Rohentwurf durch ein Sprachmodell aus dem öffentlichen Sitzungsprotokoll erzeugt (Auftrag: Zusammenfassung in rund 200 Wörtern), anschließend von der Redakteurin umgeschrieben, gekürzt und geprüft. Nach der Freigabe kein weiterer KI-Schritt, insbesondere keine automatische Kürzung für Social Media."
+}

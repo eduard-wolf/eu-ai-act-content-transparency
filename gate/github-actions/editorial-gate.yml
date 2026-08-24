@@ -1,0 +1,35 @@
+# Kopiervorlage: nach .github/workflows/editorial-gate.yml übernehmen.
+# Prüft bei jedem Pull Request und jedem Push, ob zu jeder Inhaltsdatei ein gültiger
+# Review-Record liegt und ob dessen SHA-256 noch auf die freigegebene Fassung passt.
+# Das Gate erzwingt den Prozess, nicht die inhaltliche Qualität der Prüfung — kein
+# Safe Harbour; Einordnung siehe gate/README.md.
+name: Editorial Gate
+
+on:
+  pull_request:
+  push:
+    # ANPASSEN (Branch): eigenen Standard-Branch eintragen, z. B. [main, master, produktion].
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  review-records:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Review-Records prüfen
+        # ANPASSEN (Verzeichnis): "content" durch das eigene Inhaltsverzeichnis ersetzen; mehrere durch Leerzeichen getrennt anhängen.
+        # ANPASSEN (Pfad): Liegt das Skript nicht im selben Repository, den Pfad auf die eigene Kopie von check-review-record.mjs ändern.
+        # Der Scan ist FLACH: nur *.md direkt im übergebenen Verzeichnis. Liegen die Beiträge eine Ebene
+        # tiefer (content/blog/…, der Regelfall in Hugo-, Astro- und Jekyll-Repos), schlägt der Lauf fehl
+        # und nennt die betroffenen Verzeichnisse — sie gehören dann einzeln in die Zeile. Ein Verzeichnis
+        # ganz ohne *.md ist ebenfalls ein Fehler, damit eine falsch konfigurierte Pipeline nicht dauerhaft
+        # null Dateien prüft und Grün meldet; bewusst leer bleibt es mit --erlaube-leer.
+        run: node gate/scripts/check-review-record.mjs content

@@ -1,0 +1,27 @@
+{
+  "content_path": "content/blog/hitzeschutz-fuer-aeltere-menschen.md",
+  "content_sha256": "0e0574129592963cb07876ca3d00233618478544abab49eef70e91bf25457631",
+  "reviewed_at": "2026-08-22",
+  "reviewer": {
+    "name": "Erika Beispiel (Demo)",
+    "role": "Fachredakteurin Gesundheit",
+    "fachkompetenz": "Examinierte Pflegefachkraft, seit 2018 Fachredakteurin; prüft medizinische Aussagen gegen Leitlinien und Primärquellen"
+  },
+  "editorial_responsibility": {
+    "traeger": "Musterverlag GmbH (Demo), vertreten durch die Chefredaktion",
+    "kontakt_oeffentlich": "https://example.org/impressum"
+  },
+  "pruefung": {
+    "faktencheck": true,
+    "quellen_geprueft": true,
+    "aenderungen_vorgenommen": "Zwei Trinkmengen-Empfehlungen aus dem KI-Entwurf gestrichen, weil keine Quelle sie trug; den Abschnitt zu Wechselwirkungen neu geschrieben und an der Fachinformation geprüft; die Überschrift entschärft, weil sie eine Wirkung versprach, die der Text nicht belegt."
+  },
+  "scope": {
+    "einstufung": "Ratgebertext mit Gesundheitsbezug, veröffentlicht — Art. 50 Abs. 4 UAbs. 2 einschlägig, redaktionelle Ausnahme greift; das beigestellte KI-Bild ist getrennt zu beurteilen und als Deepfake eingestuft",
+    "labels_erforderlich": [
+      "Beitragsbild: sichtbarer Hinweis „KI-generiert\" im Bild selbst, oben links, lesbar auch im 1:1- und 9:16-Zuschnitt"
+    ],
+    "begruendung": "Text: Gesundheitsbezogener Ratgeber für ein unbestimmtes Publikum, damit im Anwendungsbereich (Rn. 130-131); die Ausnahme trägt, weil eine fachkundige Person die Substanz einschließlich Faktencheck geprüft hat (Rn. 133-134) und die redaktionelle Verantwortung öffentlich auffindbar benannt ist (Rn. 138). Bild: Die redaktionelle Ausnahme gilt nur für Text — für Bild, Audio und Video gibt es sie nicht. Das fotorealistische Bild zeigt eine scheinbar reale Situation und würde einer betrachtenden Person als authentisch erscheinen (Rn. 113), daher Deepfake und sichtbare Offenlegung. Das Label steht im Bild und nicht nur in der Bildunterschrift, damit es bei Repost und Bildersuche mitreist; es muss spätestens bei der ersten Exposition klar und unterscheidbar wahrnehmbar sein (Art. 50 Abs. 5)."
+  },
+  "ki_beteiligung": "Text: Rohentwurf und Gliederung von einem Sprachmodell, danach von der Fachredakteurin überarbeitet, gekürzt und geprüft; nach der Freigabe kein weiterer KI-Schritt (Rn. 136). Bild: vollständig von einem Bildgenerator erzeugt. Die maschinenlesbare Markierung des Anbieters bleibt in der Datei erhalten, ersetzt die eigene wahrnehmbare Kennzeichnung aber nicht (Rn. 117)."
+}

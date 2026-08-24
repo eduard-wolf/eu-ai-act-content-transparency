@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Review-Record (Editorial Gate)",
+  "description": "Nachweis einer redaktionellen Gegenlese für eine einzelne Inhaltsdatei. Der Record liegt als Geschwisterdatei \"<name>.review.json\" neben \"<name>.md\" und bindet die Freigabe über SHA-256 an genau die geprüfte Fassung. Ehrliche Grenze: Das Gate erzwingt den Prozess und macht ihn nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on Transparency of AI-Generated Content, Sec. 2, Commitment 4), kein Safe Harbour. Stand: 24.08.2026.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "content_path",
+    "content_sha256",
+    "reviewed_at",
+    "reviewer",
+    "editorial_responsibility",
+    "pruefung",
+    "scope",
+    "ki_beteiligung"
+  ],
+  "properties": {
+    "content_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Pfad zur geprüften Inhaltsdatei in POSIX-Schreibweise, üblicherweise relativ zum Wurzelverzeichnis des Repositorys (z. B. \"content/gemeinderat.md\"). Das Prüfskript löst den Pfad sowohl gegen das Verzeichnis des Records als auch gegen das aktuelle Arbeitsverzeichnis auf; beide Schreibweisen sind zulässig.",
+      "examples": ["content/gemeinderat-hitzeplan.md"]
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 der freigegebenen Fassung der Inhaltsdatei: 64 Hex-Zeichen in Kleinschreibung (shasum -a 256 <datei> bzw. sha256sum <datei>). Diese Bindung setzt die Reihenfolge-Regel technisch um: Jede Änderung nach der Freigabe — auch durch ein KI-System — verändert den Hash, invalidiert den Record und lässt die Prüfung fehlschlagen (Leitlinien C(2026) 5054 final, Rn. 136)."
+    },
+    "reviewed_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}([T ]\\d{2}:\\d{2}(:\\d{2})?(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})?)?$",
+      "description": "Datum der redaktionellen Freigabe nach ISO 8601 (YYYY-MM-DD, optional mit Uhrzeit). Gemeint ist die Freigabe, die der letzte inhaltsändernde Schritt vor der Veröffentlichung sein muss (Rn. 136).",
+      "examples": ["2026-08-22", "2026-08-22T14:05:00+02:00"]
+    },
+    "reviewer": {
+      "type": "object",
+      "description": "Die natürliche Person, die die Substanz des Inhalts geprüft hat. Automatisierte Review-Prozesse — auch „KI prüft KI\" — und rein formale Checks erfüllen die Voraussetzungen der Ausnahme nicht (Rn. 135).",
+      "additionalProperties": false,
+      "required": ["name", "role", "fachkompetenz"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name der prüfenden natürlichen Person."
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Funktion oder Rolle im Publikationsprozess, z. B. „Redakteurin Lokales\" oder „Fachredaktion Recht\"."
+        },
+        "fachkompetenz": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Einschlägige Sachkunde zum geprüften Gegenstand. Die Ausnahme verlangt „relevant knowledge and professional judgement pertaining to the subject matter under scrutiny\" (Rn. 134) — hier in einem Satz belegen, nicht behaupten."
+        }
+      }
+    },
+    "editorial_responsibility": {
+      "type": "object",
+      "description": "Wer die redaktionelle Verantwortung für die Veröffentlichung trägt. Zweite kumulative Voraussetzung der Ausnahme (Rn. 133, 138).",
+      "additionalProperties": false,
+      "required": ["traeger", "kontakt_oeffentlich"],
+      "properties": {
+        "traeger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Natürliche oder juristische Person mit der letztlichen rechtlichen Verantwortung für die Veröffentlichung („ultimate legal responsibility\", Rn. 138)."
+        },
+        "kontakt_oeffentlich": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Öffentlich leicht auffindbare Fundstelle von Identität und Kontakt, z. B. die URL des Impressums oder des Kolophons. Identität und Kontaktdaten sollen „be made publicly available on an easily findable location\" (Rn. 138)."
+        }
+      }
+    },
+    "pruefung": {
+      "type": "object",
+      "description": "Umfang der tatsächlich durchgeführten Prüfung.",
+      "additionalProperties": false,
+      "required": ["faktencheck", "quellen_geprueft", "aenderungen_vorgenommen"],
+      "properties": {
+        "faktencheck": {
+          "type": "boolean",
+          "description": "Wurde die inhaltliche Richtigkeit geprüft? Der Faktencheck ist Mindestanforderung der redaktionellen Ausnahme: „Fact-checking the accuracy of the content is a minimum requirement that should be part of that review\" (Rn. 134). false ist zulässig, aber nur zusammen mit einer Kennzeichnung: false bei zugleich leerer Liste in labels_erforderlich heißt, dass hier weder die Ausnahme noch ein Label trägt — das Prüfskript wertet diese Kombination deshalb als Fehler (Herabstufung zur Warnung nur mit --erlaube-ohne-faktencheck)."
+        },
+        "quellen_geprueft": {
+          "type": "boolean",
+          "description": "Wurden die zugrunde liegenden Quellen eingesehen und gegengeprüft (Protokolle, Studien, Primärdokumente)?"
+        },
+        "aenderungen_vorgenommen": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Was bei der Gegenlese geändert, gestrichen oder zurückgewiesen wurde, in eigenen Worten. „Keine Änderungen\" ist zulässig, aber begründungsbedürftig: Rechtschreib- und Grammatikkorrektur oder kursorisches Abnicken ohne substanzielle Befassung genügen der Ausnahme nicht (Rn. 135)."
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "description": "Einstufung des Inhalts nach Art. 50 KI-VO und die daraus folgende Kennzeichnung.",
+      "additionalProperties": false,
+      "required": ["einstufung", "labels_erforderlich", "begruendung"],
+      "properties": {
+        "einstufung": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Ergebnis des Entscheidungsbaums in einem Satz, z. B. „Text, veröffentlicht, Angelegenheit von öffentlichem Interesse — Art. 50 Abs. 4 UAbs. 2 einschlägig, redaktionelle Ausnahme greift\"."
+        },
+        "labels_erforderlich": {
+          "type": "array",
+          "description": "Die tatsächlich gesetzten bzw. erforderlichen Kennzeichnungen; leere Liste = keine Kennzeichnung erforderlich. Achtung: Die redaktionelle Ausnahme gilt nur für Text. Für Bild, Audio und Video gibt es sie nicht — dort entscheidet allein der Deepfake-Test (Art. 50 Abs. 4 UAbs. 1); die Kunst-Ausnahme lockert nur die FORM der Offenlegung.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "examples": [["Bild-Overlay oben links: KI-generiert", "Hinweiszeile über der Überschrift"]]
+        },
+        "begruendung": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Begründung der Einstufung in zwei, drei Sätzen mit Fundstelle. Bei Grauzonen ist die Begründung der eigentliche Nachweis: Sie zeigt, dass die Einstufung überlegt und nicht zufällig war."
+        }
+      }
+    },
+    "ki_beteiligung": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Welches KI-System an welcher Stelle beteiligt war (Rohentwurf, Übersetzung, Kürzung, Bildgenerierung) und was danach menschlich geschah. Eine maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 ersetzt die eigene wahrnehmbare Kennzeichnung nicht — Betreiber „cannot rely on the machine-readable marking\" (Rn. 117)."
+    }
+  }
+}

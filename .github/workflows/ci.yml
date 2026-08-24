@@ -1,0 +1,46 @@
+# CI dieses Repos — Selbstanwendung am durchgerechneten Beispiel: Das Repo fährt sein
+# eigenes Gegenlese-Gate über examples/ (flacher Scan, ohne Unterverzeichnisse). Die
+# Kapitel unter playbook/ tragen keine Review-Records und werden von diesem Lauf nicht
+# berührt. Für die geprüften Dateien ist ein grüner Lauf der öffentliche Beleg dafür,
+# dass zu jeder ein gültiger Review-Record mit passendem SHA-256 vorliegt
+# (Reihenfolge-Regel, Leitlinien C(2026) 5054 final, Rn. 136).
+# Das Gate erzwingt den Prozess, nicht die inhaltliche Qualität der Prüfung — kein
+# Safe Harbour; Einordnung siehe gate/README.md. Stand: 24.08.2026.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  gate-and-tools:
+    name: Gate und Werkzeuge
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js 20 einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Gegenlese-Gate über examples/ fahren
+        # Mindestzähler vor dem Lauf: Das Skript wertet ein Verzeichnis ohne *.md inzwischen
+        # selbst als Fehler, ein grüner Lauf über null geprüften Dateien ist damit
+        # ausgeschlossen. Die beiden Pfad-Prüfungen benennen zusätzlich die konkret erwarteten
+        # Dateien; fehlt eine, wird der Lauf rot, bevor das Gate überhaupt startet.
+        run: |
+          test -f examples/blog-artikel.md
+          test -f examples/blog-artikel.review.json
+          node gate/scripts/check-review-record.mjs examples
+
+      - name: Selbsttest des Gate-Skripts
+        run: node gate/scripts/check-review-record.mjs --self-test
+
+      - name: Selbsttest der Label-Crop-Prüfung
+        run: node tools/label-crop-check/check.mjs --self-test
