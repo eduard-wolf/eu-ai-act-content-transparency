@@ -165,7 +165,7 @@ para 152). *Any* affected or other person with indications has a right to compla
    [nrwe.justiz.nrw.de](https://www.nrwe.justiz.nrw.de)): full liability of the operator
    (Betreiber) under § 5(1), (2) no. 3 UWG for misleading chatbot statements (invented specialist
    medical titles); the chatbot is not a "third party". Leave to appeal on points of law to the
-   BGH (the German Federal Court of Justice) granted, **not final**. The judgement concerns the
+   BGH (the German Federal Court of Justice) granted (judgement, para 118); the NRWE case-law database lists the judgement as **final** as of 24 August 2026. The judgement concerns the
    attribution of AI statements, not the labelling duty — but it shows that German courts
    attribute AI output fully to the operator.
 4. **Remember:** a label is no free pass: misleading practices under the UWG, copyright and
@@ -234,5 +234,5 @@ re-checked as soon as one of the following happens:
 - Commission FAQ on Article 50 (as of 24 July 2026): [digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)
 - KI-MIG: [gesetze-im-internet.de/ki-mig](https://www.gesetze-im-internet.de/ki-mig) · BGBl. 2026 I No. 223: [recht.bund.de/bgbl/1/2026/223](https://www.recht.bund.de/bgbl/1/2026/223)
 - BNetzA, transparency duties and complaints portal: [bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten](https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten/start.html) · [bundesnetzagentur.de/ki](https://www.bundesnetzagentur.de/ki)
-- OLG Hamm, judgement of 12 May 2026, I-4 UKl 3/25 (not final): [nrwe.justiz.nrw.de](https://www.nrwe.justiz.nrw.de)
+- OLG Hamm, judgement of 12 May 2026, I-4 UKl 3/25 (appeal admitted; listed as final by NRWE as of 24 August 2026): [full text on nrwe.justiz.nrw.de](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html)
 - Wettbewerbszentrale, guide "Kennzeichnung KI-generierter Inhalte", v1.1 (4 February 2026, updated 29 July 2026): [wettbewerbszentrale.de](https://www.wettbewerbszentrale.de)

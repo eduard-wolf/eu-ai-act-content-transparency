@@ -153,6 +153,10 @@ and labelling everything. What belongs in which group is decided by the
 [decision tree](01-decision-tree.md); why "AI was involved" alone does not yet trigger a duty is
 explained in the [myths FAQ](06-myths-faq.md).
 
+What goes into a label line for text and what does not — the mandatory core stating the origin,
+only true process facts beyond that, no value judgements — is set out as the grammar of the line
+in [chapter 09](09-labelling-path.md), section 3.
+
 ### Group A — MANDATORY cases
 
 | Situation | German | English |

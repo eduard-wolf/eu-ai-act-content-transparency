@@ -350,6 +350,8 @@ right one.
 > route the law provides: Article 50(4), second subparagraph, AI Act orders the disclosure
 > (*"shall disclose"*) and sets the exception beside it (*"This obligation shall not apply
 > where …"*). Labelling is the standard route, not the fallback.
+> That route is built out in [chapter 09](09-labelling-path.md): the label line, its placement,
+> the provenance page, the as-of date.
 >
 > ⛔ **A word of warning:** a documented review record from someone who cannot judge the substance
 > is **worse than none** — an omission turns into a documented false statement. (This playbook's

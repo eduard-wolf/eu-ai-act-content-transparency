@@ -92,7 +92,8 @@ professional judgement, where *"Fact-checking the accuracy of the content is a m
 named natural or legal person holding **ultimate legal responsibility**, whose identity and contact details are
 publicly findable (para 138). Not sufficient (para 135): spell- and grammar-checking, the mere existence of an
 editorial policy, automated review ("AI reviews AI"), cursory approval without substantive engagement. Met → no label,
-but keep the evidence (review record below). Not met → label required.
+but keep the evidence (review record below). Not met → label required — for the labelling path as a whole (when it
+is the right choice, the label line, placement, provenance page, as-of date) see `playbook/en/09-labelling-path.md`.
 
 **Step 6 — Form of the label.** See "If a label is required" below and `playbook/en/04-labelling-form.md`.
 
@@ -133,6 +134,26 @@ Match the label language to the content language. Full library incl. the optiona
 | Partly manipulated video | „Einzelne Bild- oder Sprachsequenzen dieses Videos wurden mit künstlicher Intelligenz verändert." | "Parts of this video's visuals or speech have been modified using artificial intelligence." |
 | Audio deepfake (audible) | „Dieser Beitrag enthält eine KI-generierte Stimme." | "This recording contains an AI-generated voice." |
 | Labelled text | „Dieser Text wurde mit künstlicher Intelligenz erstellt." | "This text was generated using artificial intelligence." |
+
+**Label line for text — three rules** (`playbook/en/09-labelling-path.md`, section 3). The line is a statement of
+origin, not a quality verdict; it carries at most three kinds of statement, and only two belong in it.
+(1) **Mandatory core — the origin statement:** that the text *"has been artificially generated or manipulated"*
+(Art. 50(4) subpara 2), *"clear and perceivable by natural persons (e.g. visible or audible measures) without them
+needing to rely on any specific technical tools or performing dedicated actions"* (para 132) — no wording is
+prescribed and the EU icon is optional. (2) **True process facts are allowed — if true:** "not editorially reviewed",
+"machine-checked against the sources" or "as of <date>" may be added because they shape what readers may legitimately
+expect, but each must be backed by a real run (the date comes from the last substantive generation or check run,
+never from a build, deploy or layout commit), since, on this playbook's reading, an untrue process statement is a
+statement about an essential characteristic of the service and open to attack as misleading (§ 5(2) no. 1 UWG,
+German unfair-competition law; whether that reference point holds for free content is undecided, and no ruling
+specifically on process statements is on record) — a wrong as-of date is worse than none. (3) **No
+self-evaluative claims:** "professionally created", "by AI experts" or "high-quality" are advertising claims about
+the trader's qualifications and the service (§ 5(2) no. 3 and no. 1 UWG), not origin statements — they stay out of
+the line, as do norm citations (para 142 asks for information that is *"noticeable, easy to understand by and
+accessible for the natural person concerned"*), and evidence belongs on the provenance page the line links to. Where
+the label path is taken because the competence test in Step 5 fails, draft **no** review record — a record without a
+substantive review documents a false statement (this playbook's reading of para 135); note the decision in one
+sentence instead ("labelled because the competence test for this topic came out negative").
 
 **Placement** — clear and distinguishable, at the latest at first exposure, with no click, hover or tooling required
 (Art. 50(5); para 142): **image** into the image itself where no overlay covers it, then check the responsive crops;
@@ -215,5 +236,5 @@ is the expected state, not a bug.**
 In this repository: decision tree `playbook/en/01-decision-tree.md` · classified cases `playbook/en/02-case-catalog.md` ·
 editorial exception `playbook/en/03-editorial-exception.md` · label form `playbook/en/04-labelling-form.md` ·
 commissioned work `playbook/en/05-agencies-and-contracts.md` · common errors `playbook/en/06-myths-faq.md` · watermarks
-`playbook/en/07-provider-marking.md` · official sources `playbook/en/08-legal-basis.md` · the gate
-`gate/README.md`. From this file: [playbook](../../../../playbook/en/01-decision-tree.md) · [gate](../../../../gate/README.md).
+`playbook/en/07-provider-marking.md` · official sources `playbook/en/08-legal-basis.md` · labelling path
+`playbook/en/09-labelling-path.md` · the gate `gate/README.md`. From this file: [playbook](../../../../playbook/en/01-decision-tree.md) · [gate](../../../../gate/README.md).

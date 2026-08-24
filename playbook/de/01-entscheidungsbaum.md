@@ -344,6 +344,8 @@ richtiger.
 > zweite vom Gesetz vorgesehene Weg: Art. 50 Abs. 4 UAbs. 2 KI-VO ordnet die Offenlegung an
 > (*"shall disclose"*) und stellt die Ausnahme daneben (*"This obligation shall not apply
 > where …"*). Kennzeichnen ist der Regelweg, nicht der Ausfallweg.
+> Ausgebaut ist dieser Weg in [Kapitel 09](09-kennzeichnungs-weg.md): Kennzeichnungszeile,
+> Platzierung, Herkunftsseite, Stand-Datum.
 >
 > ⛔ **Warnsatz:** Ein dokumentierter Review-Nachweis von jemandem, der die Substanz nicht
 > beurteilen kann, ist **schlechter als keiner** — aus einem Unterlassen wird eine dokumentierte

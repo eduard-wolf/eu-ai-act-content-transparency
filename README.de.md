@@ -93,15 +93,20 @@ Marktplatz-Momentaufnahmen altern — vor Gebrauch neu prüfen.
 ## Was drin ist
 
 ```text
-playbook/de/   die acht Kapitel, deutsch
-playbook/en/   dieselben acht Kapitel auf Englisch
+playbook/de/   die neun Kapitel, deutsch
+playbook/en/   dieselben neun Kapitel auf Englisch
 plugins/       der Claude-Code-Skill — dieses Repository ist zugleich sein Marktplatz
 gate/          das Nachweis-Gate: Schema, Prüfskript, PR-Vorlage, CI-Workflow
 tools/         label-crop-check, die geometrische Vorprüfung für Labels im Bild
 examples/      das durchgerechnete Beispiel, über das die eigene CI fährt
 ```
 
-Die Playbook-Kapitel liegen derzeit auf Deutsch; die Tabelle verlinkt sie.
+Der Entscheidungsbaum kennt für Text zwei Ausgänge, und das Playbook baut beide aus: den **Ausnahme-Weg** —
+redaktionelle Gegenlese, belegt über das Gate (Kapitel 03, `gate/`) — und den **Kennzeichnungs-Weg** ohne
+Gegenlese (Kapitel 09). Dieses Repository geht selbst den zweiten; der Hinweis am Kopf dieser Datei ist das
+Beispiel.
+
+Jedes Kapitel gibt es in beiden Sprachen; die Tabelle verlinkt die deutschen Originale, die englische Fassung liegt in `playbook/en/`.
 
 | Pfad | Inhalt |
 |---|---|
@@ -113,6 +118,7 @@ Die Playbook-Kapitel liegen derzeit auf Deutsch; die Tabelle verlinkt sie.
 | [`playbook/de/06-mythen-faq.md`](playbook/de/06-mythen-faq.md) | Acht verbreitete Irrtümer, mit Fundstelle richtiggestellt |
 | [`playbook/de/07-anbieter-markierungen.md`](playbook/de/07-anbieter-markierungen.md) | Anbieter-Markierung nach Art. 50 Abs. 2: was ein gefundenes Wasserzeichen beweist, was nicht, und warum es die eigene Kennzeichnung nie ersetzt |
 | [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md) | Rechtsgrundlagen: Zeitleiste, Normtexte im Wortlaut, deutsche Zuständigkeiten, Sanktionsrahmen, Nachweis-Erwartung der Aufsicht — und wann das Kapitel neu zu prüfen ist |
+| [`playbook/de/09-kennzeichnungs-weg.md`](playbook/de/09-kennzeichnungs-weg.md) | Der Kennzeichnungs-Weg: publizieren ohne Gegenlese — wann er der richtige ist, was in die Kennzeichnungszeile darf und was nicht, Platzierung ohne Layout-Schaden, Herkunftsseite, Stand-Datum |
 | [`gate/README.de.md`](gate/README.de.md) | Das Nachweis-Gate: Schema des Review-Records, das abhängigkeitsfreie Prüfskript, PR-Vorlage, fertiger GitHub-Actions-Workflow |
 | [`plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md`](plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md) | Claude-Code-Skill (englisch): prüft vor der Veröffentlichung die Art.-50-Lage und **bereitet** den Review-Record vor — bezeugt ihn nie |
 | [`tools/label-crop-check/README.de.md`](tools/label-crop-check/README.de.md) | Geometrische Vorprüfung: Überlebt ein ins Bild gesetztes Label die Zuschnitte 1:1, 4:5, 9:16 und 16:9? |
@@ -203,7 +209,7 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
 ## Ehrlicher Zuschnitt
 
 - **Ein Playbook plus ein Nachweis-Muster — kein Framework.** Kein CMS-Plugin, kein Dienst, keine
-  Datenbank: zwei abhängigkeitsfreie Node-Skripte, ein JSON-Schema, eine Workflow-Datei und acht
+  Datenbank: zwei abhängigkeitsfreie Node-Skripte, ein JSON-Schema, eine Workflow-Datei und neun
   Kapitel. Man übernimmt, was man braucht.
 - **Zwei Sprachen, eine Regel.** Die englische Fassung trägt, was EU-weit portabel ist; die
   deutsche führt dort, wo die operative Durchsetzungsebene deutsch ist: Die

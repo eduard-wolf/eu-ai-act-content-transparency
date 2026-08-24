@@ -161,7 +161,8 @@ Ein Beschwerderecht hat *jede* betroffene oder sonstige Person mit Anhaltspunkte
    (Verbraucherzentrale NRW ./. Aesthetify GmbH; [nrwe.justiz.nrw.de](https://www.nrwe.justiz.nrw.de)):
    volle Betreiberhaftung nach § 5 Abs. 1, Abs. 2 Nr. 3 UWG für irreführende
    Chatbot-Aussagen (erfundene Facharzttitel); der Chatbot ist kein „Dritter". Revision zum
-   BGH zugelassen, **nicht rechtskräftig**. Das Urteil betrifft die Zurechnung von
+   BGH zugelassen (Rn. 118); die Rechtsprechungsdatenbank NRWE weist das Urteil mit Stand
+   24.08.2026 als **rechtskräftig** aus. Das Urteil betrifft die Zurechnung von
    KI-Äußerungen, nicht die Kennzeichnungspflicht — es zeigt aber, dass deutsche Gerichte
    KI-Output dem Betreiber voll zurechnen.
 4. **Merksatz:** Ein Label ist kein Freifahrtschein: UWG-Irreführung, Urheber- und
@@ -231,5 +232,5 @@ prüfen, sobald eines der folgenden Ereignisse eintritt:
 - Kommissions-FAQ zu Art. 50 (Stand 24.07.2026): [digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)
 - KI-MIG: [gesetze-im-internet.de/ki-mig](https://www.gesetze-im-internet.de/ki-mig) · BGBl. 2026 I Nr. 223: [recht.bund.de/bgbl/1/2026/223](https://www.recht.bund.de/bgbl/1/2026/223)
 - BNetzA, Transparenzpflichten und Beschwerdeportal: [bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten](https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten/start.html) · [bundesnetzagentur.de/ki](https://www.bundesnetzagentur.de/ki)
-- OLG Hamm, Urteil vom 12.05.2026, I-4 UKl 3/25 (nicht rechtskräftig): [nrwe.justiz.nrw.de](https://www.nrwe.justiz.nrw.de)
+- OLG Hamm, Urteil vom 12.05.2026, I-4 UKl 3/25 (Revision zugelassen; laut NRWE rechtskräftig, Stand 24.08.2026): [Volltext auf nrwe.justiz.nrw.de](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html)
 - Wettbewerbszentrale, Leitfaden „Kennzeichnung KI-generierter Inhalte", v1.1 (04.02.2026, aktualisiert 29.07.2026): [wettbewerbszentrale.de](https://www.wettbewerbszentrale.de)

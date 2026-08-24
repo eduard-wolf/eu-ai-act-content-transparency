@@ -17,6 +17,12 @@ the skill, both Node scripts, the entry pages and this file.
    its consolidated version, the European Commission's guidelines C(2026) 5054 final of 20 July
    2026, the Code of Practice on Transparency of AI-Generated Content of 10 June 2026, the
    Commission's FAQ on Article 50, the German KI-MIG and the publications of the Bundesnetzagentur.
+   For the neighbouring questions of unfair-competition and civil law
+   ([chapter 08](playbook/en/08-legal-basis.md) and [chapter 09](playbook/en/09-labelling-path.md)),
+   the German UWG, BGB and DDG (gesetze-im-internet.de) and the decisions cited there are added —
+   OLG Hamm, judgement of 12 May 2026, I-4 UKl 3/25 (full text and finality note:
+   [nrwe.justiz.nrw.de](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html)),
+   BGH, CJEU and LG Itzehoe — each with date and file number in the chapter.
 2. **Adversarial cross-check per chapter.** Each chapter was then checked by an independent agent
    against those same sources — tasked with finding deviations, not confirming them. What it found
    was corrected.
@@ -31,9 +37,15 @@ the skill, both Node scripts, the entry pages and this file.
 
 ## What is machine-verified
 
-- **73 verbatim English quotes** from the guidelines were checked character by character against the
-  official PDF — with no deviation. Quotes from EU documents are therefore kept everywhere in their
-  official English wording, including inside German text.
+- **193 verbatim English quotes from the guidelines** — every distinct quoted string in all
+  published Markdown files of the repository, chapter 09 included — were machine-checked against the
+  official PDF on 24 August 2026 (text extracted with pdftotext; compared character by character
+  except for line breaks, whitespace, end-of-line hyphenation, the PDF's footnote numbers and the
+  form of the quotation marks) — with no deviation. Quotes from EU documents are therefore kept
+  everywhere in their official English wording, including inside German text. Not covered by this
+  check are quotes from the text of the Regulation, the Code of Practice, the Commission's FAQ, the
+  EU icons page and vendor documentation; they carry their source reference but were not checked
+  against a PDF.
 - **Every legal statement carries its source anchor** — article and paragraph of the AI Act,
   paragraph number of the guidelines, section or (sub-)measure of the code, section of the KI-MIG.
   Any reader can check any statement against the original. That is the control this repository
@@ -62,7 +74,8 @@ At this point, this playbook's decision tree has two branches: the exception or 
 ([chapter 01](playbook/en/01-decision-tree.md)). The exception presupposes review by a person with
 relevant subject-matter expertise — *"relevant knowledge and professional judgement pertaining to
 the subject matter"* (guidelines C(2026) 5054 final, para 134). Where that person is missing,
-labelling is the path the law provides.
+labelling is the path the law provides — developed in
+[chapter 09](playbook/en/09-labelling-path.md).
 
 This repository applies its own tree to itself and takes the second branch. The alternative would
 have been a review record without substantive expert review — precisely the class of error the
@@ -90,6 +103,11 @@ The events that would change this repository's conclusions are listed as a bench
 The Commission's guidelines are legally non-binding; only the Court of Justice of the European Union
 can interpret the AI Act with binding effect. This repository is not legal advice and builds no safe
 harbour.
+
+## Responsible entity
+
+This content is published by **Eduard Wolf** as the owner of this repository ([LICENSE](LICENSE)).
+Contact: via the issues of this repository.
 
 ## Reporting errors
 

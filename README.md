@@ -87,12 +87,17 @@ picture before relying on it.
 ## What's inside
 
 ```text
-playbook/en/   the eight chapters, German
+playbook/en/   the nine chapters, English
+playbook/de/   the same nine chapters in German — the originals
 plugins/       the Claude Code skill — this repository doubles as its marketplace
 gate/          the editorial-evidence gate: schema, check script, PR template, CI workflow
 tools/         label-crop-check, the geometric pre-check for labels set inside an image
 examples/      the worked example that this repository's own CI runs over
 ```
+
+For text the decision tree has two exits, and the playbook builds out both: the **exception path** — human editorial
+review, evidenced through the gate (chapter 03, `gate/`) — and the **labelling path** without review (chapter 09).
+This repository itself takes the second; the notice at the top of this file is the example.
 
 Every chapter exists in both languages. The table links the English files; the German originals sit in `playbook/de/` and lead where the enforcement layer is German.
 
@@ -106,6 +111,7 @@ Every chapter exists in both languages. The table links the English files; the G
 | [`playbook/en/06-myths-faq.md`](playbook/en/06-myths-faq.md) | Eight widespread misconceptions, corrected with sources |
 | [`playbook/en/07-provider-marking.md`](playbook/en/07-provider-marking.md) | Provider marking under Art. 50(2): what a watermark proves, what it does not, why it never replaces your own label |
 | [`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md) | Legal basis: timeline, verbatim norms, German authorities, sanctions, what supervisors expect as evidence, and when this needs re-checking |
+| [`playbook/en/09-labelling-path.md`](playbook/en/09-labelling-path.md) | The labelling path: publishing without editorial review — when it is the right one, what belongs in the label line and what does not, placement without layout damage, the provenance page, the as-of date |
 | [`gate/README.md`](gate/README.md) | The editorial-evidence gate: review-record schema, the zero-dependency check script, PR template, ready-made GitHub Actions workflow |
 | [`plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md`](plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md) | The Claude Code skill: runs the Article 50 check before publishing and prepares — never attests — the review record |
 | [`tools/label-crop-check/README.md`](tools/label-crop-check/README.md) | Geometric pre-check: does an in-image label survive the 1:1, 4:5, 9:16 and 16:9 platform crops? |
@@ -190,7 +196,7 @@ and 16:9 by default, others via `--ratios`; exit 1 if one of them cuts it. Zero 
 ## Honest scope
 
 - **A playbook plus a verification pattern — not a framework.** No CMS plugin, no service, no
-  database. Two Node scripts with zero dependencies, a JSON schema, a workflow file and eight
+  database. Two Node scripts with zero dependencies, a JSON schema, a workflow file and nine
   chapters. Adopt the parts you need.
 - **Two languages, one rule.** The English set carries what is portable across the EU; the German
   set leads where the operative enforcement layer is German: the Bundesnetzagentur is the central

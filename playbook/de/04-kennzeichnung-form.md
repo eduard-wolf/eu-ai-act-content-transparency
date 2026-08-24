@@ -152,6 +152,10 @@ labeln und alles labeln. Was in welche Gruppe gehört, entscheidet der
 [Entscheidungsbaum](01-entscheidungsbaum.md); warum „KI war beteiligt" allein noch keine Pflicht
 auslöst, erklärt die [Mythen-FAQ](06-mythen-faq.md).
 
+Was in eine Kennzeichnungszeile für Text hineingehört und was nicht — der Pflicht-Kern der
+Herkunftsaussage, darüber hinaus nur wahre Prozess-Tatsachen, keine Wertungen —, steht als
+Grammatik der Zeile in [Kapitel 09](09-kennzeichnungs-weg.md), Abschnitt 3.
+
 ### Gruppe A — PFLICHT-Fälle
 
 | Situation | DE | EN |

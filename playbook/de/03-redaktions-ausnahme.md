@@ -191,6 +191,9 @@ UAbs. 2 KI-VO ordnet die Offenlegung an (*"shall disclose"*) und stellt die Ausn
 (*"This obligation shall not apply where …"*) — die Kennzeichnung ist der Normalfall, nicht die
 Strafe für einen missglückten Review.
 
+Der Weg, der dann beginnt — publizieren mit Kennzeichnung statt Gegenlese —, ist in
+[Kapitel 09](09-kennzeichnungs-weg.md) ausgebaut.
+
 Wer den Test festhält, dokumentiert damit zugleich, **warum** gekennzeichnet wurde. Das trägt in
 einer Prüfung weiter als eine unbelegte Behauptung von Fachkunde.
 

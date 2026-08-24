@@ -17,7 +17,13 @@ Werkzeug-Dokumentation, den Skill, beide Node-Skripte, die Einstiegsseiten und d
 1. **Rechtsrecherche aus den amtlichen Primärquellen.** Grundlage waren die Verordnung (EU)
    2024/1689 in der konsolidierten Fassung, die Leitlinien der Kommission C(2026) 5054 final vom
    20.07.2026, der Code of Practice on Transparency of AI-Generated Content vom 10.06.2026, die
-   Kommissions-FAQ zu Art. 50, das KI-MIG und die Veröffentlichungen der Bundesnetzagentur.
+   Kommissions-FAQ zu Art. 50, das KI-MIG und die Veröffentlichungen der Bundesnetzagentur. Für die
+   wettbewerbs- und zivilrechtlichen Nachbarfragen ([Kapitel 08](playbook/de/08-rechtsgrundlagen.md)
+   und [Kapitel 09](playbook/de/09-kennzeichnungs-weg.md)) kommen das UWG, das BGB und das DDG
+   (gesetze-im-internet.de) sowie die dort zitierten Entscheidungen hinzu — OLG Hamm, Urteil vom
+   12.05.2026, I-4 UKl 3/25 (Volltext und Rechtskraftvermerk:
+   [nrwe.justiz.nrw.de](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html)),
+   BGH, EuGH und LG Itzehoe —, jeweils mit Datum und Aktenzeichen im Kapitel.
 2. **Adversariale Gegenprüfung je Kapitel.** Jedes Kapitel hat anschließend ein unabhängiger Agent
    gegen dieselben Quellen geprüft — mit dem Auftrag, Abweichungen zu finden, nicht sie zu
    bestätigen. Was er fand, wurde korrigiert.
@@ -32,9 +38,15 @@ Werkzeug-Dokumentation, den Skill, beide Node-Skripte, die Einstiegsseiten und d
 
 ## Was maschinell geprüft ist
 
-- **73 wörtliche englische Zitate** aus den Leitlinien wurden Zeichen für Zeichen gegen das amtliche
-  PDF geprüft — ohne Abweichung. Zitate aus EU-Dokumenten stehen deshalb überall in der englischen
-  Originalfassung, auch mitten im deutschen Text.
+- **193 wörtliche englische Zitate aus den Leitlinien** — jede unterschiedliche Zitat-Zeichenkette
+  in allen veröffentlichten Markdown-Dateien des Repositorys, Kapitel 09 eingeschlossen — wurden am
+  24.08.2026 maschinell gegen das amtliche PDF geprüft (Textextraktion mit pdftotext; Vergleich
+  zeichengenau bis auf Zeilenumbrüche, Leerraum, Trennstriche am Zeilenende, Fußnotenziffern des
+  PDFs und die Form der Anführungszeichen) — ohne Abweichung. Zitate aus EU-Dokumenten stehen
+  deshalb überall in der englischen Originalfassung, auch mitten im deutschen Text. Nicht von diesem
+  Abgleich erfasst sind Zitate aus dem Verordnungstext, dem Kodex, der Kommissions-FAQ, der
+  EU-Icons-Seite und aus Herstellerdokumentation; sie tragen ihre Fundstelle, sind aber nicht gegen
+  ein PDF geprüft.
 - **Jede Rechtsaussage trägt ihre Fundstelle** — Artikel und Absatz der KI-VO, Randnummer der
   Leitlinien, Section oder (Sub-)Measure des Kodex, Paragraf des KI-MIG. Damit kann jede lesende
   Person jede Aussage am Original nachprüfen. Das ist die Kontrolle, die dieses Repository anbietet.
@@ -63,7 +75,8 @@ Der Entscheidungsbaum dieses Playbooks kennt an dieser Stelle zwei Zweige: Ausna
 Kennzeichnung ([Kapitel 01](playbook/de/01-entscheidungsbaum.md)). Die Ausnahme setzt eine Prüfung
 durch eine Person mit einschlägiger Fachkompetenz voraus — *"relevant knowledge and professional
 judgement pertaining to the subject matter"* (Leitlinien C(2026) 5054 final, Rn. 134). Wo diese
-Person fehlt, ist Kennzeichnen der vorgesehene Weg.
+Person fehlt, ist Kennzeichnen der vorgesehene Weg — ausgebaut in
+[Kapitel 09](playbook/de/09-kennzeichnungs-weg.md).
 
 Dieses Repository wendet seinen eigenen Baum auf sich selbst an und wählt den zweiten Zweig. Die
 Alternative wäre ein Review-Nachweis ohne fachliche Prüfung gewesen — genau die Fehlerklasse, vor
@@ -90,6 +103,11 @@ in [Kapitel 08: Rechtsgrundlagen](playbook/de/08-rechtsgrundlagen.md), Abschnitt
 
 Die Leitlinien der Kommission sind rechtlich unverbindlich; verbindlich auslegen kann die
 KI-Verordnung nur der EuGH. Dieses Repository ist keine Rechtsberatung und baut keinen Safe Harbour.
+
+## Verantwortliche Stelle
+
+Veröffentlicht werden diese Inhalte von **Eduard Wolf** als Inhaber dieses Repositorys
+([LICENSE](LICENSE)). Kontakt: über die Issues dieses Repositorys.
 
 ## Fehler melden
 

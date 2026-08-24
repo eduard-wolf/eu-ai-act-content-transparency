@@ -189,6 +189,9 @@ Article 50(4), second subparagraph, AI Act orders disclosure (*"shall disclose"*
 exception beside it (*"This obligation shall not apply where …"*) — the label is the normal case,
 not the penalty for a botched review.
 
+The route that begins there — publishing with a label instead of an editorial review — is built
+out in [chapter 09](09-labelling-path.md).
+
 Recording the test at the same time documents **why** a label was applied. In an inspection that
 carries further than an unsubstantiated claim of expertise.
 
