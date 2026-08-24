@@ -1,5 +1,12 @@
 # Kennzeichnung richtig umsetzen: Form, Wortlaut, Platzierung
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -204,7 +211,7 @@ Platzierungs-Referenz ist der Kodex, Section 2, Measure 1.2 (Sub-measures 1.2.1�
 | Variante | Bewertung |
 |---|---|
 | **Label im Bild selbst** — Kodex Sub-measure 1.2.2 lit. a: *"in an appropriate place where no intervening overlay elements exist (e.g., in the top right corner of an image or video deep fake)"* | **Sicherer Weg.** Das Label überlebt Bildersuche, Repost, Screenshot und Kontextverlust — überall dort wird das Bild ohne die umgebende Seite wahrgenommen. |
-| **Unmittelbar sichtbare Bildunterschrift**, ohne Klick und ohne Scrollen im selben Sichtfeld | ⚠️ **Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).** Ohne Nutzeraktion wahrnehmbar — der Kodex setzt in Sub-measure 1.2.1 lit. c aber das **eingebettete** Label als Regel: *"The icon or equivalent label will be directly embedded into the content, unless equivalent alternatives to an embedded icon are available (e.g., a user interface overlay that for natural persons appears to be on the content)"*, und verlangt zusätzlich, dass die Offenlegung *"takes into account the distribution and dissemination chain of the content"*. Eine Bildunterschrift ist weder eingebettet, noch erscheint sie auf dem Inhalt — genau deshalb reist sie bei Repost und Bildersuche nicht mit. Vertretbar daher **nur mit dokumentierter Begründung und nur, wo Zweitverwertung praktisch ausgeschlossen ist**. Weder Leitlinien noch FAQ entscheiden die Frage „im Bild oder Bildunterschrift" ausdrücklich — der Kodex dagegen schon. |
+| **Unmittelbar sichtbare Bildunterschrift**, ohne Klick und ohne Scrollen im selben Sichtfeld | ⚠️ **Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).** Ohne Nutzeraktion wahrnehmbar — der Kodex setzt in Sub-measure 1.2.1 lit. c aber das **eingebettete** Label als Regel: *"The icon or equivalent label will be directly embedded into the content, unless equivalent alternatives to an embedded icon are available (e.g., a user interface overlay that for natural persons appears to be on the content)"*, und verlangt zusätzlich, dass die Offenlegung *"takes into account the distribution and dissemination chain of the content"*. Eine Bildunterschrift ist weder eingebettet, noch erscheint sie auf dem Inhalt — genau deshalb reist sie bei Repost und Bildersuche nicht mit. Vertretbar daher **nur mit dokumentierter Begründung und nur, wo Zweitverwertung praktisch ausgeschlossen ist**. Weder Leitlinien noch FAQ entscheiden die Frage „im Bild oder Bildunterschrift" ausdrücklich — der Kodex dagegen schon. |
 | **Einen Klick oder Hover entfernt**, nur in Metadaten, nur im Dateinamen | **Unzureichend** (Rn. 142; FAQ: keine *"dedicated actions"* zumutbar; zu Metadaten Rn. 117). |
 
 > ℹ️ **Ausnahme für geschlossene interne Kontexte.** Die drei Zeilen oben gelten für Inhalte, die
@@ -215,7 +222,7 @@ Platzierungs-Referenz ist der Kodex, Section 2, Measure 1.2 (Sub-measures 1.2.1�
 **Responsive Zuschnitte beachten.** Plattformen und Themes schneiden Bilder auf 1:1, 4:5, 9:16
 oder Thumbnail zu. Ein Label, das im Original oben rechts sitzt, kann im Zuschnitt wegfallen —
 dann ist die Kennzeichnung genau dort nicht mehr wahrnehmbar, wo die Person sie sehen würde. Vor
-der Veröffentlichung prüfen: [tools/label-crop-check](../tools/label-crop-check/README.md)
+der Veröffentlichung prüfen: [tools/label-crop-check](../../tools/label-crop-check/README.de.md)
 simuliert die gängigen Zuschnitte und meldet, ob das Label sichtbar bleibt.
 
 ### 4.2 Video
@@ -280,7 +287,7 @@ Ob der Text überhaupt kennzeichnungspflichtig ist oder die redaktionelle Ausnah
 [Kapitel 03](03-redaktions-ausnahme.md). Dort gilt die **Reihenfolge-Regel** (Rn. 136): Jeder
 substanzielle KI-Eingriff **nach** der redaktionellen Freigabe macht die Ausnahme nichtig — die
 Gegenlese muss der letzte inhaltsändernde Schritt sein. Technisch erzwungen wird das im
-[gate/](../gate/README.md).
+[gate/](../../gate/README.de.md).
 
 ### 4.5 Geschlossenes internes Umfeld
 
@@ -322,7 +329,7 @@ Drei Konsequenzen:
    gerenderte Label tatsächlich klar und unterscheidbar erscheint. Das ist eine **Sichtprüfung**
    pro Plattform und Format: Beitrag nach dem Setzen des Schalters als normaler Nutzer aufrufen
    (Feed, Story, Suche, eingebettete Wiedergabe) und prüfen, ob und wo das Label erscheint.
-   Ergebnis mit Screenshot und Datum dokumentieren (siehe [gate/](../gate/README.md)).
+   Ergebnis mit Screenshot und Datum dokumentieren (siehe [gate/](../../gate/README.de.md)).
    *[zu verifizieren: ob und wie einzelne Plattformen ihre KI-Schalter sichtbar rendern — dazu
    liegt keine amtliche Feststellung vor; deshalb pro Kanal und Format selbst prüfen und den
    Stand datieren.]*
@@ -359,7 +366,7 @@ Drei Grenzen, die in der Praxis regelmäßig übersehen werden:
 
 - **Welche Form „appropriate" ist, ist Einzelfallabwägung** (Rn. 123: *"a case-by-case
   assessment"*, nach Art des Werks, Publikum und Kontext). ⚠️ **Grauzone — Einstufung mit kurzer
-  Begründung dokumentieren (siehe [gate/](../gate/README.md)).** Konkrete Orte nennen zwar nicht
+  Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).** Konkrete Orte nennen zwar nicht
   die Leitlinien, wohl aber der Kodex: Für Deepfakes in künstlerischen, kreativen, satirischen,
   fiktionalen oder vergleichbaren Werken gilt nicht Measure 1.2 (siehe Abschnitt 4), sondern das
   eigene Offenlegungsregime der Section 2, **Commitment 3**. Es benennt drei Ortskategorien:
@@ -442,7 +449,7 @@ selbst zu prüfen (Rn. 144).
    verändert (Rn. 136) — sonst entfällt die Ausnahme und es wird gelabelt.
 8. **Dokumentiert?** Einstufung, gewählte Labels und die Begründung für jede Grauzone gehören in
    den Review-Record (`scope.einstufung`, `scope.labels_erforderlich`, `scope.begruendung`,
-   siehe [gate/](../gate/README.md)). Das Gate erzwingt den **Prozess** und macht ihn
+   siehe [gate/](../../gate/README.de.md)). Das Gate erzwingt den **Prozess** und macht ihn
    nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das
    rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Kodex Section 2,
    Commitment 4) — **kein Safe Harbour**.

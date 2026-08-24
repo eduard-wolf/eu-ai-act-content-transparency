@@ -1,5 +1,12 @@
 # Die redaktionelle Ausnahme: wann KI-Text ohne Label auskommt
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -11,7 +18,7 @@ hindurchpasst: die redaktionelle Ausnahme. Daneben steht nur die Ausnahme für g
 erlaubte Strafverfolgung (Rn. 130 iii; eigener Abschnitt Rn. 139), die hier ausgeklammert
 bleibt — dazu [Kapitel 01](01-entscheidungsbaum.md). Dieses Kapitel klärt, wann die
 redaktionelle Ausnahme trägt — und woran sie in der Praxis scheitert. Die technische
-Umsetzung steht in [gate/](../gate/README.md), die Form der Kennzeichnung für alle Fälle,
+Umsetzung steht in [gate/](../../gate/README.de.md), die Form der Kennzeichnung für alle Fälle,
 in denen die Ausnahme **nicht** greift, in [Kapitel 04](04-kennzeichnung-form.md).
 
 > 🔑 **Merksatz vorweg:** Die redaktionelle Ausnahme gilt **nur für Text** — für Bilder,
@@ -94,14 +101,120 @@ nur im editorial-control-Satz.
 > — `reviewer.fachkompetenz` (human review) neben `pruefung.quellen_geprueft` und
 > `pruefung.aenderungen_vorgenommen` (editorial control). Das ist eine bewusste Übererfüllung,
 > damit der Nachweis unabhängig davon trägt, auf welchen Weg man sich später beruft — **nicht**,
-> weil das Recht beide kumulativ verlangte (→ [gate/](../gate/README.md)).
+> weil das Recht beide kumulativ verlangte (→ [gate/](../../gate/README.de.md)).
 
 Für **Mediendiensteanbieter** gilt Bestandsschutz für gelebte Praxis: *"This is without
 prejudice to existing review and editorial procedures and professional standards applicable
 to media service providers"* (Rn. 134, ebenso Rn. 140 und Code of Practice Sec. 2,
 Commitment 4 Abs. 1).
 
-## 3. Die Verbotsliste — was **nicht** genügt (Rn. 135)
+## 3. Der Kompetenz-Test: Kann ich **diesen** Text prüfen?
+
+Der praktisch schärfste Filter der ganzen Ausnahme steht in keiner eigenen Randnummer. Er
+steckt in einer Wortgruppe aus Rn. 134, die beim Lesen leicht überflogen wird:
+
+> "Human review refers to the deliberate examination of the substance of the content by one
+> or more natural persons **possessing relevant knowledge and professional judgement
+> pertaining to the subject matter under scrutiny** (e.g. academic peer review or professional
+> validation chains). **Fact-checking the accuracy of the content is a minimum requirement
+> that should be part of that review.**"
+
+**Kompetenz ist pro Inhalt zu bestimmen, nicht pro Person.** Bezugspunkt ist *"the subject
+matter under scrutiny"* — der konkret geprüfte Gegenstand, nicht der Titel, die Rolle oder die
+Berufserfahrung der prüfenden Person. Die Ausnahme fragt deshalb nicht „ist diese Person
+fachkundig?", sondern „ist diese Person **für diesen Text** fachkundig?". Dieselbe Person kann
+die Frage für den einen Artikel mit Ja und für den nächsten mit Nein beantworten, ohne dass sich
+an ihr etwas geändert hätte.
+
+In der Ich-Form ist die Frage nicht mehr ausweichbar — und genau so gehört sie an den Anfang
+jeder Gegenlese: **nicht „bin ich Experte?", sondern „kann ich DIESEN Text fachlich prüfen?"**.
+
+### 3.1 Selbsteinschätzung: vier Prüfsätze
+
+Vor der Gegenlese, für den konkret vorliegenden Text. Alle vier müssen ehrlich mit Ja
+beantwortbar sein:
+
+| # | Prüfsatz | Woran er hängt |
+|---|---|---|
+| 1 | Kann ich die zentralen **Sachaussagen** als richtig oder falsch erkennen? | Kern der *"examination of the substance"* (Rn. 134) — wer eine Aussage nur für plausibel halten kann, prüft den Stil, nicht die Substanz |
+| 2 | Kann ich die **Quellen** beurteilen — ob sie tragen, aktuell und einschlägig sind? | *"ensuring the trustworthiness of sources"* (Rn. 134); dazu muss man die Quellenlandschaft des Themas kennen |
+| 3 | **Würde ich Fehler bemerken** — auch die, die plausibel klingen? | Der Faktencheck ist *"a minimum requirement"* (Rn. 134) — Fehler bemerken kann aber nur, wer den Sollzustand kennt |
+| 4 | Kann ich den Text **aus inhaltlichen Gründen** ändern oder ablehnen? | Zwei Hälften: die **Befugnis** (*"authority to approve, alter or reject"* auf *"substantive grounds"*, Rn. 134) und die **Fähigkeit**, inhaltliche Gründe überhaupt zu benennen |
+
+Prüfsatz 3 ist der unbequemste, weil er auf die eigene Unwissenheit zielt: Ein KI-Text ist
+sprachlich fehlerfrei, auch wenn er inhaltlich falsch ist. Wo Fachkunde fehlt, fehlt genau das
+Signal, an dem man sonst stolpert — der schiefe Satz, die unpassende Formulierung, die falsche
+Zahl im vertrauten Bereich. **„Es liest sich richtig" ist kein Prüfergebnis.**
+
+### 3.2 Themenbezug: dieselbe Person, zwei Ergebnisse
+
+Weil die Kompetenz am Gegenstand hängt, verläuft die Grenze quer durch Personen und Teams:
+
+| Regelmäßig **vorhanden** | Regelmäßig **nicht vorhanden** |
+|---|---|
+| Wer über das **eigene Produkt** schreibt, das er gebaut, betrieben und gemessen hat — die Sachaussagen sind eigenes Wissen, Fehler fallen auf | Wer über ein **fremdes Fachgebiet** schreibt: Recht, Medizin, Steuern, fremde Technik |
+| Wer über den **eigenen Fachbereich** schreibt und die Quellenlage kennt | Wer über ein Nachbargebiet schreibt, das nur vertraut *wirkt* |
+| Wer die genannten **Zahlen selbst erhoben** hat oder ihre Herkunft nachvollziehen kann | Wer die Zahlen nur aus dem KI-Output kennt und nichts dagegenhalten kann |
+
+Das deckt sich mit den amtlichen Positivbeispielen (Kasten nach Rn. 138, → Abschnitt 7): Der
+Wissenschaftsblog lässt **intern peer-reviewen**, der Nachhaltigkeitsbericht geht durch die
+**Fachfunktionen** des Unternehmens, die Sicherheitswarnung gibt ein **Amtsträger** der
+zuständigen Behörde frei. In allen dreien prüft nicht „jemand", sondern jemand vom Fach
+**für genau diesen Gegenstand**.
+
+### 3.3 Gilt der Test auch auf dem editorial-control-Weg?
+
+Wörtlich verlangt Rn. 134 die Fachkunde nur im **human-review**-Satz. Für die **editorial
+control** nennt dieselbe Randnummer stattdessen die Befugnis, den Text *"to approve, alter or
+reject"* auf *"substantive grounds (incl. fact-checking of information and ensuring the
+trustworthiness of sources)"* — die Fachkunde erscheint dort nicht als eigenes Merkmal (so auch
+die Merkmalstabelle in Abschnitt 2).
+
+**Lesart dieses Playbooks** (die Leitlinien sagen dazu nichts ausdrücklich): Der Unterschied ist
+kleiner, als er aussieht. Wer *"substantive grounds"* braucht, um abzulehnen, muss die Substanz
+beurteilen können — sonst bleibt von der Befugnis eine leere Form. Die redaktionelle Stelle darf
+diese Beurteilung aber **organisieren**, statt sie selbst zu leisten: Sie kann eine
+Fachredaktion, eine Fachfunktion oder eine externe Begutachtung dazwischenschalten. Worauf sie
+nicht verzichten kann, ist die Beurteilung als solche — der Faktencheck bleibt auf beiden Wegen
+Minimum (Abschnitt 2).
+
+Für die Praxis heißt das: Der Kompetenz-Test erledigt sich nicht dadurch, dass man den
+editorial-control-Weg wählt. Er wandert nur von der prüfenden Person zu der Frage, **wen** die
+redaktionelle Stelle für diesen Gegenstand einsetzt.
+
+### 3.4 Fällt der Test negativ aus: kennzeichnen
+
+Wertfrei formuliert, weil hier nichts abzuwerten ist: Fällt eine der vier Antworten „nein" aus,
+ist die redaktionelle Ausnahme **für diesen Text nicht verfügbar** — dann wird gekennzeichnet.
+Das ist kein Scheitern und kein Ausweichen, sondern der Regelweg des Gesetzes. Art. 50 Abs. 4
+UAbs. 2 KI-VO ordnet die Offenlegung an (*"shall disclose"*) und stellt die Ausnahme daneben
+(*"This obligation shall not apply where …"*) — die Kennzeichnung ist der Normalfall, nicht die
+Strafe für einen missglückten Review.
+
+Wer den Test festhält, dokumentiert damit zugleich, **warum** gekennzeichnet wurde. Das trägt in
+einer Prüfung weiter als eine unbelegte Behauptung von Fachkunde.
+
+> ⛔ **Der Warnsatz dieses Kapitels:** Ein dokumentierter Review-Nachweis von jemandem, der die
+> Substanz nicht beurteilen kann, ist **schlechter als keiner**. Ohne Nachweis steht ein
+> Unterlassen im Raum; mit Nachweis steht eine **dokumentierte Falschaussage** im Raum — mit
+> Datum, Namen und Prüfvermerk, geliefert von der eigenen Seite.
+>
+> **Keine neue Rechtsaussage, sondern eine Folgerung** aus Rn. 134 (Fachkunde als Bestandteil
+> des human review) und Rn. 135, die *"cursory editorial approval without substantive
+> engagement"* ausdrücklich ausschließt (→ Abschnitt 4): Wer die Substanz nicht beurteilen kann,
+> liefert genau die kursorische Freigabe, die die Norm nicht genügen lässt — und protokolliert
+> sie zusätzlich. Die Leitlinien sagen dazu nichts eigens.
+
+Das ist die Umkehrung der Doppelregel aus Abschnitt 4: **Dokumentation ohne Substanz** ist ein
+sauber protokollierter Verstoß. Das Gate macht den Unterschied nicht wett — es hält fest, wer
+mit welcher Fachkunde geprüft hat, es prüft aber nicht, ob diese Person tatsächlich fachkundig
+**war** (→ [gate/](../../gate/README.de.md)). Genau darum verlangt das Feld
+`reviewer.fachkompetenz` im Review-Record die Sachkunde **in einem Satz belegt**, nicht bloß
+behauptet.
+
+Kurzfassung und Einordnung in den Prüfablauf: [Kapitel 01](01-entscheidungsbaum.md), Stufe 5.
+
+## 4. Die Verbotsliste — was **nicht** genügt (Rn. 135)
 
 Der wichtigste Absatz des ganzen Kapitels, im Wortlaut:
 
@@ -122,7 +235,7 @@ Daraus folgt die Doppelregel dieses Kapitels: **Substanz ohne Dokumentation** mu
 Streitfall behauptet statt belegt werden — **Dokumentation ohne Substanz** ist ein sauber
 protokollierter Verstoß. Gebraucht wird beides.
 
-## 4. Die Reihenfolge-Regel (Rn. 136)
+## 5. Die Reihenfolge-Regel (Rn. 136)
 
 Voller Wortlaut:
 
@@ -159,7 +272,7 @@ Typische Schritte **nach** dem Sign-off, die die Ausnahme kosten:
 ⚠️ Wo genau „substanziell" beginnt, sagen die Leitlinien nicht abschließend: Eine reine
 Formatkonvertierung, Minifizierung oder ein Encoding-Fix ändert den Inhalt nicht — eine
 Umformulierung oder Kürzung schon. Grauzone — Einstufung mit kurzer Begründung dokumentieren
-(siehe [gate/](../gate/README.md)).
+(siehe [gate/](../../gate/README.de.md)).
 
 Zwei Konsequenzen fürs Handwerk:
 
@@ -168,14 +281,14 @@ Zwei Konsequenzen fürs Handwerk:
    die Kennzeichnungspflicht zurück.
 2. **Reihenfolge beweisbar machen.** Genau das leistet die Hash-Bindung des Review-Records:
    Jede spätere Änderung — auch durch KI, auch ein Leerzeichen — invalidiert den Record und
-   lässt CI rot werden (→ [gate/](../gate/README.md)).
+   lässt CI rot werden (→ [gate/](../../gate/README.de.md)).
 
 **Lesart dieses Playbooks** (die Leitlinien sagen dazu nichts ausdrücklich): Die Ausnahme
 ist nach einem substanziellen KI-Eingriff nicht dauerhaft verloren. Wer erneut fachkundig
 gegenliest und freigibt, hat wieder eine Freigabe als letzten inhaltsändernden Schritt. Das
 Gate bildet das als **Re-Review** ab — neuer Hash, neues Datum, neuer Prüfvermerk.
 
-## 5. Voraussetzung 2 — redaktionelle Verantwortung (Rn. 138)
+## 6. Voraussetzung 2 — redaktionelle Verantwortung (Rn. 138)
 
 > "This entails that said person must hold the **ultimate legal responsibility** over the
 > publication of the content, including the human review or editorial control (e.g. an
@@ -215,7 +328,7 @@ to ensure accountability"* (CoP Sec. 2, Commitment 4).
 in broader contexts and to other deployers"*. Wo die Grenze zwischen EMFA-Mediendienst und
 sonstigem Publisher verläuft, ist ungeklärt — und in Deutschland zugleich eine Frage der
 Aufsicht (§ 2 Abs. 8 KI-MIG, → [Kapitel 08](08-rechtsgrundlagen.md)). Grauzone — Einstufung
-mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 
 Wer Träger ist, wenn Agentur, Freelancer und Kunde beteiligt sind, klärt
 [Kapitel 05](05-agentur-und-vertraege.md): Angestellte und Dritte, die das System **auf
@@ -227,7 +340,7 @@ nicht (Beispielabsatz nach Rn. 14). Fundstellen: Leitlinien Rn. 14 (Primärfunds
 ebenso Kommissions-FAQ zu Art. 50 [zu verifizieren: genauer FAQ-Abschnitt zur
 Betreiber-Rolle].
 
-## 6. Die amtlichen Beispiele (Kasten nach Rn. 138)
+## 7. Die amtlichen Beispiele (Kasten nach Rn. 138)
 
 | Ausnahme greift | Ausnahme greift **nicht** |
 |---|---|
@@ -242,7 +355,7 @@ die Substanz** — und **eine benannte Stelle trägt dafür die Verantwortung**.
 Medienprivileg: Behörde, Forschungseinrichtung und Unternehmen stehen gleichberechtigt in
 der Liste. Weitere Einzelfälle: [Fallkatalog](02-fallkatalog.md).
 
-## 7. Dokumentation: was gefordert ist — und was nicht
+## 8. Dokumentation: was gefordert ist — und was nicht
 
 Der Code of Practice on Transparency of AI-Generated Content (10.06.2026) beschreibt in
 Sec. 2, **Commitment 4** das Minimum für alle Betreiber **ohne** bestehende redaktionelle
@@ -266,11 +379,11 @@ Ebenso ausdrücklich erlaubt ist mehr:
 > of involvement of the AI system in the published text."
 
 Zwei Einordnungen dazu: Der Kodex bindet unmittelbar nur **Signatare** — für alle anderen ist
-er der Maßstab, an dem die erwartete Gap-Analyse gemessen wird (Rn. 148, → Abschnitt 8). Und
+er der Maßstab, an dem die erwartete Gap-Analyse gemessen wird (Rn. 148, → Abschnitt 9). Und
 die Einzelfall-Doku ist **freiwillig**, aber sie ist der Unterschied zwischen *behaupten* und
 *belegen*, sobald jemand nachfragt.
 
-## 8. Kein Kodex-Beitritt? Dann „other adequate means" (Rn. 146–149)
+## 9. Kein Kodex-Beitritt? Dann „other adequate means" (Rn. 146–149)
 
 | Weg | Was die Aufsicht erwartet |
 |---|---|
@@ -288,7 +401,7 @@ Maßnahmen **bußgeldmindernd** wirken (Rn. 149). Beitrittsweg und Sanktionsrahm
 Praktisch heißt das: Wer nicht beitritt, trägt die Darlegungslast selbst — und braucht etwas,
 das man einer Behörde **vorlegen** kann.
 
-## 9. Ehrliches Fazit
+## 10. Ehrliches Fazit
 
 **Warum ein Git/CI-Gegenlese-Schritt als Nachweis taugt.** Er liefert genau die drei Punkte,
 an denen die Ausnahme hängt, in vorlegbarer Form: die **benannte, fachkundige Person**
@@ -324,4 +437,4 @@ stehende Merksätze:
 
 Verbreitete Irrtümer zu diesem Kapitel — insbesondere „Gegenlesen befreit auch Bilder" und
 „eine KI-Policy reicht" — stehen in der [Mythen-FAQ](06-mythen-faq.md). Die operative
-Umsetzung steht in [gate/](../gate/README.md).
+Umsetzung steht in [gate/](../../gate/README.de.md).

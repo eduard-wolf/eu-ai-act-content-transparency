@@ -1,5 +1,12 @@
 # Auftragsketten: Wer ist Betreiber, wer kennzeichnet, wer haftet
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -103,13 +110,13 @@ pursuant to Article 50 AI Act"*, Rn. 16) — und Rn. 17 stellt klar, dass andere
 Standesregeln eine eigene Kennzeichnung verlangen können. Ob und wie weit ein reines
 Verbreitungsmedium daneben lauterkeitsrechtlich in Anspruch genommen werden kann, ist eine Frage
 des UWG und hier nicht entschieden.
-⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 
 **Zu Fall 4 — geteilte Entscheidung:** Wenn Auftraggeber und Dienstleister *gemeinsam* über den
 KI-Einsatz entscheiden (der Kunde will „irgendwas mit KI", die Agentur wählt Tool und Motiv), ist
 die Zuordnung nicht eindeutig. Dann gilt: eine Partei benennen, die Begründung festhalten und
 kennzeichnen. Zwei Labels schaden weniger als keines.
-⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 
 ---
 
@@ -206,7 +213,7 @@ Name dort steht — Details: [Kapitel 03](03-redaktions-ausnahme.md).
       aufzunehmen (Kodex-Measure 1.2 „Non-removal of markings" — die Anbieter-Verpflichtung);
       in der Kette muss es vertraglich weitergereicht werden.
 - [ ] Zuschnitte, Thumbnails, Ad-Formate, Repost und Zweitverwertung: Wer prüft, dass das Label
-      den Zuschnitt überlebt (→ [tools/label-crop-check](../tools/label-crop-check/README.md))?
+      den Zuschnitt überlebt (→ [tools/label-crop-check](../../tools/label-crop-check/README.de.md))?
 - [ ] Weitergabe an Distributionspartner: verhältnismäßige Maßnahmen, dass das Label bis zur
       ersten Exposition sichtbar bleibt (Rn. 12; Art. 50 Abs. 5).
 - [ ] Übersetzungen, CMS-Import, Newsletter-Rendering: Wer stellt sicher, dass das Label mitwandert?
@@ -232,7 +239,7 @@ Deepfake-Test ([Mythen-FAQ](06-mythen-faq.md), Mythos 8). Dieser Block betrifft 
 - [ ] Der Dienstleister liefert den **Review-Record** mit: `<name>.review.json` neben der
       Inhaltsdatei, mit Reviewer, Fachkompetenz, redaktioneller Verantwortung, Prüfumfang,
       Einstufung und `content_sha256` der freigegebenen Fassung (Feldliste und Prüfskript:
-      [gate/](../gate/README.md)).
+      [gate/](../../gate/README.de.md)).
 - [ ] Aufbewahrung: Wer hält die Nachweise wie lange vor — und wer legt sie bei einem
       Auskunftsersuchen der Marktüberwachung vor? Nicht-Signatare des Kodex müssen mit mehr
       Auskunftsersuchen rechnen, ausdrücklich auch zu ihrer Labelling-Praxis (Rn. 148).
@@ -274,4 +281,4 @@ Deepfake-Test ([Mythen-FAQ](06-mythen-faq.md), Mythos 8). Dieser Block betrifft 
 7. Verträge regeln das Innenverhältnis, nicht die Adressierung der Pflicht.
 
 Fundstellen und amtliche Dokumente: [Kapitel 08](08-rechtsgrundlagen.md) · typische Irrtümer:
-[Mythen-FAQ](06-mythen-faq.md) · Nachweis-Mechanik: [gate/](../gate/README.md).
+[Mythen-FAQ](06-mythen-faq.md) · Nachweis-Mechanik: [gate/](../../gate/README.de.md).

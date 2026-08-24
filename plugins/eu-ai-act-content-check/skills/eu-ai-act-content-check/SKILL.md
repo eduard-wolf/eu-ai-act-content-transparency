@@ -12,7 +12,9 @@ description: "Use before publishing or deploying web content, articles, images, 
 
 Article 50 has applied since 2 August 2026 (guidelines para 153). Below, "para" always means a paragraph of
 C(2026) 5054 final. Chapter names refer to files in this repository; if only this skill folder was copied, the tree
-below still stands on its own.
+below still stands on its own. Those chapters — and this file — are labelled as AI-generated: they were produced by
+AI agents without editorial review by a human with relevant subject-matter expertise, so the exception of Art. 50(4),
+second subparagraph is not claimed for them; `PROVENANCE.md` records what was verified and what was not.
 
 **Two sentences to carry through every check:**
 
@@ -45,7 +47,7 @@ is obvious to a reasonably well-informed, observant and circumspect person. The 
 28). You are the provider if you developed the bot in-house and put it into service under your own name, or if you
 **modified** a bought-in system (in the example *"with new training data"*) and afterwards put it into service under
 your own name (Art. 3(3); paras 10, 11). An unmodified bought-in bot leaves the duty with its maker — check in your
-own embedding that the notice really appears, and put it in the contract (`playbook/05-agentur-und-vertraege.md`). The
+own embedding that the notice really appears, and put it in the contract (`playbook/en/05-agencies-and-contracts.md`). The
 notice belongs **in the conversation at first interaction**, not in an imprint, manual or terms of use (Art. 50(5);
 paras 33, 142, 143); agents must disclose both their artificial nature and on whose behalf they act (para 31). This
 step never ends the check — Art. 50(1) and (4) can apply cumulatively (para 8), so continue with the content itself.
@@ -92,7 +94,7 @@ publicly findable (para 138). Not sufficient (para 135): spell- and grammar-chec
 editorial policy, automated review ("AI reviews AI"), cursory approval without substantive engagement. Met → no label,
 but keep the evidence (review record below). Not met → label required.
 
-**Step 6 — Form of the label.** See "If a label is required" below and `playbook/04-kennzeichnung-form.md`.
+**Step 6 — Form of the label.** See "If a label is required" below and `playbook/en/04-labelling-form.md`.
 
 **Step 7 — Neighbouring duties.** A label is no free pass: unfair-competition (UWG) misleading claims, copyright, data
 protection and personality rights remain untouched (para 124; footnotes 32, 34). Platform policies and the DSA apply
@@ -121,7 +123,7 @@ Next step:  concrete label proposal, or review record, or "nothing to do"
 ## If a label is required
 
 Match the label language to the content language. Full library incl. the optional EU icons:
-`playbook/04-kennzeichnung-form.md`.
+`playbook/en/04-labelling-form.md`.
 
 | Case | DE | EN |
 |---|---|---|
@@ -210,8 +212,8 @@ is the expected state, not a bug.**
 
 ## Where to read further
 
-In this repository: decision tree `playbook/01-entscheidungsbaum.md` · classified cases `playbook/02-fallkatalog.md` ·
-editorial exception `playbook/03-redaktions-ausnahme.md` · label form `playbook/04-kennzeichnung-form.md` ·
-commissioned work `playbook/05-agentur-und-vertraege.md` · common errors `playbook/06-mythen-faq.md` · watermarks
-`playbook/07-anbieter-markierungen.md` · official sources `playbook/08-rechtsgrundlagen.md` · the gate
-`gate/README.md`. From this file: [playbook](../../playbook/01-entscheidungsbaum.md) · [gate](../../gate/README.md).
+In this repository: decision tree `playbook/en/01-decision-tree.md` · classified cases `playbook/en/02-case-catalog.md` ·
+editorial exception `playbook/en/03-editorial-exception.md` · label form `playbook/en/04-labelling-form.md` ·
+commissioned work `playbook/en/05-agencies-and-contracts.md` · common errors `playbook/en/06-myths-faq.md` · watermarks
+`playbook/en/07-provider-marking.md` · official sources `playbook/en/08-legal-basis.md` · the gate
+`gate/README.md`. From this file: [playbook](../../../../playbook/en/01-decision-tree.md) · [gate](../../../../gate/README.md).

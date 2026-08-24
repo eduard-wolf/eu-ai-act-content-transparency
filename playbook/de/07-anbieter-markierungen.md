@@ -1,5 +1,12 @@
 # Anbieter-Markierungen: die maschinenlesbare zweite Ebene
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -202,7 +209,7 @@ deshalb nicht einmal, dass für diesen Vorgang überhaupt eine Markierungspflich
 kennzeichnender Deepfake ist — dort gilt ein eigener Maßstab (Ähnlichkeit und falscher
 Authentizitätseindruck, Rn. 113 f., Bagatellgrenze Rn. 116). Wer die beiden Ausnahme-Regime
 mischt, kommt bei Bildern regelmäßig zum falschen Ergebnis — Grauzone: Einstufung mit kurzer
-Begründung dokumentieren (siehe [gate/](../gate/README.md)); Einzelfälle im
+Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)); Einzelfälle im
 [Fallkatalog](02-fallkatalog.md).
 
 ### 3.2 Die defensive Seite
@@ -238,7 +245,7 @@ Für die eigene Praxis folgt daraus:
 - **Unabsichtlicher Verlust** ist der Normalfall: Screenshot, Re-Export, Format-Konvertierung,
   CMS-Bildskalierung und viele Social-Uploads entfernen Metadaten beiläufig. ⚠️ Ob eine Pipeline,
   die Metadaten routinemäßig verwirft, unter das vertragliche Verbot fällt, ist ungeklärt —
-  Grauzone: Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+  Grauzone: Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 - **Das eigene Label muss die Kette überleben.** Rn. 12 verlangt von Betreibern in
   Produktions- und Vertriebsketten *"proportionate measures to ensure that the labelling of the
   content they have implemented pursuant to Article 50(4) AI Act is displayed in a clear and
@@ -262,7 +269,7 @@ Frage nicht beantwortet.
 
 Belastbar ist die andere Richtung: **dokumentieren, welcher Schritt der eigenen Pipeline KI
 berührt hat und wer was geprüft hat.** Genau das leistet der Review-Record im
-[gate/](../gate/README.md):
+[gate/](../../gate/README.de.md):
 
 - `ki_beteiligung` hält fest, **wo** im Ablauf KI gewirkt hat — die Information, die aus keinem
   Marker herauszulesen ist.
@@ -298,6 +305,6 @@ nicht.
    redaktionelle Ausnahme gibt es ohnehin nur für Text ([Kapitel 03](03-redaktions-ausnahme.md)).
 6. Markierungen nicht entfernen: vertragliches Verbot über die Anbieter-Terms (CoP Measure 1.2);
    das eigene Label muss die Verwertungskette überleben (Rn. 12).
-7. Nachweis führt der dokumentierte Prozess, nicht die Forensik → [gate/](../gate/README.md).
+7. Nachweis führt der dokumentierte Prozess, nicht die Forensik → [gate/](../../gate/README.de.md).
    Und ein Label ist kein Freifahrtschein: UWG-Irreführung, Urheber- und Persönlichkeitsrechte
    bleiben unberührt ([Mythen-FAQ](06-mythen-faq.md)).

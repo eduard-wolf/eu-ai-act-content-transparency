@@ -1,5 +1,12 @@
 # Fallkatalog: wann ja, wann nein
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -7,7 +14,7 @@
 
 ## Lesehilfe
 
-- **Spalten.** „Fall" beschreibt die Situation, „Einstufung" das Ergebnis (✅ frei · 🏷️ kennzeichnungspflichtig · ⚠️ Grauzone), „Warum" den tragenden Grund in einem Satz, „Anker" die Fundstelle. ⚠️ heißt immer: **Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).**
+- **Spalten.** „Fall" beschreibt die Situation, „Einstufung" das Ergebnis (✅ frei · 🏷️ kennzeichnungspflichtig · ⚠️ Grauzone), „Warum" den tragenden Grund in einem Satz, „Anker" die Fundstelle. ⚠️ heißt immer: **Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).**
 - **Zwei Prüfungen, nicht eine.** Text fragt „Wer hat's geprüft?" — Bild fragt „Wirkt's echt?". Die redaktionelle Ausnahme gibt es **nur für Text** (Art. 50 Abs. 4 UAbs. 2); bei Bild, Audio und Video entscheidet allein der Deepfake-Test, und die Kunst-Ausnahme lockert lediglich die **Form** der Offenlegung (Rn. 119–123).
 - **Anker-Konvention.** „Rn." = Randnummer der Kommissions-Leitlinien C(2026) 5054 final; „Kasten nach Rn. 116/124/131/138" = die dortigen amtlichen Beispielkataloge; „Kodex" = Code of Practice on Transparency of AI-Generated Content (10.06.2026). Wörtliche Zitate stehen in der englischen Originalfassung; alle Fundstellen gesammelt in [Kapitel 08](08-rechtsgrundlagen.md). `[zu verifizieren: …]` markiert bewusst offene Punkte — dort deckt keine amtliche Quelle den Fall; erfunden wird nichts.
 - **Was ein Label nicht leistet.** Es ist kein Freifahrtschein: UWG-Irreführung, Urheber- und Persönlichkeitsrechte bleiben unberührt (Rn. 124, 127–129). Und die maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 ersetzt die eigene wahrnehmbare Kennzeichnung nie — *"deployers cannot rely on the machine-readable marking"* (Rn. 117; [Kapitel 07](07-anbieter-markierungen.md)).
@@ -94,7 +101,7 @@ Nur hier existiert die redaktionelle Ausnahme (Art. 50 Abs. 4 UAbs. 2; Kriterien
 | KI-Text von einer zweiten KI geprüft, der Mensch macht nur einen Rechtschreib- und Grammatikcheck | 🏷️ Label | *"automated review processes or cursory editorial approval without substantive engagement"* erfüllen die Ausnahme nicht. | Rn. 135; Kasten nach Rn. 138 |
 | Selbstverlegtes KI-Sachbuch auf einer Handelsplattform, von niemandem inhaltlich geprüft | 🏷️ Label | Wörtliches Negativbeispiel: ein *"AI-generated, self-published book on climate change, made available on an e-commerce platform that has not undergone any review by a competent natural or legal person (nor by the platform)"* — die Plattform ersetzt die Gegenlese nicht. Vorgelagert bleibt die Scope-Frage: beim Klima-Sachbuch ja (Umweltschutz), beim Fantasy-Roman nein. | Kasten nach Rn. 138; Kasten nach Rn. 131 |
 | KI-Entwurf fachlich gegengelesen (mindestens Faktencheck), verantwortliche Person benannt und öffentlich auffindbar | ✅ kein Label, Nachweis aufbewahren | Beide kumulativen Bedingungen erfüllt: substanzielle Prüfung durch eine sachkundige Person **und** redaktionelle Verantwortung. | Rn. 133, 134, 138 |
-| Nach der redaktionellen Freigabe noch einmal KI-Umformulierung oder KI-„SEO-Politur" | 🏷️ Label | *"Any substantive AI intervention occurring after the human review or editorial control process has taken place will therefore cause the exception to become void."* Genau diese Reihenfolge sichert das [Editorial-Gate](../gate/README.md) technisch ab. | Rn. 136 |
+| Nach der redaktionellen Freigabe noch einmal KI-Umformulierung oder KI-„SEO-Politur" | 🏷️ Label | *"Any substantive AI intervention occurring after the human review or editorial control process has taken place will therefore cause the exception to become void."* Genau diese Reihenfolge sichert das [Editorial-Gate](../../gate/README.de.md) technisch ab. | Rn. 136 |
 | KI-gestützte Übersetzung eines menschlich verfassten Artikels, Übersetzung menschlich geprüft | ✅ kein Label | Wörtliches Positivbeispiel der Ausnahme. | Kasten nach Rn. 138 |
 | KI-Nachhaltigkeitsbericht auf der Website eines börsennotierten Unternehmens, von der Fachfunktion (z. B. Compliance) geprüft | ✅ kein Label | Wörtliches Positivbeispiel: *"human review by professionals in relevant functions"*. | Kasten nach Rn. 138 |
 | KI-generierte Sicherheitswarnung, vor der Verbreitung von einer Amtsperson freigegeben, unter Verantwortung der zuständigen Behörde | ✅ kein Label, Nachweis aufbewahren | Wörtliches Positivbeispiel: *"AI-generated public safety warnings approved by a public official before being distributed to citizens, under the responsibility of the relevant public agency for civil protection"* — dieselbe Meldung ohne diese Freigabe fällt unter die Zeile zur Unwetterwarnung. | Kasten nach Rn. 138 |

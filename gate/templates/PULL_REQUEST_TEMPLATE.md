@@ -1,8 +1,8 @@
 # Redaktionelle Freigabe
 
 > Merksatz: **Text fragt „Wer hat's geprüft?" — Bild fragt „Wirkt's echt?"**
-> Einstufung offen? Erst durch den [Entscheidungsbaum](../../playbook/01-entscheidungsbaum.md),
-> dann diesen PR öffnen. Feldliste und Prüfskript: [gate/](../README.md).
+> Einstufung offen? Erst durch den [Entscheidungsbaum](../../playbook/de/01-entscheidungsbaum.md),
+> dann diesen PR öffnen. Feldliste und Prüfskript: [gate/](../README.de.md).
 
 **Inhaltsdatei(en):**
 **Review-Record(s):**
@@ -32,7 +32,7 @@ Die Ausnahme gilt **nur für Text**. Alle Punkte sind kumulativ.
       unterscheidbar (Art. 50 Abs. 5). Eine maschinenlesbare Anbieter-Markierung oder ein
       Wasserzeichen ersetzt die eigene Kennzeichnung **nicht** (Rn. 117).
 - [ ] Label übersteht die gängigen Zuschnitte →
-      [tools/label-crop-check](../../tools/label-crop-check/README.md).
+      [tools/label-crop-check](../../tools/label-crop-check/README.de.md).
 
 ## Bevor gemergt wird
 

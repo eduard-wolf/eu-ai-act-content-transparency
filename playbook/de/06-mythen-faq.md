@@ -1,5 +1,12 @@
 # Mythen und FAQ: die acht häufigsten Irrtümer
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -51,7 +58,7 @@ ausdrücklich im Positiv-Kasten. Auch Bagatell-Bearbeitungen machen aus einem Fo
 Deepfake — Passanten im Hintergrund entfernen, Belichtung, Farbkorrektur, Rauschunterdrückung
 (Rn. 116). Entscheidend ist die Wirkung auf die Authentizitätswahrnehmung im konkreten Kontext,
 nicht das Werkzeug; Grenzfälle sind hier die Regel.
-⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 
 **Weiter:** [Entscheidungsbaum, Stufe 2](01-entscheidungsbaum.md) · [Fallkatalog](02-fallkatalog.md)
 
@@ -73,7 +80,7 @@ sein Fehlen beweist gar nichts, weil längst nicht jeder Anbieter Text überhaup
 je Anbieter: [Kapitel 07](07-anbieter-markierungen.md)). Der belastbare Nachweis ist deshalb
 nicht die Forensik am fertigen Artefakt, sondern der dokumentierte Prozess.
 
-**Weiter:** [Anbieter-Markierungen](07-anbieter-markierungen.md) · [gate/](../gate/README.md)
+**Weiter:** [Anbieter-Markierungen](07-anbieter-markierungen.md) · [gate/](../../gate/README.de.md)
 
 ---
 
@@ -195,7 +202,7 @@ Halluzinationen — nur befreit es nicht vom Label.
 > 🔑 **Merksatz:** Die redaktionelle Ausnahme gilt nur für Text. Text fragt „Wer hat's geprüft?" —
 > Bild fragt „Wirkt's echt?"
 
-**Weiter:** [Redaktionelle Ausnahme](03-redaktions-ausnahme.md) · [gate/](../gate/README.md)
+**Weiter:** [Redaktionelle Ausnahme](03-redaktions-ausnahme.md) · [gate/](../../gate/README.de.md)
 
 ---
 

@@ -32,7 +32,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
 
-const STAND = '22.08.2026';
+const STAND = '24.08.2026';
 const FLAGS = new Set(['--erlaube-leer', '--erlaube-ohne-faktencheck']);
 const SHA256_HEX = /^[0-9a-f]{64}$/;
 const ISO_DATUM = /^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2}(:\d{2})?(\.\d+)?(Z|[+-]\d{2}:\d{2})?)?$/;

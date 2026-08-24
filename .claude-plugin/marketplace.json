@@ -1,0 +1,14 @@
+{
+  "name": "eu-ai-act-content-transparency",
+  "owner": {
+    "name": "Eduard Wolf"
+  },
+  "description": "Playbook, editorial-evidence gate and tooling for the EU AI Act's content transparency duties (Article 50).",
+  "plugins": [
+    {
+      "name": "eu-ai-act-content-check",
+      "source": "./plugins/eu-ai-act-content-check",
+      "description": "Article 50 transparency check for AI-assisted text, image, audio and video before publication, plus a draft of the editorial review record."
+    }
+  ]
+}

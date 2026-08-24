@@ -1,39 +1,47 @@
-# label-crop-check — überlebt das KI-Label den Zuschnitt?
+# label-crop-check — does the AI label survive the crop?
 
-> ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
-> Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> 🤖 **Made with AI — no editorial review.** This text was produced by AI agents
+> and machine-verified against the official sources. It has **not undergone
+> editorial review by a human with relevant subject-matter expertise**; the
+> exception in Article 50(4), second subparagraph of the AI Act is therefore
+> **not claimed**. What was verified and what was not:
+> [Provenance](../../PROVENANCE.md).
 
-Ein Zero-Dependency-CLI (Node ≥ 18), das **geometrisch** prüft, ob ein im Bild platziertes
-KI-Label die gängigen Plattform-Zuschnitte übersteht. Keine Bildverarbeitung, keine Uploads,
-keine Installation — das Tool rechnet mit Maßen, nicht mit Pixeln.
+> ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
+> Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
+> the European Union can interpret the AI Act with binding effect. There is no case law on
+> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
+> **As of: 24 August 2026.**
 
-## Das Praxisproblem
+A zero-dependency CLI (Node ≥ 18) that checks **geometrically** whether an AI label placed inside an
+image survives the common platform crops. No image processing, no uploads, no installation — the
+tool computes with dimensions, not with pixels.
 
-Art. 50 Abs. 5 KI-VO verlangt die Offenlegung
+## The problem in practice
+
+Article 50(5) AI Act requires the disclosure to be made
 
 > "in a clear and distinguishable manner at the latest at the time of the first interaction
 > or exposure."
 
-Für Bilder empfiehlt der Verhaltenskodex das Label **im Bild**, Sub-measure 1.2.2 lit. a:
+For images, the Code of Practice recommends the label **inside the image**, Sub-measure 1.2.2 lit. a:
 
 > "in an appropriate place where no intervening overlay elements exist (e.g., in the top right
 > corner of an image or video deep fake)."
 
-Genau diese Ecke schneiden responsive Zuschnitte als Erstes weg: Feed 1:1, Hochformat 4:5,
-Story/Reel 9:16, Header 16:9, Thumbnail. Ein Label, das am Desktop sichtbar ist und im
-Handy-Zuschnitt fehlt, ist dort **nicht wahrnehmbar, wo die Person den Inhalt zuerst sieht** —
-und wahrnehmbar schuldet es der Betreiber (Leitlinien Rn. 141–143). Wer nur verbreitet oder
-überträgt — Hosting-Dienste, Online-Plattformen, Sender — ist **kein** Betreiber, solange er keine
-Autorität über den KI-Einsatz hat (Rn. 16); die Plattform springt hier also nicht ein. Die
-maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 rettet das nicht: Betreiber *"cannot
-rely on the machine-readable marking"* (Rn. 117).
+That is exactly the corner responsive crops cut away first: feed 1:1, portrait 4:5, story/reel 9:16,
+header 16:9, thumbnail. A label that is visible on the desktop and missing from the mobile crop is
+**not perceivable where the person first sees the content** — and perceivable is what the deployer
+owes (guidelines paras 141–143). Whoever merely disseminates or transmits — hosting services, online
+platforms, broadcasters — is **not** a deployer as long as they hold no authority over the use of the
+AI (para 16); the platform therefore does not step in here. The machine-readable provider marking
+under Article 50(2) does not save it: deployers *"cannot rely on the machine-readable marking"*
+(para 117).
 
-Dieses Tool macht die Vorprüfung **vor** dem Upload reproduzierbar: gleiche Eingabe, gleiches
-Ergebnis, prüfbar im Ticket, im PR oder in CI.
+This tool makes the pre-check **before** the upload reproducible: same input, same result, verifiable
+in the ticket, in the PR or in CI.
 
-## Nutzung
+## Usage
 
 ```
 node check.mjs --image BxH --label X,Y,BxH [--ratios 1:1,4:5,9:16,16:9] [--focal X,Y] [--json]
@@ -41,22 +49,22 @@ node check.mjs --self-test
 node check.mjs --help
 ```
 
-| Argument | Bedeutung |
+| Argument | Meaning |
 |---|---|
-| `--image BxH` | Maße des Originalbildes in Pixeln, z. B. `1600x1200` |
-| `--label X,Y,BxH` | Labelbox in Bildkoordinaten, **Ursprung oben links** |
-| `--ratios LISTE` | Zielverhältnisse, kommagetrennt; Standard `1:1,4:5,9:16,16:9` |
-| `--focal X,Y` | Fokuspunkt; der Zuschnitt wird darum gelegt und an den Bildgrenzen geklemmt (Standard: Bildmitte) |
-| `--json` | Ergebnis als JSON statt als Tabelle |
-| `--self-test` | eingebaute Selbsttests ausführen |
+| `--image BxH` | dimensions of the original image in pixels, e.g. `1600x1200` |
+| `--label X,Y,BxH` | label box in image coordinates, **origin top left** |
+| `--ratios LISTE` | target ratios, comma-separated; default `1:1,4:5,9:16,16:9` |
+| `--focal X,Y` | focal point; the crop is placed around it and clamped to the image bounds (default: image centre) |
+| `--json` | result as JSON instead of a table |
+| `--self-test` | run the built-in self-tests |
 
-| Exit-Code | Bedeutung |
+| Exit code | Meaning |
 |---|---|
-| `0` | alle geprüften Zuschnitte zeigen das Label vollständig |
-| `1` | mindestens ein Zuschnitt schneidet das Label an |
-| `2` | Eingabefehler (unbrauchbare Maße, Label außerhalb des Bildes, kaputtes Ratio) |
+| `0` | all crops checked show the label in full |
+| `1` | at least one crop cuts into the label |
+| `2` | input error (unusable dimensions, label outside the image, malformed ratio) |
 
-### Beispiel 1 — Label oben rechts, Standard-Zuschnitte
+### Example 1 — label top right, default crops
 
 ```
 $ node check.mjs --image 1600x1200 --label 1080,40,160x60
@@ -73,9 +81,9 @@ Ergebnis: 2 von 4 Zuschnitten schneiden das Label an. Exit 1.
 Label näher zur Bildmitte setzen, einen Fokuspunkt vorgeben oder je Zuschnitt eine eigene Fassung ausspielen.
 ```
 
-Im Feed hält das Label, in der Story ist es angeschnitten, im Header ist es weg.
+In the feed the label holds, in the story it is clipped, in the header it is gone.
 
-### Beispiel 2 — derselbe Bildbereich mit gesetztem Fokuspunkt
+### Example 2 — the same image area with a focal point set
 
 ```
 $ node check.mjs --image 1600x1200 --label 1150,40,120x60 --ratios 1:1,4:5,9:16 --focal 1310,600
@@ -91,51 +99,52 @@ Ergebnis: Das Label überlebt alle 3 geprüften Zuschnitte. Exit 0.
 Geometrische Vorprüfung — die Sichtprüfung am realen Post ersetzt sie nicht.
 ```
 
-Der Fokuspunkt wird an der Bildkante geklemmt (9:16 beginnt bei x = 925, nicht bei 972,5) —
-das entspricht dem Verhalten von Zuschnitten mit gesetztem Fokus- bzw. Ankerpunkt.
+The focal point is clamped at the image edge (9:16 starts at x = 925, not at 972.5) — that matches
+the behaviour of crops with a focal or anchor point set.
 
-Für Skripte und CI liefert `--json` dasselbe Ergebnis maschinenlesbar
+For scripts and CI, `--json` returns the same result in machine-readable form
 (`results[].survives`, `results[].label_area_lost_pct`, `all_survive`, `exit_code`).
 
-## Modell und Annahmen — ehrlich
+## Model and assumptions — honestly
 
-Das Tool ist eine **Vorprüfung reiner Geometrie**. Es kennt weder das Bild noch die Plattform.
+The tool is a **pre-check of pure geometry**. It knows neither the image nor the platform.
 
-- **Center-Crop-Annahme.** Für jedes Zielverhältnis wird der größtmögliche Ausschnitt gebildet
-  und mittig gelegt — mit `--focal` um den Fokuspunkt, an den Bildgrenzen geklemmt. Reale
-  Plattformen schneiden abweichend zu: sie skalieren, setzen eigene Ankerpunkte, erkennen
-  Motive automatisch, blenden UI-Elemente über das Bild und ändern ihre Formate. Ein `OK` hier
-  ist eine begründete Erwartung, keine Zusage der Plattform.
-- **„Überlebt" heißt: vollständig im Zuschnitt.** Die Labelbox muss komplett innerhalb des
-  Ausschnitts liegen; Randberührung zählt als sichtbar. Ein teilweise sichtbares Label gilt als
-  abgeschnitten — mit Angabe, wie viel Prozent der Labelfläche verloren geht.
-- **Keine Bildverarbeitung.** Das Tool liest keine Bilddatei. Maße und Labelbox kommen aus dem
-  Layout- oder Exportschritt; wer sie falsch angibt, bekommt ein falsches Ergebnis.
-- **Keine Aussage über Lesbarkeit.** Kontrast, Schriftgröße, Skalierung auf Thumbnail-Maße,
-  Überdeckung durch Play-Buttons oder Untertitel prüft das Tool nicht — nur Position und Fläche.
-- **Die Ratio-Liste ist ein Startwert vom 22.08.2026**, kein gepflegter Plattform-Katalog.
-  Eigene Zielformate gehören per `--ratios` in den Aufruf, denn maßgeblich sind die Kanäle, in
-  denen tatsächlich veröffentlicht wird.
-- **Das Tool ersetzt keine Sichtprüfung.** Es macht die Vorprüfung reproduzierbar und
-  dokumentierbar — die Kontrolle am realen Post bleibt der letzte Schritt.
+- **Center-crop assumption.** For every target ratio the largest possible section is formed and
+  placed centrally — with `--focal` around the focal point, clamped to the image bounds. Real
+  platforms crop differently: they scale, set anchor points of their own, detect subjects
+  automatically, overlay UI elements on the image and change their formats. An `OK` here is a
+  reasoned expectation, not a commitment from the platform.
+- **"Survives" means: fully inside the crop.** The label box has to lie completely within the
+  section; touching the edge counts as visible. A partially visible label counts as cut off — stating
+  what percentage of the label area is lost.
+- **No image processing.** The tool does not read any image file. Dimensions and label box come from
+  the layout or export step; state them wrongly and the result is wrong.
+- **No statement about legibility.** Contrast, font size, scaling down to thumbnail dimensions, being
+  covered by play buttons or subtitles — the tool checks none of that, only position and area.
+- **The ratio list is a starting value as of 22 August 2026**, not a maintained platform catalogue.
+  Your own target formats belong in the call via `--ratios`, because what is decisive are the
+  channels actually published to.
+- **The tool does not replace a visual check.** It makes the pre-check reproducible and documentable
+  — the check on the real post remains the last step.
 
-### Was das Tool nicht beantwortet
+### What the tool does not answer
 
-- **Ob überhaupt gekennzeichnet werden muss.** Das klären
-  [Entscheidungsbaum](../../playbook/01-entscheidungsbaum.md) und
-  [Fallkatalog](../../playbook/02-fallkatalog.md). Für Bilder, Audio und Video gibt es **keine**
-  redaktionelle Ausnahme — dort zählt allein der Deepfake-Test; die Kunst-Ausnahme lockert nur
-  die **Form** der Offenlegung.
-- **Wie das Label aussehen und heißen muss.** Wortlaut, EU-Icons und Platzierung je Modalität
-  stehen in [Kapitel 04, Abschnitt 4.1](../../playbook/04-kennzeichnung-form.md).
-- **Ob ein Label genügt.** Es ist kein Freifahrtschein: UWG-Irreführung, Urheber- und
-  Persönlichkeitsrechte bleiben davon unberührt
-  ([Kapitel 06](../../playbook/06-mythen-faq.md)).
+- **Whether a label is required at all.** That is settled by the
+  [decision tree](../../playbook/en/01-decision-tree.md) and the
+  [case catalog](../../playbook/en/02-case-catalog.md). For images, audio and video there is **no**
+  editorial exception — there the deepfake test alone counts; the art exception merely relaxes the
+  **form** of the disclosure.
+- **What the label has to look like and be called.** Wording, EU icons and placement per modality are
+  in [chapter 04, section 4.1](../../playbook/en/04-labelling-form.md).
+- **Whether a label is enough.** It is no free pass: misleading practices under the UWG (German Act
+  against Unfair Competition), copyright and personality rights remain untouched by it
+  ([chapter 06](../../playbook/en/06-myths-faq.md)).
 
-⚠️ Bleibt nach dem Lauf eine Grauzone (etwa: Label knapp am Rand, Zuschnitt der Zielplattform
-unklar) — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.md)).
+⚠️ If a grey zone remains after the run (for instance: label right at the edge, crop of the target
+platform unclear) — record the classification with a short justification (see
+[gate/](../../gate/README.md)).
 
-## Selbsttest
+## Self-test
 
 ```
 $ node check.mjs --self-test
@@ -155,20 +164,20 @@ label-crop-check — Selbsttest
 10 von 10 Fällen bestanden.
 ```
 
-Exit 0, wenn alle Fälle bestehen — damit lässt sich das Tool selbst in CI absichern.
+Exit 0 when all cases pass — which lets the tool itself be safeguarded in CI.
 
-## Fundstellen
+## Sources
 
-- **Art. 50 Abs. 5 KI-VO** (VO (EU) 2024/1689) — Wahrnehmbarkeit spätestens bei der ersten
-  Interaktion oder Exposition: [eur-lex.europa.eu](https://eur-lex.europa.eu) (CELEX 02024R1689)
-- **Leitlinien C(2026) 5054 final** vom 20.07.2026, Rn. 16 (wer nur verbreitet oder überträgt —
-  Hosting-Dienste, Online-Plattformen, Sender — ist kein Betreiber), Rn. 117 (maschinenlesbare
-  Markierung ersetzt die eigene Kennzeichnung nicht), Rn. 141–143 (Wahrnehmbarkeit):
+- **Article 50(5) AI Act** (Regulation (EU) 2024/1689) — perceivability at the latest at the first
+  interaction or exposure: [eur-lex.europa.eu](https://eur-lex.europa.eu) (CELEX 02024R1689)
+- **Guidelines C(2026) 5054 final** of 20 July 2026, para 16 (whoever merely disseminates or
+  transmits — hosting services, online platforms, broadcasters — is not a deployer), para 117 (the
+  machine-readable marking does not replace your own label), paras 141–143 (perceivability):
   [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu)
-- **Code of Practice on Transparency of AI-Generated Content** (10.06.2026), Section 2,
-  Sub-measure 1.2.2 lit. a (Platzierung im Bild):
+- **Code of Practice on Transparency of AI-Generated Content** (10 June 2026), Section 2,
+  Sub-measure 1.2.2 lit. a (placement inside the image):
   [ec.europa.eu/newsroom/dae/redirection/document/129555](https://ec.europa.eu/newsroom/dae/redirection/document/129555)
-- **EU-Icons** zur Kennzeichnung KI-generierter Inhalte (Nutzung optional, Kennzeichnungspflicht
-  nicht): [digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content](https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content)
-- Normtexte, deutsche Zuständigkeiten und Sanktionsrahmen:
-  [Kapitel 08](../../playbook/08-rechtsgrundlagen.md)
+- **EU icons** for labelling AI-generated content (their use is optional, the labelling duty is
+  not): [digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content](https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content)
+- Norm texts, German competent authorities and the sanctions framework:
+  [chapter 08](../../playbook/en/08-legal-basis.md)

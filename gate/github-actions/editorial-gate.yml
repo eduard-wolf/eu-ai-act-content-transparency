@@ -2,7 +2,7 @@
 # Prüft bei jedem Pull Request und jedem Push, ob zu jeder Inhaltsdatei ein gültiger
 # Review-Record liegt und ob dessen SHA-256 noch auf die freigegebene Fassung passt.
 # Das Gate erzwingt den Prozess, nicht die inhaltliche Qualität der Prüfung — kein
-# Safe Harbour; Einordnung siehe gate/README.md.
+# Safe Harbour; Einordnung siehe gate/README.de.md.
 name: Editorial Gate
 
 on:

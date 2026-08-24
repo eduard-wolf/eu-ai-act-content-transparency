@@ -1,0 +1,9 @@
+{
+  "name": "eu-ai-act-content-check",
+  "description": "Checks which EU AI Act Article 50 transparency duties apply to AI-assisted content before publication and prepares - never attests - the editorial review record.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Eduard Wolf"
+  },
+  "license": "MIT"
+}

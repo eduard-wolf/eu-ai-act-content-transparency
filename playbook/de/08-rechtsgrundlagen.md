@@ -1,5 +1,12 @@
 # Rechtsgrundlagen
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -64,7 +71,7 @@ der redaktionellen Freigabe macht die Ausnahme nichtig — die Gegenlese muss de
 inhaltsändernde Schritt sein (*"Any substantive AI intervention occurring after the human
 review or editorial control process has taken place will therefore cause the exception to
 become void."*). Voraussetzungen und technische Umsetzung: [Kapitel 03](03-redaktions-ausnahme.md)
-und [gate/](../gate/README.md).
+und [gate/](../../gate/README.de.md).
 
 ### Art. 50 Abs. 5 — Form und Zeitpunkt der Information
 
@@ -125,7 +132,7 @@ Ein Beschwerderecht hat *jede* betroffene oder sonstige Person mit Anhaltspunkte
   Merkmale sind unscharf: Wo die Grenze zwischen EMFA-Mediendienst und sonstigem Publisher
   (Blog, Firmenwebsite, Solo-Creator) verläuft und wann ein Einsatz journalistischen Zwecken
   oder Werbezwecken dient, ist ungeklärt — Grauzone: Einstufung **zu beiden Merkmalen** mit
-  kurzer Begründung dokumentieren (siehe [gate/](../gate/README.md)).
+  kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 - **Bußgeld-Mechanik:** Art. 50 ist **nicht** als eigener nationaler
   Ordnungswidrigkeiten-Tatbestand in **§ 15 KI-MIG** gelistet. Die Durchsetzung läuft
   über den Bußgeldrahmen des **Art. 99 Abs. 4 lit. g KI-VO** i. V. m. **§ 16 Abs. 1
@@ -178,7 +185,7 @@ vertretungsberechtigten Person unterzeichnen und an
 CNECT-AIOFFICE-CODE-OF-PRACTICE-TRANSPARENCY@ec.europa.eu senden (Kommissionsseite zum
 Kodex auf [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu)).
 
-**Wichtig für die Einordnung des [Gates](../gate/README.md):** Eine Einzelfall-Dokumentation
+**Wichtig für die Einordnung des [Gates](../../gate/README.de.md):** Eine Einzelfall-Dokumentation
 jeder Gegenlese ist rechtlich **nicht** gefordert — CoP Section 2, Commitment 4: *"This does
 not entail having to document individual instances of human review or editorial control over
 individual text publications."* Zusätzliche Aufzeichnungen sind aber ausdrücklich zulässig:

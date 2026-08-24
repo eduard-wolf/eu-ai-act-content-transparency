@@ -1,5 +1,12 @@
 # Entscheidungsbaum: Wann muss ich kennzeichnen?
 
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](../../PROVENANCE.de.md).
+
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
 > auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
@@ -16,7 +23,7 @@ Drei Regeln für die Benutzung:
 
 1. **Grauzonen lösen keine Diskussion aus, sondern eine dokumentierte Begründung.** Wo ⚠️ steht,
    wird die Einstufung in zwei, drei Sätzen begründet und als Review-Record abgelegt (siehe
-   [gate/](../gate/README.md)). Fertig eingeordnete Einzelfälle: [Fallkatalog](02-fallkatalog.md).
+   [gate/](../../gate/README.de.md)). Fertig eingeordnete Einzelfälle: [Fallkatalog](02-fallkatalog.md).
    Typische Irrtümer: [Mythen-FAQ](06-mythen-faq.md).
 2. **Erst Rolle, dann Inhalt.** Die Pflichten treffen unterschiedliche Akteure: Abs. 1 und Abs. 2
    den **Anbieter**, Abs. 3 und Abs. 4 den **Betreiber** (Leitlinien Rn. 6). Sie können
@@ -49,6 +56,7 @@ flowchart TD
     KU{"Evident Kunst, Satire,<br/>Fiktion? Rn. 119-123"}
     S3{"Stufe 3 · Text<br/>Veröffentlicht?"}
     S4{"Stufe 4 · Text<br/>Öffentliches Interesse?"}
+    K5{"Stufe 5 · Kompetenz-Test<br/>Kann ich DIESEN Text<br/>fachlich prüfen? Rn. 134"}
     S5{"Stufe 5<br/>Redaktionelle Ausnahme<br/>erfüllt und belegt?"}
     F1["kein Pflicht-Label<br/>Qualitätsprüfung bleibt sinnvoll"]
     F2["keine Text-<br/>Kennzeichnungspflicht"]
@@ -76,7 +84,9 @@ flowchart TD
     S3 -->|"nein"| F2
     S3 -->|"ja"| S4
     S4 -->|"nein"| F2
-    S4 -->|"ja"| S5
+    S4 -->|"ja"| K5
+    K5 -->|"nein — Ausnahme<br/>nicht verfügbar"| L1
+    K5 -->|"ja"| S5
     S5 -->|"ja"| F3
     S5 -->|"nein"| L1
     L1 --> S6
@@ -93,7 +103,7 @@ KI-Beitragsbild, Video mit generierten Untertiteln), wird der Baum **je Bestandt
 durchlaufen. Sonst fällt der häufigste Realfall durchs Raster: Der gegengelesene Text kann über
 Stufe 5 label-frei bleiben, während das beigestellte KI-Bild ein Deepfake ist — die redaktionelle
 Ausnahme trägt nur Text (Rn. 133). Genau so trennt es der Beispiel-Record in
-[`gate/templates/review-record.example.json`](../gate/templates/review-record.example.json).
+[`gate/templates/review-record.example.json`](../../gate/templates/review-record.example.json).
 
 Ausgeklammert: die Ausnahme für gesetzlich erlaubte Strafverfolgung (Art. 50 Abs. 4 KI-VO;
 Rn. 125 für Deepfakes, Rn. 139 für Text) — für Marketing-, Agentur- und Redaktionsarbeit ohne
@@ -213,7 +223,7 @@ erscheinen**? Art. 3 Nr. 60 KI-VO wird in vier kumulative Kriterien zerlegt (Rn.
 
 Fehlt eines der vier Kriterien, ist es **kein Deepfake** — Illustration, Cartoon, erkennbar surreale
 Szene, Instrumental-Musikbett ohne Wirklichkeitsabbild. Label-frei heißt aber nicht prüf-frei:
-Faktencheck und Rechte-Klärung bleiben sinnvoll (→ Stufe 7 und [gate/](../gate/README.md)).
+Faktencheck und Rechte-Klärung bleiben sinnvoll (→ Stufe 7 und [gate/](../../gate/README.de.md)).
 Kontextbeispiel aus Rn. 114: KI-Hintergründe, Spezialeffekte und technisches Pre-/Postprocessing in
 der normalen Filmproduktion lassen den Inhalt regelmäßig nicht fälschlich echt wirken — voll
 KI-generierte Schauspieler, digitale Repliken, De-Aging und simulierte Darbietungen dagegen schon.
@@ -236,7 +246,7 @@ arrangements of existing products, or re-scaling of images"* dazu. **Die Weiche 
 
 ⚠️ Objektentfernung und Hintergrundtausch sind damit kontextabhängig (Immobilienfoto: Mülleimer weg
 ≠ Feuchtefleck weg): Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe
-[gate/](../gate/README.md)). Eingeordnete Einzelfälle: [Fallkatalog](02-fallkatalog.md).
+[gate/](../../gate/README.de.md)). Eingeordnete Einzelfälle: [Fallkatalog](02-fallkatalog.md).
 
 **Kunst-Weiche (Rn. 119–123):** Bei **evident** künstlerischen, kreativen, satirischen oder
 fiktionalen Werken bleibt die Pflicht bestehen — gelockert wird nur die Form: Offenlegung *"in an
@@ -266,7 +276,7 @@ Rn. 131) — auf der Website steht sie dann aber doch.
 ⚠️ Die Zwischenzone (offene Community, großer Verteiler, halböffentliche Gruppe) ist eine echte
 Grauzone; Rn. 131 i nimmt Gruppen nur aus, wenn sie geschlossen und *"too small or insignificant"*
 sind: Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe
-[gate/](../gate/README.md)).
+[gate/](../../gate/README.de.md)).
 
 **Zeitregel:** Es zählt das **Veröffentlichungs**datum, nicht das Erzeugungsdatum — *"if texts that
 have been generated or manipulated before 2 August 2026 are published on or after that date, they
@@ -297,15 +307,54 @@ Wissen, Meinungen oder Fakten vermitteln — sehr kurze Texte ohne solchen Gehal
 
 ⚠️ Die Grenze „Werbung ↔ Information von öffentlichem Interesse" ist die häufigste Grauzone dieser
 Stufe: Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe
-[gate/](../gate/README.md)).
+[gate/](../../gate/README.de.md)).
 
 Nein ⇒ keine Text-Kennzeichnungspflicht, weiter zu Stufe 7. Ja ⇒ Stufe 5.
 
 ## Stufe 5 — Redaktionelle Ausnahme
 
-**Prüffragen:** Hat ein Mensch mit einschlägiger Sachkunde die **Substanz** geprüft (mindestens
-Faktencheck)? Trägt eine benannte natürliche oder juristische Person die redaktionelle
-Verantwortung, öffentlich auffindbar? War die Freigabe der **letzte inhaltsändernde Schritt**?
+**Prüffragen:** Kann ich **diesen** Text überhaupt fachlich prüfen? Hat ein Mensch mit
+einschlägiger Sachkunde die **Substanz** geprüft (mindestens Faktencheck)? Trägt eine benannte
+natürliche oder juristische Person die redaktionelle Verantwortung, öffentlich auffindbar? War die
+Freigabe der **letzte inhaltsändernde Schritt**?
+
+### Vorgeschaltet: der Kompetenz-Test
+
+Bevor die beiden Bedingungen überhaupt zur Debatte stehen, steht eine Selbstprüfung — und ihre
+Frage lautet **nicht** „bin ich Experte?", sondern **„kann ich DIESEN Text fachlich prüfen?"**.
+Rn. 134 knüpft die Kompetenz ausdrücklich an den Gegenstand: verlangt sind Personen *"possessing
+relevant knowledge and professional judgement pertaining to the subject matter under scrutiny"*.
+Maßstab ist das Thema, nicht der Titel.
+
+Vier Prüfsätze, alle vier ehrlich mit Ja zu beantworten:
+
+1. Kann ich die zentralen **Sachaussagen** als richtig oder falsch erkennen?
+2. Kann ich die **Quellen** beurteilen — ob sie tragen, aktuell und einschlägig sind?
+3. **Würde ich Fehler bemerken** — auch die, die plausibel klingen?
+4. Kann ich den Text **aus inhaltlichen Gründen** ändern oder ablehnen?
+
+**Die Kompetenz ist themenbezogen**, deshalb fällt die Antwort bei derselben Person je nach Text
+verschieden aus: Wer über das **eigene Produkt** schreibt, das er gebaut, betrieben und gemessen
+hat, hat sie regelmäßig. Wer über ein **fremdes Fachgebiet** schreibt — Recht, Medizin, fremde
+Technik —, regelmäßig nicht; dort liest sich ein falscher KI-Satz genauso flüssig wie ein
+richtiger.
+
+> ⚖️ **Konsequenz, wertfrei:** Fällt eine der vier Antworten „nein" aus, ist die Ausnahme für
+> diesen Text **nicht verfügbar** — dann wird gekennzeichnet. Das ist kein Scheitern, sondern der
+> zweite vom Gesetz vorgesehene Weg: Art. 50 Abs. 4 UAbs. 2 KI-VO ordnet die Offenlegung an
+> (*"shall disclose"*) und stellt die Ausnahme daneben (*"This obligation shall not apply
+> where …"*). Kennzeichnen ist der Regelweg, nicht der Ausfallweg.
+>
+> ⛔ **Warnsatz:** Ein dokumentierter Review-Nachweis von jemandem, der die Substanz nicht
+> beurteilen kann, ist **schlechter als keiner** — aus einem Unterlassen wird eine dokumentierte
+> Falschaussage. (Lesart dieses Playbooks, gefolgert aus Rn. 134 und der Negativliste Rn. 135,
+> die *"cursory editorial approval without substantive engagement"* ausdrücklich ausschließt;
+> die Leitlinien sagen dazu nichts eigens.)
+
+Ausführlich — mit Selbsteinschätzungs-Checkliste und der Frage, wie der Test auf dem
+editorial-control-Weg wirkt: [Kapitel 03](03-redaktions-ausnahme.md), Abschnitt 3.
+
+### Und dann erst die beiden Bedingungen
 
 Zwei **kumulative** Bedingungen (Rn. 133):
 
@@ -330,7 +379,7 @@ Zwei **kumulative** Bedingungen (Rn. 133):
 > void."* — Jeder substanzielle KI-Eingriff **nach** der redaktionellen Freigabe macht die Ausnahme
 > nichtig. Die Gegenlese muss der letzte inhaltsändernde Schritt vor der Veröffentlichung sein.
 
-Genau das operationalisiert das [Editorial-Gate](../gate/README.md): ein Review-Record mit
+Genau das operationalisiert das [Editorial-Gate](../../gate/README.de.md): ein Review-Record mit
 SHA-256-Bindung an den freigegebenen Stand — jede spätere Änderung, auch durch KI, invalidiert den
 Record und lässt CI rot werden. **Ehrliche Grenze:** Das Gate erzwingt den **Prozess** und macht ihn
 nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche
@@ -339,6 +388,7 @@ AI-Generated Content, Sec. 2, Commitment 4 — dort ist die Dokumentation einzel
 ausdrücklich **nicht** verlangt, aber als Zusatzaufzeichnung vorgesehen), kein Safe Harbour.
 Kriterien, Rollen und Belege im Detail: [Kapitel 03](03-redaktions-ausnahme.md).
 
+Kompetenz-Test „nein" ⇒ Ausnahme nicht verfügbar, Label Pflicht, weiter zu Stufe 6.
 Ausnahme erfüllt ⇒ kein Label, Nachweis aufbewahren, weiter zu Stufe 7.
 Nicht erfüllt ⇒ Label Pflicht, weiter zu Stufe 6.
 
@@ -386,5 +436,5 @@ in Auftragsketten: [Kapitel 05](05-agentur-und-vertraege.md).
 
 **Ergebnis festhalten.** Der Baum endet nicht bei „Label ja/nein", sondern bei einer festgehaltenen
 Einstufung: Ergebnis, Begründung in zwei bis drei Sätzen, Datum. Bei Text ist dieser Record zugleich
-der Beleg für die redaktionelle Ausnahme ([gate/](../gate/README.md)); bei Bild, Audio und Video ist
+der Beleg für die redaktionelle Ausnahme ([gate/](../../gate/README.de.md)); bei Bild, Audio und Video ist
 er die Grauzonen-Dokumentation, die im Streitfall zeigt, dass die Einstufung überlegt war.

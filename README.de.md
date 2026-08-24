@@ -1,8 +1,16 @@
 # EU-AI-Act-Playbook: KI-Inhalte kennzeichnen & redaktionell nachweisen
 
-**English version: [README.md](README.md).** Die Playbook-Kapitel und die Gate-Dokumentation sind
-**deutschsprachig** — diese Datei ist die deutsche Eingangstür dazu. Wörtliche Zitate aus
-EU-Dokumenten stehen durchgehend in der englischen Originalfassung.
+> 🤖 **Mit KI erstellt — ohne redaktionelle Gegenlese.** Dieser Text wurde von
+> KI-Agenten erzeugt und maschinell gegen die amtlichen Quellen geprüft. Er hat
+> **keine redaktionelle Gegenlese durch einen Menschen mit einschlägiger
+> Fachkompetenz** durchlaufen; die Ausnahme des Art. 50 Abs. 4 UAbs. 2 KI-VO wird
+> daher **nicht in Anspruch genommen**. Was genau geprüft wurde und was nicht:
+> [Herkunft und Prüfung](PROVENANCE.de.md).
+
+**English version: [README.md](README.md).** Sprachregel: Die englische Fassung trägt, was EU-weit
+portabel ist, die deutsche Fassung führt überall dort, wo die Vollzugsebene deutsch ist (KI-MIG,
+Bundesnetzagentur, UWG). Wörtliche Zitate aus EU-Dokumenten stehen in beiden Fassungen in der
+englischen Originalfassung.
 
 Entscheidungsbaum, Fallkatalog und ein git-natives Nachweis-Gate für die Kennzeichnungspflichten
 bei KI-Inhalten (Art. 50 der Verordnung (EU) 2024/1689).
@@ -65,22 +73,50 @@ noch etwas am Inhalt geändert wird.
   Offenlegung (Art. 50 Abs. 4; Rn. 119–123).
 - 🧭 Eselsbrücke: **Text fragt „Wer hat's geprüft?" — Bild fragt „Wirkt's echt?"**
 
+## Abgrenzung zu anderen Werkzeugen rund um die KI-VO
+
+Werkzeuge zur KI-Verordnung gibt es reichlich, und dieses Repo ersetzt keines davon. Eine
+Momentaufnahme des offiziellen Community-Marktplatzes für Claude-Plugins vom 24.08.2026 zählt
+2.282 Plugins, darunter mehrere zur KI-VO — etwa `eu-ai-act-compliance` (Risikoklassifikator nach
+Art. 6), `gia-eu-ai-act-compliance` (Klassifikation nach der Verordnung (EU) 2024/1689, Screening
+gegen die Verbote des Art. 5), `norma-claude-skill` (EU-Compliance-Methodik mit Vorlagen für KI-VO,
+ISO 42001 und NIS2) und `sentinal-stack` (Agenten für DLP, KI-VO-Compliance und Audit-Evidenz).
+
+Die Trennlinie ist der Gegenstand, nicht die Qualität. Jene Werkzeuge stufen **Systeme** ein oder
+liefern **Vorlagen**. Dieses Repo arbeitet eine Ebene darunter, am **Inhalt**, den ein System
+erzeugt: welche Pflicht aus Art. 50 an einer konkreten Text-, Bild-, Audio- oder Videodatei hängt
+und wie die menschliche Gegenlese dahinter als Nachweis in Git und CI verankert wird. Wer wissen
+muss, ob das eigene System hochriskant ist, greift zu den Klassifikatoren; wer wissen muss, ob
+dieser eine Artikel ein Label braucht und wie sich die Gegenlese belegen lässt, ist hier richtig.
+Marktplatz-Momentaufnahmen altern — vor Gebrauch neu prüfen.
+
 ## Was drin ist
+
+```text
+playbook/de/   die acht Kapitel, deutsch
+playbook/en/   dieselben acht Kapitel auf Englisch
+plugins/       der Claude-Code-Skill — dieses Repository ist zugleich sein Marktplatz
+gate/          das Nachweis-Gate: Schema, Prüfskript, PR-Vorlage, CI-Workflow
+tools/         label-crop-check, die geometrische Vorprüfung für Labels im Bild
+examples/      das durchgerechnete Beispiel, über das die eigene CI fährt
+```
+
+Die Playbook-Kapitel liegen derzeit auf Deutsch; die Tabelle verlinkt sie.
 
 | Pfad | Inhalt |
 |---|---|
-| [`playbook/01-entscheidungsbaum.md`](playbook/01-entscheidungsbaum.md) | Entscheidungsbaum in acht Stufen (0–7): Exposition, Chatbot, Deepfake-Test, Veröffentlichung, öffentliches Interesse, redaktionelle Ausnahme, Form der Kennzeichnung, Nachbarrechte |
-| [`playbook/02-fallkatalog.md`](playbook/02-fallkatalog.md) | 71 eingeordnete Fälle in sieben Gruppen — Bild (Werbung/E-Commerce), Bild (journalistisch), Audio, Video, Text, interne Inhalte, Alt-Inhalte — je mit Ergebnis (✅ frei · 🏷️ Label · ⚠️ Grauzone) und Fundstelle |
-| [`playbook/03-redaktions-ausnahme.md`](playbook/03-redaktions-ausnahme.md) | Die Text-Ausnahme im Detail: beide Voraussetzungen, die Verbotsliste (Rn. 135), die Reihenfolge-Regel (Rn. 136), was dokumentiert werden muss — und was nicht |
-| [`playbook/04-kennzeichnung-form.md`](playbook/04-kennzeichnung-form.md) | Form, Wortlaut und Platzierung je Modalität; die optionalen EU-Icons; Label-Text-Bibliothek DE + EN; Barrierefreiheit; Prüfliste vor der Veröffentlichung |
-| [`playbook/05-agentur-und-vertraege.md`](playbook/05-agentur-und-vertraege.md) | Auftragsketten: Wer ist Betreiber, wer kennzeichnet, wer trägt das UWG-Risiko — samt Regelungspunkte-Checkliste für Verträge |
-| [`playbook/06-mythen-faq.md`](playbook/06-mythen-faq.md) | Acht verbreitete Irrtümer, mit Fundstelle richtiggestellt |
-| [`playbook/07-anbieter-markierungen.md`](playbook/07-anbieter-markierungen.md) | Anbieter-Markierung nach Art. 50 Abs. 2: was ein gefundenes Wasserzeichen beweist, was nicht, und warum es die eigene Kennzeichnung nie ersetzt |
-| [`playbook/08-rechtsgrundlagen.md`](playbook/08-rechtsgrundlagen.md) | Rechtsgrundlagen: Zeitleiste, Normtexte im Wortlaut, deutsche Zuständigkeiten, Sanktionsrahmen, Nachweis-Erwartung der Aufsicht — und wann das Kapitel neu zu prüfen ist |
-| [`gate/`](gate/README.md) | Das Nachweis-Gate: Schema des Review-Records, das abhängigkeitsfreie Prüfskript, PR-Vorlage, fertiger GitHub-Actions-Workflow |
-| [`skill/eu-ai-act-content-check/`](skill/eu-ai-act-content-check/SKILL.md) | Claude-Code-Skill (englisch): prüft vor der Veröffentlichung die Art.-50-Lage und **bereitet** den Review-Record vor — bezeugt ihn nie |
-| [`tools/label-crop-check/`](tools/label-crop-check/README.md) | Geometrische Vorprüfung: Überlebt ein ins Bild gesetztes Label die Zuschnitte 1:1, 4:5, 9:16 und 16:9? |
-| [`examples/`](examples/blog-artikel.md) | Durchgerechnetes Beispiel: ein fiktiver Lokalartikel mit zugehörigem Review-Record — die eigene CI dieses Repos fährt darüber |
+| [`playbook/de/01-entscheidungsbaum.md`](playbook/de/01-entscheidungsbaum.md) | Entscheidungsbaum in acht Stufen (0–7): Exposition, Chatbot, Deepfake-Test, Veröffentlichung, öffentliches Interesse, redaktionelle Ausnahme, Form der Kennzeichnung, Nachbarrechte |
+| [`playbook/de/02-fallkatalog.md`](playbook/de/02-fallkatalog.md) | 71 eingeordnete Fälle in sieben Gruppen — Bild (Werbung/E-Commerce), Bild (journalistisch), Audio, Video, Text, interne Inhalte, Alt-Inhalte — je mit Ergebnis (✅ frei · 🏷️ Label · ⚠️ Grauzone) und Fundstelle |
+| [`playbook/de/03-redaktions-ausnahme.md`](playbook/de/03-redaktions-ausnahme.md) | Die Text-Ausnahme im Detail: beide Voraussetzungen, die Verbotsliste (Rn. 135), die Reihenfolge-Regel (Rn. 136), was dokumentiert werden muss — und was nicht |
+| [`playbook/de/04-kennzeichnung-form.md`](playbook/de/04-kennzeichnung-form.md) | Form, Wortlaut und Platzierung je Modalität; die optionalen EU-Icons; Label-Text-Bibliothek DE + EN; Barrierefreiheit; Prüfliste vor der Veröffentlichung |
+| [`playbook/de/05-agentur-und-vertraege.md`](playbook/de/05-agentur-und-vertraege.md) | Auftragsketten: Wer ist Betreiber, wer kennzeichnet, wer trägt das UWG-Risiko — samt Regelungspunkte-Checkliste für Verträge |
+| [`playbook/de/06-mythen-faq.md`](playbook/de/06-mythen-faq.md) | Acht verbreitete Irrtümer, mit Fundstelle richtiggestellt |
+| [`playbook/de/07-anbieter-markierungen.md`](playbook/de/07-anbieter-markierungen.md) | Anbieter-Markierung nach Art. 50 Abs. 2: was ein gefundenes Wasserzeichen beweist, was nicht, und warum es die eigene Kennzeichnung nie ersetzt |
+| [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md) | Rechtsgrundlagen: Zeitleiste, Normtexte im Wortlaut, deutsche Zuständigkeiten, Sanktionsrahmen, Nachweis-Erwartung der Aufsicht — und wann das Kapitel neu zu prüfen ist |
+| [`gate/README.de.md`](gate/README.de.md) | Das Nachweis-Gate: Schema des Review-Records, das abhängigkeitsfreie Prüfskript, PR-Vorlage, fertiger GitHub-Actions-Workflow |
+| [`plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md`](plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md) | Claude-Code-Skill (englisch): prüft vor der Veröffentlichung die Art.-50-Lage und **bereitet** den Review-Record vor — bezeugt ihn nie |
+| [`tools/label-crop-check/README.de.md`](tools/label-crop-check/README.de.md) | Geometrische Vorprüfung: Überlebt ein ins Bild gesetztes Label die Zuschnitte 1:1, 4:5, 9:16 und 16:9? |
+| [`examples/blog-artikel.md`](examples/blog-artikel.md) | Durchgerechnetes Beispiel: ein fiktiver Lokalartikel mit zugehörigem Review-Record — die eigene CI dieses Repos fährt darüber |
 
 ## Das Gate in 30 Sekunden
 
@@ -120,7 +156,7 @@ Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice, Sec. 2, 
 
 ## Schnellstart
 
-**Das Gate in fünf Schritten** (Details: [`gate/README.md`](gate/README.md)):
+**Das Gate in fünf Schritten** (Details: [`gate/README.de.md`](gate/README.de.md)):
 
 1. [`gate/scripts/check-review-record.mjs`](gate/scripts/check-review-record.mjs) und
    [`gate/review-record.schema.json`](gate/review-record.schema.json) ins eigene Repository kopieren,
@@ -138,12 +174,26 @@ Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice, Sec. 2, 
    aktivieren, den Status-Check des Gates als **required** markieren.
    **Ohne Schritt 5 ist das Gate eine Empfehlung, kein Gate.**
 
-**Der Skill.** Den Ordner `skill/eu-ai-act-content-check` in das Verzeichnis `.claude/skills/` des
-eigenen Projekts kopieren (sodass `.claude/skills/eu-ai-act-content-check/SKILL.md` existiert). Er
-geht vor Veröffentlichung, Deployment oder Merge den Entscheidungsbaum durch und **bereitet** den
-Review-Record vor — Prüfperson, Prüfdatum, die `pruefung`-Booleans und den finalen Hash füllt er
-nie aus. Ein Ende-zu-Ende von einem Agenten erzeugter Record wäre genau der *"automated review
-process"*, den Rn. 135 ausschließt.
+**Der Skill.** Dieses Repository ist zugleich ein Plugin-Marktplatz. Zwei Kommandos installieren
+den Skill:
+
+```text
+/plugin marketplace add eduard-wolf/eu-ai-act-content-transparency
+/plugin install eu-ai-act-content-check@eu-ai-act-content-transparency
+```
+
+Ohne Plugin-Mechanik den Ordner `plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check` in
+das Verzeichnis `.claude/skills/` des eigenen Projekts kopieren, sodass
+`.claude/skills/eu-ai-act-content-check/SKILL.md` existiert; auch ein lokaler Klon dieses
+Repositorys funktioniert als Marktplatz-Quelle
+(`/plugin marketplace add <Pfad zu diesem Repository>`). Das Skill-Format ist für Claude Code
+dokumentiert — und die Anweisungen selbst sind reines Markdown, also auch ohne Installation lesbar:
+[`SKILL.md`](plugins/eu-ai-act-content-check/skills/eu-ai-act-content-check/SKILL.md).
+
+Der Skill geht vor Veröffentlichung, Deployment oder Merge den Entscheidungsbaum durch und
+**bereitet** den Review-Record vor — Prüfperson, Prüfdatum, die `pruefung`-Booleans und den finalen
+Hash füllt er nie aus. Ein Ende-zu-Ende von einem Agenten erzeugter Record wäre genau der
+*"automated review process"*, den Rn. 135 ausschließt.
 
 **Die Crop-Prüfung.** `node tools/label-crop-check/check.mjs --image 1600x1200 --label 1150,40,120x60`
 zeigt, ob ein im Bild platziertes Label die üblichen Plattform-Zuschnitte überlebt — standardmäßig
@@ -155,15 +205,16 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
 - **Ein Playbook plus ein Nachweis-Muster — kein Framework.** Kein CMS-Plugin, kein Dienst, keine
   Datenbank: zwei abhängigkeitsfreie Node-Skripte, ein JSON-Schema, eine Workflow-Datei und acht
   Kapitel. Man übernimmt, was man braucht.
-- **Deutschsprachiger Inhalt mit Absicht.** Die operative Durchsetzungsebene ist deutsch: Die
+- **Zwei Sprachen, eine Regel.** Die englische Fassung trägt, was EU-weit portabel ist; die
+  deutsche führt dort, wo die operative Durchsetzungsebene deutsch ist: Die
   Bundesnetzagentur ist nach § 2 [KI-MIG](https://www.gesetze-im-internet.de/ki-mig) zentrale
   Marktüberwachungs-, Anlauf- und Beschwerdestelle
   ([bundesnetzagentur.de/ki](https://www.bundesnetzagentur.de/ki)); setzen Mediendiensteanbieter
   (Art. 2 Nr. 2 EMFA) KI zu journalistischen oder zu Werbezwecken ein, ist nach § 2 Abs. 8 KI-MIG
   die Länderaufsicht Marktüberwachungsbehörde — sonst bleibt es bei der Auffangzuständigkeit der
-  BNetzA ([`playbook/08-rechtsgrundlagen.md`](playbook/08-rechtsgrundlagen.md), Abschnitt 3).
-  Daneben läuft das Lauterkeitsrecht (UWG).
-  Zitate aus EU-Dokumenten bleiben in der offiziellen englischen Fassung.
+  BNetzA ([`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md), Abschnitt 3).
+  Daneben läuft das Lauterkeitsrecht (UWG). Die Konsolenausgabe der Skripte ist deutsch; Zitate aus
+  EU-Dokumenten bleiben in der offiziellen englischen Fassung.
 - **Unverbindliche Quellen, keine Rechtsprechung.** Leitlinien und FAQ sind Auslegung der
   Kommission, kein Gesetz; die Kommission kündigt eine Überprüfung der Leitlinien selbst an
   (Rn. 155). Der Bußgeldrahmen reicht bis 15 000 000 EUR oder 3 % des weltweiten Jahresumsatzes, je
@@ -173,14 +224,14 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
   rightsholders under Union law on intellectual property or Union data protection law"* (Rn. 124;
   Fn. 34 dehnt das ausdrücklich auf veröffentlichte Texte über Angelegenheiten von öffentlichem
   Interesse aus). Daneben laufen §§ 5, 5a UWG — mit oder ohne Label, siehe
-  [`playbook/08-rechtsgrundlagen.md`](playbook/08-rechtsgrundlagen.md).
+  [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md).
 - **Die maschinenlesbare Anbieter-Markierung ersetzt nie die eigene wahrnehmbare Kennzeichnung.**
   Die Leitlinien sind unmissverständlich: *"[D]eployers cannot rely on the machine-readable marking
   embedded in the content by the provider under Article 50(2) AI Act, since those markings are not
   immediately clear and distinguishable for the natural persons exposed to the deep fake content."*
   (Rn. 117)
 - **Grauzonen bleiben Grauzonen.** Wo die Quellen einen Fall nicht entscheiden, sagen die Kapitel
-  das — Grauzone: Einstufung mit kurzer Begründung dokumentieren (siehe [`gate/`](gate/README.md)) —
+  das — Grauzone: Einstufung mit kurzer Begründung dokumentieren (siehe [`gate/`](gate/README.de.md)) —
   statt Schein-Sicherheit zu erzeugen. `[zu verifizieren: …]` markiert bewusst offene Punkte — dort
   deckt keine amtliche Quelle den Fall; erfunden wird nichts.
 
@@ -191,7 +242,7 @@ veröffentlichte Verwaltungspraxis dazu. Jede Rechtsaussage in diesem Repo träg
 Stand-Stempel und eine Fundstelle. Welche Ereignisse die Schlussfolgerungen ändern würden — ein
 erstes EuGH- oder BGH-Urteil, erste dokumentierte Abmahnungen oder BNetzA-Verfahren, eine Review der
 Leitlinien, eine KI-MIG-Novelle —, steht in
-[`playbook/08-rechtsgrundlagen.md`](playbook/08-rechtsgrundlagen.md), Abschnitt 7.
+[`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md), Abschnitt 7.
 
 ## Lizenz
 
