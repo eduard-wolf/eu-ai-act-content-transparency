@@ -9,13 +9,16 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
 
 ## Gebrauchsanleitung
 
 Der Baum sortiert den Normalfall **in unter einer Minute** vor: Stufe 0 bis 5 entscheiden
-„Label ja/nein", Stufe 6 klärt die **Form**, Stufe 7 die Pflichten **neben** der KI-Verordnung.
+„Label ja/nein", Stufe 6 klärt die **Form**, Stufe 7 die Pflichten und Verbote **neben** Art. 50.
 Zu jedem Knoten steht unten ein Abschnitt mit Prüffragen, Fundstelle und Verweis aufs
 Detail-Kapitel.
 
@@ -419,15 +422,23 @@ Zweitverwertung außerhalb der Plattform tragen sie nicht (Rn. 126).
 **Prüffrage:** Was gilt zusätzlich — unabhängig davon, ob ein Label nötig war?
 
 > 🚧 **Merksatz:** Ein Label ist kein Freifahrtschein — UWG-Irreführung, Urheber- und
-> Persönlichkeitsrechte bleiben.
+> Persönlichkeitsrechte bleiben, und was verboten ist, bleibt verboten.
 
+- **Verbotene Praktiken (Art. 5 KI-VO):** Ab dem 02.12.2026 verbietet Art. 5 Abs. 1 UAbs. 1
+  lit. ba und bb KI-VO (eingefügt durch VO (EU) 2026/1744) KI-Systeme, die realistische intime
+  Darstellungen einer bestimmbaren Person ohne deren ausdrückliche Zustimmung oder Darstellungen
+  von sexuellem Missbrauch von Kindern erzeugen oder manipulieren; Betreiber trifft das Verbot,
+  wenn sie ein System zu diesem Zweck verwenden (Art. 5 Abs. 1a lit. b). Ein Label macht eine
+  verbotene Praxis nicht zulässig (Erwägungsgrund 137 KI-VO; Leitlinien Rn. 25) — Details:
+  [Kapitel 08](08-rechtsgrundlagen.md), Abschnitt 6.
 - **Lauterkeitsrecht:** Das Deepfake-Kriterium ist ausdrücklich unabhängig vom Irreführungsbegriff
   der Richtlinie 2005/29/EG zu verstehen (Leitlinien Fn. 32) — ein gekennzeichnetes, aber
   irreführendes Produktbild bleibt irreführend.
 - **Urheber-, Datenschutz- und Persönlichkeitsrechte** bleiben unberührt (Rn. 124, 127–129); das
   gilt ausdrücklich auch für veröffentlichte Texte von öffentlichem Interesse (Fn. 34).
-- **DSA:** Art. 35 Abs. 1 lit. k DSA verpflichtet sehr große Plattformen und Suchmaschinen
-  werkzeugneutral — also auch bei Fälschungen ganz ohne KI (Rn. 126).
+- **DSA:** Art. 35 Abs. 1 DSA verpflichtet sehr große Plattformen und Suchmaschinen zur
+  Risikominderung; lit. k nennt prominente Markierungen erzeugter oder manipulierter Inhalte als
+  **mögliche** Maßnahme — werkzeugneutral, also auch für Fälschungen ganz ohne KI (Rn. 126).
 - **Plattform-Policies** (Upload-Disclosure, Werbekennzeichnung) sind eigene Vertragspflichten neben
   dem Gesetz.
 

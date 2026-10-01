@@ -9,9 +9,11 @@
 
 > ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
 > Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
-> the European Union can interpret the AI Act with binding effect. There is no case law on
-> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
-> **As of: 24 August 2026.**
+> the European Union can interpret the AI Act with binding effect. With C(2026) 5054 final the
+> Commission approved the content of the draft guidelines; they will be formally adopted once all
+> language versions are available. There is no case law on Article 50 yet — this playbook builds a
+> defensible position, not a safe harbour.
+> **As of: 24 August 2026; updated on 1 October 2026.**
 
 These eight sentences have been everywhere since 2 August 2026 — in webinar chats, in agency
 meetings, in comment sections. Every one of them is wrong or half right, and every one produces a
@@ -90,14 +92,22 @@ finished artefact but the documented process.
 **Correction.** The label discharges exactly **one** duty: transparency about the artificial origin.
 Everything else stays as it was. Para 129 is unambiguous: the transparency duty *"does not imply
 that AI-generated or manipulated deep fakes that are harmful and unlawful under the applicable Union
-or national law (e.g. misleading advertising or criminal law …) may be generated and disseminated."*
-Third-party rights remain expressly unaffected — data protection, copyright and trade mark law,
-personality rights in image and voice (paras 124, 127–129); the attenuated art exception *"cannot be
-a justification for failing to respect the fundamental rights of individuals or rightsholders"*
-(para 124). And the deepfake criterion is expressly independent of the concept of misleading under
-the Unfair Commercial Practices Directive (footnote 32): a labelled but misleading product image
-remains misleading (§§ 5, 5a UWG, the German Act against Unfair Competition) — open to warning
-letters from competitors and associations (§ 8(3) UWG).
+or national law (e.g. misleading advertising or criminal law such as child sexual abuse material and
+non-consensual intimate images) may be generated and disseminated"*. Third-party rights remain
+expressly unaffected — data protection, copyright and trade mark law, personality rights in image
+and voice (paras 124, 127–129); the attenuated art exception *"cannot be a justification for failing
+to respect the fundamental rights of individuals or rightsholders"* (para 124). And the deepfake
+criterion is expressly independent of the concept of misleading under the Unfair Commercial
+Practices Directive (footnote 32): a labelled but misleading product image remains misleading
+(§§ 5, 5a UWG, the German Act against Unfair Competition) — open to warning letters from
+competitors and associations (§ 8(3) UWG). Since Regulation (EU) 2026/1744, two of the case groups
+named in para 129 are also **prohibited AI practices**: from 2 December 2026, Article 5(1), first
+subparagraph, points (ba) and (bb) AI Act prohibit AI systems that generate or manipulate
+non-consensual intimate material of identifiable persons or child sexual abuse material; deployers
+are caught where they use a system for that purpose (Article 5(1a), point (b)). A label changes
+nothing about that — compliance with the transparency obligations *"should not be interpreted as
+indicating that the use of the AI system or its output is lawful"* (recital 137 AI Act; guidelines
+para 25).
 
 > 🚧 **Remember:** a label is no free pass.
 
@@ -121,7 +131,12 @@ in place, and has to be labelled audibly — "Persons" expressly covers *"person
 expressions, such as image, voice, behaviour, performances"* (para 113 iii). The counter-test is in
 the negative box after para 116: AI voice replication for **fictional** characters, *"when there is
 no deception as to the identity of the narrators"* — what is missing there is the deception, not the
-consent.
+consent. From 2 December 2026 consent takes on a role of its own for intimate depictions:
+Article 5(1), first subparagraph, point (ba) AI Act (inserted by Regulation (EU) 2026/1744)
+prohibits using AI to generate or manipulate realistic intimate depictions of an identifiable
+person without that person's *"freely-given, specific, informed, unambiguous and explicit
+consent"*. Consent takes the case out of that prohibition, not out of the labelling duty — and for
+child sexual abuse material (point (bb)) there is no consent route at all.
 
 **Read on:** [Labelling: audio](04-labelling-form.md) · [Case catalog](02-case-catalog.md)
 
@@ -145,7 +160,8 @@ cropping and standard colour adjustments as standard editing, while
 changes meaning and substance"*, face swapping or altering body shape are listed as semantic
 changes. **Third:** unfair-competition law applies **regardless of the tool** — the power line
 retouched out of a property photo by hand is just as misleading as the one removed by AI
-(§§ 5, 5a UWG), and the DSA likewise binds very large platforms irrespective of the tool (para 126).
+(§§ 5, 5a UWG), and Article 35(1)(k) DSA names prominent markings as a possible risk-mitigation
+measure for very large platforms, likewise irrespective of the tool (para 126).
 
 **Read on:** [Decision tree, stage 2](01-decision-tree.md) · [Case catalog](02-case-catalog.md)
 
@@ -210,8 +226,8 @@ it just does not exempt from the label.
 | 1 | AI involved ⇒ label | Only deepfakes and text on matters of public interest | paras 112, 130–131 |
 | 2 | AI image ⇒ deepfake | Four cumulative criteria, minor edits do not count | paras 113, 114, 116 |
 | 3 | Watermark ⇒ done | Provider marking never replaces your own label | para 117 |
-| 4 | Label ⇒ legal | No free pass: UWG, copyright, personality rights | paras 124, 129; §§ 5, 5a UWG |
-| 5 | Consent ⇒ no label | Consent protects the person, the label the audience | paras 112, 113 iii; Article 50(5) |
+| 4 | Label ⇒ legal | No free pass: UWG, copyright, personality rights; the Article 5 AI Act prohibitions remain | paras 25, 124, 129; §§ 5, 5a UWG; Article 5(1), first subparagraph, points (ba), (bb) AI Act |
+| 5 | Consent ⇒ no label | Consent protects the person, the label the audience | paras 112, 113 iii; Article 50(5); Article 5(1), first subparagraph, point (ba) AI Act |
 | 6 | Photoshop free, AI prohibited | AI inside the tool counts; the result decides; UWG regardless of tool | paras 92 (Art. 50(2)), 116, 126 |
 | 7 | Internal ⇒ never a label | Right only for text — an internal deepfake carries the duty | paras 112, 115, 131 i |
 | 8 | Text reviewed ⇒ images free | The editorial exception applies only to text | Article 50(4), second subparagraph; para 136 |

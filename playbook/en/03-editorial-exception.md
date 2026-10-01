@@ -9,9 +9,11 @@
 
 > ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
 > Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
-> the European Union can interpret the AI Act with binding effect. There is no case law on
-> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
-> **As of: 24 August 2026.**
+> the European Union can interpret the AI Act with binding effect. With C(2026) 5054 final the
+> Commission approved the content of the draft guidelines; they will be formally adopted once all
+> language versions are available. There is no case law on Article 50 yet — this playbook builds a
+> defensible position, not a safe harbour.
+> **As of: 24 August 2026; updated on 1 October 2026.**
 
 For editorial, agency and marketing work, Article 50(4), second subparagraph, AI Act holds exactly
 one practically usable door through which AI-generated text fits **without a label**: the editorial
@@ -335,7 +337,8 @@ in their own right — the responsibility stays with the legal person under whos
 system is used (para 14). Where, by contrast, the agency itself decides whether and how AI is
 used, **it** is the deployer and the merely commissioning client is not (example paragraph after
 para 14). Sources: guidelines para 14 (primary source); likewise the Commission's FAQ on
-Article 50 [zu verifizieren: exact FAQ section on the deployer role].
+Article 50 (as of 24 July 2026), question "Who is a deployer and what transparency obligations
+apply to them?".
 
 ## 7. The official examples (box after para 138)
 

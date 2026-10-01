@@ -17,9 +17,11 @@ transparency duties (Article 50).
 
 > ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
 > Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
-> the European Union can interpret the AI Act with binding effect. There is no case law on
-> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
-> **As of: 24 August 2026.**
+> the European Union can interpret the AI Act with binding effect. With C(2026) 5054 final the
+> Commission approved the content of the draft guidelines; they will be formally adopted once all
+> language versions are available. There is no case law on Article 50 yet — this playbook builds a
+> defensible position, not a safe harbour.
+> **As of: 24 August 2026; updated on 1 October 2026.**
 
 ## Why this exists
 
@@ -199,21 +201,31 @@ and 16:9 by default, others via `--ratios`; exit 1 if one of them cuts it. Zero 
   database. Two Node scripts with zero dependencies, a JSON schema, a workflow file and nine
   chapters. Adopt the parts you need.
 - **Two languages, one rule.** The English set carries what is portable across the EU; the German
-  set leads where the operative enforcement layer is German: the Bundesnetzagentur is the central
-  market surveillance and complaints body under § 2 [KI-MIG](https://www.gesetze-im-internet.de/ki-mig)
-  ([bundesnetzagentur.de/ki](https://www.bundesnetzagentur.de/ki)), and unfair-competition law (UWG)
-  runs alongside Article 50. The scripts' console output is German. Quotes from EU documents are
-  kept in their official English wording.
+  set leads where the operative enforcement layer is German: under §§ 2, 6 and 8
+  [KI-MIG](https://www.gesetze-im-internet.de/ki-mig) the Bundesnetzagentur is the market
+  surveillance authority, the single point of contact and the central complaints body
+  ([complaints page](https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/18_Beschwerdestelle/start.html)),
+  and unfair-competition law (UWG) runs alongside Article 50. Since Regulation (EU) 2026/1744 the
+  AI Office of the Commission is exclusively competent for providers of AI systems built on their
+  own general-purpose AI model (same provider or same undertaking) and for systems of very large
+  online platforms and search engines (Article 75(1) AI Act, with exceptions); deployers that merely
+  use such systems remain under national supervision
+  ([`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md), section 3). The scripts'
+  console output is German. Quotes from EU documents are kept in their official English wording.
 - **Non-binding sources, no case law.** Guidelines and FAQ are Commission interpretation, not law;
   the Commission itself announces a review of the guidelines (para 155). Fines under Article 50 can
   reach EUR 15 000 000 or 3% of total worldwide annual turnover, whichever is higher — for SMEs
-  whichever is lower (para 152).
+  (Article 99(6) AI Act; para 152) and, since Regulation (EU) 2026/1744, for small mid-cap
+  enterprises (Article 99(6a) AI Act) whichever is lower.
 - **A label is no free pass.** *"Reliance on the attenuated transparency obligation cannot be a
   justification for failing to respect the fundamental rights of individuals or rightsholders under
   Union law on intellectual property or Union data protection law"* (para 124, whose footnote 34
   extends this to published texts informing the public on matters of public interest). German
   unfair-competition law (§§ 5, 5a UWG) applies alongside, label or no label — see
-  [`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md).
+  [`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md). And what Article 5 AI Act
+  prohibits stays prohibited — from 2 December 2026 that includes AI systems for non-consensual
+  intimate material and for child sexual abuse material (Article 5(1), first subparagraph,
+  points (ba) and (bb) AI Act).
 - **The machine-readable provider marking never replaces your own perceivable label.**
   *"[D]eployers cannot rely on the machine-readable marking embedded in the content by the provider
   under Article 50(2) AI Act, since those markings are not immediately clear and distinguishable for
@@ -225,10 +237,12 @@ and 16:9 by default, others via `--ratios`; exit 1 if one of them cuts it. Zero 
 ## Status
 
 **As of: 24 August 2026** — three weeks after Article 50 became applicable, with no case law and no
-published administrative practice on it. Every legal statement in this repository carries a dated
-stamp and a source; the events that would change the conclusions — a first CJEU or BGH ruling,
-first documented warning letters or Bundesnetzagentur proceedings, a review of the guidelines, an
-amendment to the KI-MIG — are listed in
+published administrative practice on it; **updated on 1 October 2026** (changes made by
+Regulation (EU) 2026/1744, competence of the AI Office, status of the guidelines, updated sources).
+Every legal statement in this repository carries a dated stamp and a source; the events that would
+change the conclusions — a first CJEU or BGH ruling, first documented warning letters or
+Bundesnetzagentur proceedings, the formal adoption or a review of the guidelines, an amendment to
+the KI-MIG — are listed in
 [`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md), section 7.
 
 ## License
