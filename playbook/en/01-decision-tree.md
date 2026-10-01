@@ -9,14 +9,17 @@
 
 > ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
 > Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
-> the European Union can interpret the AI Act with binding effect. There is no case law on
-> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
-> **As of: 24 August 2026.**
+> the European Union can interpret the AI Act with binding effect. With C(2026) 5054 final the
+> Commission approved the content of the draft guidelines; they will be formally adopted once all
+> language versions are available. There is no case law on Article 50 yet — this playbook builds a
+> defensible position, not a safe harbour.
+> **As of: 24 August 2026; updated on 1 October 2026.**
 
 ## How to use it
 
 The tree pre-sorts the normal case **in under a minute**: stages 0 to 5 decide
-"label yes/no", stage 6 settles the **form**, stage 7 the duties **alongside** the AI Act.
+"label yes/no", stage 6 settles the **form**, stage 7 the duties and prohibitions **alongside**
+Article 50.
 Every node has a section below it with test questions, a source anchor and a pointer to the
 detailed chapter.
 
@@ -426,15 +429,24 @@ secondary use outside the platform they do not carry it (para 126).
 **Test question:** what applies in addition — regardless of whether a label was needed?
 
 > 🚧 **Rule of thumb:** a label is no free pass — misleading practices under the UWG (German Act
-> against Unfair Competition), copyright and personality rights remain.
+> against Unfair Competition), copyright and personality rights remain, and what is prohibited
+> stays prohibited.
 
+- **Prohibited practices (Article 5 AI Act):** from 2 December 2026, Article 5(1), first
+  subparagraph, points (ba) and (bb) AI Act (inserted by Regulation (EU) 2026/1744) prohibit AI
+  systems that generate or manipulate realistic intimate depictions of an identifiable person
+  without that person's explicit consent, or child sexual abuse material; deployers are caught
+  where they use a system for that purpose (Article 5(1a), point (b)). A label does not make a
+  prohibited practice permissible (recital 137 AI Act; guidelines para 25) — details:
+  [chapter 08](08-legal-basis.md), section 6.
 - **Unfair-competition law:** the deepfake criterion is expressly to be understood independently of
   the concept of misleading practices in Directive 2005/29/EC (guidelines footnote 32) — a labelled
   but misleading product image remains misleading.
 - **Copyright, data protection and personality rights** are untouched (paras 124, 127–129); that
   expressly holds for published texts of public interest as well (footnote 34).
-- **DSA:** Article 35(1)(k) DSA obliges very large platforms and search engines in a
-  tool-neutral way — hence also for fakes made entirely without AI (para 126).
+- **DSA:** Article 35(1) DSA obliges very large platforms and search engines to mitigate risks;
+  point (k) names prominent markings of generated or manipulated content as a **possible**
+  measure — tool-neutral, hence also for fakes made entirely without AI (para 126).
 - **Platform policies** (upload disclosure, advertising disclosure) are contractual duties of their
   own, alongside the law.
 

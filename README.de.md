@@ -17,8 +17,11 @@ bei KI-Inhalten (Art. 50 der Verordnung (EU) 2024/1689).
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
 
 ## Für wen das gedacht ist
 
@@ -213,24 +216,34 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
   Kapitel. Man übernimmt, was man braucht.
 - **Zwei Sprachen, eine Regel.** Die englische Fassung trägt, was EU-weit portabel ist; die
   deutsche führt dort, wo die operative Durchsetzungsebene deutsch ist: Die
-  Bundesnetzagentur ist nach § 2 [KI-MIG](https://www.gesetze-im-internet.de/ki-mig) zentrale
-  Marktüberwachungs-, Anlauf- und Beschwerdestelle
-  ([bundesnetzagentur.de/ki](https://www.bundesnetzagentur.de/ki)); setzen Mediendiensteanbieter
-  (Art. 2 Nr. 2 EMFA) KI zu journalistischen oder zu Werbezwecken ein, ist nach § 2 Abs. 8 KI-MIG
-  die Länderaufsicht Marktüberwachungsbehörde — sonst bleibt es bei der Auffangzuständigkeit der
-  BNetzA ([`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md), Abschnitt 3).
+  Bundesnetzagentur ist nach §§ 2, 6 und 8 [KI-MIG](https://www.gesetze-im-internet.de/ki-mig)
+  Marktüberwachungsbehörde, zentrale Anlauf- und zentrale Beschwerdestelle
+  ([Beschwerdestelle](https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/18_Beschwerdestelle/start.html));
+  setzen Mediendiensteanbieter (Art. 2 Nr. 2 EMFA) KI zu journalistischen oder zu Werbezwecken
+  ein, ist nach § 2 Abs. 8 KI-MIG die Länderaufsicht Marktüberwachungsbehörde — sonst bleibt es bei
+  der Auffangzuständigkeit der BNetzA. Seit der VO (EU) 2026/1744 ist für Anbieter von KI-Systemen
+  auf eigenem KI-Modell mit allgemeinem Verwendungszweck (gleicher Anbieter oder gleiches
+  Unternehmen) und für Systeme sehr großer Online-Plattformen und Suchmaschinen ausschließlich das
+  AI Office der Kommission zuständig (Art. 75 Abs. 1 KI-VO, mit Ausnahmen); Betreiber, die solche
+  Systeme nur nutzen, bleiben unter nationaler Aufsicht
+  ([`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md), Abschnitt 3).
   Daneben läuft das Lauterkeitsrecht (UWG). Die Konsolenausgabe der Skripte ist deutsch; Zitate aus
   EU-Dokumenten bleiben in der offiziellen englischen Fassung.
 - **Unverbindliche Quellen, keine Rechtsprechung.** Leitlinien und FAQ sind Auslegung der
   Kommission, kein Gesetz; die Kommission kündigt eine Überprüfung der Leitlinien selbst an
   (Rn. 155). Der Bußgeldrahmen reicht bis 15 000 000 EUR oder 3 % des weltweiten Jahresumsatzes, je
-  nachdem, welcher Betrag höher ist — für KMU gilt der **niedrigere** (Rn. 152).
+  nachdem, welcher Betrag höher ist — für KMU (Art. 99 Abs. 6 KI-VO; Rn. 152) und seit der
+  VO (EU) 2026/1744 auch für kleine Midcap-Unternehmen (Art. 99 Abs. 6a KI-VO) gilt der
+  **niedrigere**.
 - **Ein Label ist kein Freifahrtschein.** *"Reliance on the attenuated transparency obligation
   cannot be a justification for failing to respect the fundamental rights of individuals or
   rightsholders under Union law on intellectual property or Union data protection law"* (Rn. 124;
   Fn. 34 dehnt das ausdrücklich auf veröffentlichte Texte über Angelegenheiten von öffentlichem
   Interesse aus). Daneben laufen §§ 5, 5a UWG — mit oder ohne Label, siehe
-  [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md).
+  [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md). Und was Art. 5 KI-VO
+  verbietet, bleibt verboten — ab dem 02.12.2026 auch KI-Systeme für nicht einvernehmlich erstelltes
+  intimes Material und für Darstellungen von sexuellem Missbrauch von Kindern (Art. 5 Abs. 1
+  UAbs. 1 lit. ba und bb KI-VO).
 - **Die maschinenlesbare Anbieter-Markierung ersetzt nie die eigene wahrnehmbare Kennzeichnung.**
   Die Leitlinien sind unmissverständlich: *"[D]eployers cannot rely on the machine-readable marking
   embedded in the content by the provider under Article 50(2) AI Act, since those markings are not
@@ -244,9 +257,11 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
 ## Stand
 
 **Stand: 24.08.2026** — drei Wochen nach Anwendungsbeginn des Art. 50, ohne Rechtsprechung und ohne
-veröffentlichte Verwaltungspraxis dazu. Jede Rechtsaussage in diesem Repo trägt einen datierten
-Stand-Stempel und eine Fundstelle. Welche Ereignisse die Schlussfolgerungen ändern würden — ein
-erstes EuGH- oder BGH-Urteil, erste dokumentierte Abmahnungen oder BNetzA-Verfahren, eine Review der
+veröffentlichte Verwaltungspraxis dazu; **aktualisiert am 01.10.2026** (Änderungen durch die
+VO (EU) 2026/1744, Zuständigkeit des AI Office, Status der Leitlinien, aktualisierte Quellen). Jede
+Rechtsaussage in diesem Repo trägt einen datierten Stand-Stempel und eine Fundstelle. Welche
+Ereignisse die Schlussfolgerungen ändern würden — ein erstes EuGH- oder BGH-Urteil, erste
+dokumentierte Abmahnungen oder BNetzA-Verfahren, die förmliche Annahme oder eine Review der
 Leitlinien, eine KI-MIG-Novelle —, steht in
 [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md), Abschnitt 7.
 

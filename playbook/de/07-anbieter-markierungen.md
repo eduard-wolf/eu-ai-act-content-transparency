@@ -9,8 +9,11 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
 
 Über KI-Inhalten liegen **zwei getrennte Transparenz-Ebenen**: Der **Anbieter** des Generators
 markiert seine Ausgaben **maschinenlesbar** (Art. 50 Abs. 2 der Verordnung (EU) 2024/1689), der
@@ -128,32 +131,34 @@ oder mit Prompts zu steuern, macht dagegen nicht zum Anbieter.
 
 ---
 
-## 2. Stand der großen Anbieter — 22.08.2026
+## 2. Stand der großen Anbieter — 22.08.2026, teilweise aktualisiert am 01.10.2026
 
-Momentaufnahme mit Stand-Stempel, keine gepflegte Liste: Anbieter-Praxis ändert sich schneller
-als ein Repo. Jede Zeile trägt ihre Beleglage. **Der Stand ändert an der eigenen Pflicht
-nichts** — sie hängt am Inhalt und am Publikum, nicht am Werkzeug ([Kapitel 01](01-entscheidungsbaum.md)).
+Momentaufnahme mit Stand-Stempel, keine gepflegte Liste: Anbieter-Praxis ändert sich schneller als
+ein Repo. Jede Zeile trägt ihre Beleglage; am 01.10.2026 nachgeprüft sind die Anthropic-Zeile und
+der Signatarstatus. **Der Stand ändert an der eigenen Pflicht nichts** — sie hängt am Inhalt und am
+Publikum, nicht am Werkzeug ([Kapitel 01](01-entscheidungsbaum.md)).
 
-| Anbieter / System | Text | Bild, Audio, Video, Dateien | Beleglage (22.08.2026) |
+| Anbieter / System | Text | Bild, Audio, Video, Dateien | Beleglage (22.08.2026, wo nicht anders angegeben) |
 |---|---|---|---|
-| **Anthropic / Claude** | unsichtbares Wasserzeichen, auf Modellebene in den Text eingewoben; Modelle, die ab 02.08.2026 in der EU starten, ab Start — ältere Modelle in der Übergangsphase | signierte C2PA-Provenance-Metadaten bei unterstützten Dateitypen (z. B. .svg, .png, .jpg) | **belegt** — Anbieter-Dokumentation „How Claude marks AI-generated content" (<https://support.claude.com/en/articles/16266773>); CoP-Signatar Section 1 |
+| **Anthropic / Claude** | unsichtbares Wasserzeichen, auf Modellebene in den Text eingewoben; Modelle, die ab 02.08.2026 in der EU starten, ab Start — für ältere Modelle wird es nachgerüstet; welche Modelle auf welchen Oberflächen markieren, zeigt die Modell-Tabelle der Anbieter-Dokumentation | signierte C2PA-Provenance-Metadaten (Content Credentials) bei unterstützten Dateitypen (z. B. PNG, JPEG) | **belegt** (Stand 01.10.2026) — Anbieter-Dokumentation „How Claude marks AI-generated content" (<https://support.claude.com/en/articles/16266773>, abgerufen am 01.10.2026); CoP-Signatar Section 1 |
 | **Google / Gemini** | SynthID: das Wasserzeichen wird über die Wahrscheinlichkeits-Scores der Token gesetzt (Gemini-App und Web) | SynthID auch für Bild, Audio und Video | **belegt** — Anbieter-Dokumentation SynthID (<https://deepmind.google/science/synthid/>); CoP-Signatar Section 1 |
 | **OpenAI / ChatGPT** | zum Stand-Datum **keine** Text-Markierung dokumentiert | C2PA- und SynthID-Herkunftssignale bei unterstützten Bildern, SynthID bei unterstütztem Audio — berichtet, nicht an der Anbieter-Doku verifiziert; für Video kein Beleg | **wahrscheinlich** — CoP-Signatar Section 1 ist belegt (offizielle Liste); die Anbieter-Dokumentation war zum Stand-Datum nicht abrufbar. [zu verifizieren: aktueller Markierungs-Stand für Text und Medien direkt an der OpenAI-Dokumentation] |
-| **xAI / Grok** | nicht dokumentiert | Markierung für Bild/Video wird berichtet, aus Anbieter-Dokumentation nicht belegt | **wahrscheinlich (schwach)** — xAI wird in der Kommissionsmeldung vom 31.07.2026 (Update 20.08.2026) **nicht als Signatar genannt**; die Meldung nennt aber nur eine Auswahl der Unterzeichner, der Signatarstatus ist damit **nicht verifiziert**. [zu verifizieren: Signatarstatus am vollständigen Unterzeichner-Register der Kommission; Markierungs-Stand an einer Primärquelle von xAI] |
+| **xAI / Grok** | nicht dokumentiert | Markierung für Bild/Video wird berichtet, aus Anbieter-Dokumentation nicht belegt | **wahrscheinlich (schwach)** — Markierung nur berichtet. **Kein CoP-Signatar** nach der vollständigen Unterzeichnerliste der Kommission (Seitenstand 24.09.2026, abgerufen am 01.10.2026): xAI steht weder in Section 1 noch in Section 2. [zu verifizieren: Markierungs-Stand an einer Primärquelle von xAI] |
 
 **Signatarstatus als Anhaltspunkt, nicht als Nachweis.** Die Kommission führt die Unterzeichner
-offiziell: Section 1 (Anbieter) 82, Section 2 (Betreiber) 152, insgesamt rund 190 Organisationen —
-dieselbe Organisation kann beide Sections zeichnen, daher liegt die Gesamtzahl unter der Summe
+offiziell und ergänzt die Liste laufend: Section 1 (Anbieter) 95, Section 2 (Betreiber) 192
 (<https://digital-strategy.ec.europa.eu/en/news/strong-backing-code-practice-transparency-ai-generated-content>,
-Seitenstand 20.08.2026). Namentlich für Section 1 genannt sind u. a. Aleph Alpha, Anthropic,
-Black Forest Labs, Cohere, Google, Meta, Microsoft, Mistral, Open AI und Synthesia — eine
-Auswahl, keine vollständige Aufzählung: **Aus „nicht genannt" folgt kein „nicht
-unterzeichnet".** Wer nicht unterzeichnet, ist deshalb **nicht** von Art. 50 Abs. 2 befreit —
-er muss die Erfüllung über *"other adequate means"* nachweisen und rechnet mit mehr
+Seitenstand 24.09.2026, abgerufen am 01.10.2026). Bis Ende Juli 2026 hatten nach derselben
+Meldung rund 190 Organisationen unterzeichnet — dieselbe Organisation kann beide Sections zeichnen,
+daher liegt die Gesamtzahl unter der Summe. Der Meldungstext nennt für Section 1 Beispiele (u. a.
+Aleph Alpha, Anthropic, Black Forest Labs, Cohere, Google, Meta, Microsoft, Mistral, Open AI und
+Synthesia); maßgeblich ist die vollständige Liste darunter. Ob ein Anbieter tatsächlich markiert,
+sagt der Signatarstatus nicht. Wer nicht unterzeichnet, ist **nicht** von Art. 50 Abs. 2 befreit
+— er muss die Erfüllung über *"other adequate means"* nachweisen und rechnet mit mehr
 Auskunftsersuchen (Rn. 148).
 
 Zu Anthropic im Detail, weil dieser Fall die Grenzen der Marker-Logik besonders klar zeigt (alle
-Zitate aus der oben genannten Anbieter-Dokumentation):
+Zitate aus der oben genannten Anbieter-Dokumentation, abgerufen am 01.10.2026):
 
 - Der Geltungsbereich ist breit: *"Marks will apply to output from supported Claude models across
   Claude Platform (API), Claude, Claude Code, Claude Cowork, and Claude Tag, and wherever Claude
@@ -161,12 +166,14 @@ Zitate aus der oben genannten Anbieter-Dokumentation):
 - Markiert wird nicht nur Erzeugtes, sondern **auch Verarbeitetes**: *"Claude uses two
   complementary techniques to mark content generated and processed by Claude"* — ausdrücklich auch
   beim Korrekturlesen, Übersetzen, Zusammenfassen oder Konvertieren (Abschnitt 3).
-- Die Aussagekraft ist begrenzt — der Marker sagt nur, dass der Inhalt verarbeitet worden
-  **sein kann**: *"If a supported mark is found, it indicates that the content may have been
-  processed by Claude"*;
-  umgekehrt *"Lack of a detected mark doesn't mean the content wasn't AI-generated or processed."*
-- Die Detektionsseite ist noch nicht öffentlich: *"We'll share details on detection mechanisms in
-  forthcoming technical documentation."*
+- Die Aussagekraft ist begrenzt — der Marker sagt nur, dass der Inhalt erzeugt oder verarbeitet
+  worden **sein kann**: *"If a supported mark is found, it indicates that the content may have
+  been generated or processed by Claude"*; umgekehrt *"Lack of a detected mark doesn't mean the
+  content wasn't AI-generated or processed."*
+- Die Detektion ist nur teilweise öffentlich: Für C2PA-Dateimarken gibt es einen frei nutzbaren
+  Prüfer (*"use the free Claude Content Checker"*), die Wasserzeichen-Detektion dagegen nur
+  eingeschränkt: *"Watermark detection is currently in private preview, available to eligible
+  organizations as required under EU law"*.
 
 ---
 
@@ -178,7 +185,7 @@ Zitate aus der oben genannten Anbieter-Dokumentation):
 | „Marker gefunden ⇒ der KI-Anteil war groß" | **Nein** | Der Marker ist binär und trägt kein Maß. Über Umfang, Rolle und Reihenfolge der KI-Beteiligung sagt er nichts |
 | „Marker gefunden ⇒ es liegt ein Verstoß vor" | **Nein** | Die Kennzeichnungspflicht folgt aus Modalität, Publikum und Inhalt (Art. 50 Abs. 4), nicht aus dem Vorhandensein einer Markierung — Prüfung: [Kapitel 01](01-entscheidungsbaum.md) |
 | „Kein Marker gefunden ⇒ keine KI im Spiel" | **Nein** | Fehlende Markierung beweist nichts: Altmodelle, nicht unterstützte Kanäle und Dateitypen, verlorene Metadaten, Anbieter ohne Markierung |
-| „Ich kann das selbst nachprüfen" | **Meist nein — Stand der Anbieterpraxis, nicht die Rechtslage** | Rechtlich gilt eher das Gegenteil: Die Detektionsmittel müssen den exponierten Personen verfügbar sein (Rn. 75), und Rn. 76 verlangt *"publicly-available industry standard detection solutions that allow any third party to implement detection"*. In der Praxis fehlt das zum Stand-Datum teils — Anthropic kündigt die Detektions-Dokumentation erst an (*"forthcoming technical documentation"*, Abschnitt 2). [zu verifizieren: ob und wie der Kodex den Zugang zur Detektionslösung für Freitext einschränkt — Sub-measure 1.1.2] |
+| „Ich kann das selbst nachprüfen" | **Meist nein — Stand der Anbieterpraxis, nicht die Rechtslage** | Rechtlich gilt eher das Gegenteil: Die Detektionsmittel müssen den exponierten Personen verfügbar sein (Rn. 75), und Rn. 76 verlangt *"publicly-available industry standard detection solutions that allow any third party to implement detection"*. In der Praxis fehlt das teils — bei Anthropic war die Wasserzeichen-Detektion am 01.10.2026 nur als *"private preview"* für berechtigte Organisationen zugänglich; frei prüfbar sind die C2PA-Dateimarken (Abschnitt 2). [zu verifizieren: ob und wie der Kodex den Zugang zur Detektionslösung für Freitext einschränkt — Sub-measure 1.1.2] |
 
 ### 3.1 Anbieter dürfen mehr markieren, als das Gesetz verlangt
 
@@ -258,14 +265,14 @@ Für die eigene Praxis folgt daraus:
 
 ## 5. Konsequenz für das eigene Setup: Prozess statt Forensik
 
-Wasserzeichen-Forensik taugt nicht als Compliance-Nachweis — in **beide** Richtungen: Ein
-gefundener Marker belegt allenfalls, dass ein bestimmtes System den Inhalt berührt hat (bei
-Claude ausdrücklich nur *"may have been processed"*), ein fehlender belegt gar nichts, die
-Detektionswerkzeuge sind zum Stand-Datum teils noch nicht veröffentlicht — obwohl die
-Leitlinien ihre Verfügbarkeit für die exponierten Personen verlangen (Rn. 75 f.) —, und
-markiert wird auch, was gar nicht markierungspflichtig wäre (Abschnitt 3). Wer seine
-Kennzeichnungs-Entscheidungen auf Marker-Suche stützt, stützt sie auf ein Signal, das die eigene
-Frage nicht beantwortet.
+Wasserzeichen-Forensik taugt nicht als Compliance-Nachweis — in **beide** Richtungen: Ein gefundener
+Marker belegt allenfalls, dass ein bestimmtes System den Inhalt berührt hat (bei Claude ausdrücklich
+nur *"may have been processed"*), ein fehlender belegt gar nichts, die Detektionswerkzeuge sind
+teils nicht öffentlich zugänglich (bei Anthropic am 01.10.2026 die Wasserzeichen-Detektion,
+Abschnitt 2) — obwohl die Leitlinien ihre Verfügbarkeit für die exponierten Personen verlangen
+(Rn. 75 f.) —, und markiert wird auch, was gar nicht markierungspflichtig wäre (Abschnitt 3). Wer
+seine Kennzeichnungs-Entscheidungen auf Marker-Suche stützt, stützt sie auf ein Signal, das die
+eigene Frage nicht beantwortet.
 
 Belastbar ist die andere Richtung: **dokumentieren, welcher Schritt der eigenen Pipeline KI
 berührt hat und wer was geprüft hat.** Genau das leistet der Review-Record im

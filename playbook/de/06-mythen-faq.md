@@ -9,8 +9,11 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
 
 Diese acht Sätze hört man seit dem 02.08.2026 überall — in Webinar-Chats, in Agentur-Meetings,
 in Kommentarspalten. Jeder von ihnen ist falsch oder halb richtig, und jeder produziert einen
@@ -91,14 +94,22 @@ nicht die Forensik am fertigen Artefakt, sondern der dokumentierte Prozess.
 **Richtigstellung.** Das Label erfüllt genau **eine** Pflicht: Transparenz über den künstlichen
 Ursprung. Alles andere bleibt, wie es war. Rn. 129 ist unmissverständlich: Die Transparenzpflicht
 *"does not imply that AI-generated or manipulated deep fakes that are harmful and unlawful under
-the applicable Union or national law (e.g. misleading advertising or criminal law …) may be
-generated and disseminated."* Drittrechte bleiben ausdrücklich unberührt — Datenschutz,
-Urheber- und Markenrecht, Persönlichkeitsrechte an Bild und Stimme (Rn. 124, 127–129); die
-abgeschwächte Kunst-Ausnahme *"cannot be a justification for failing to respect the fundamental
-rights of individuals or rightsholders"* (Rn. 124). Und das Deepfake-Kriterium ist ausdrücklich
-unabhängig vom Irreführungsbegriff der UGP-Richtlinie (Fn. 32): Ein gekennzeichnetes, aber
-irreführendes Produktbild bleibt irreführend (§§ 5, 5a UWG) — abmahnbar durch Mitbewerber und
-Verbände (§ 8 Abs. 3 UWG).
+the applicable Union or national law (e.g. misleading advertising or criminal law such as child
+sexual abuse material and non-consensual intimate images) may be generated and disseminated"*.
+Drittrechte bleiben ausdrücklich unberührt — Datenschutz, Urheber- und Markenrecht,
+Persönlichkeitsrechte an Bild und Stimme (Rn. 124, 127–129); die abgeschwächte Kunst-Ausnahme
+*"cannot be a justification for failing to respect the fundamental rights of individuals or
+rightsholders"* (Rn. 124). Und das Deepfake-Kriterium ist ausdrücklich unabhängig vom
+Irreführungsbegriff der UGP-Richtlinie (Fn. 32): Ein gekennzeichnetes, aber irreführendes
+Produktbild bleibt irreführend (§§ 5, 5a UWG) — abmahnbar durch Mitbewerber und Verbände
+(§ 8 Abs. 3 UWG). Zwei der in Rn. 129 genannten Fallgruppen sind seit der VO (EU) 2026/1744
+zudem **verbotene KI-Praktiken**: Ab dem 02.12.2026 untersagt Art. 5 Abs. 1 UAbs. 1 lit. ba und bb
+KI-VO KI-Systeme, die nicht einvernehmlich erstelltes intimes Material bestimmbarer Personen oder
+Darstellungen von sexuellem Missbrauch von Kindern erzeugen oder manipulieren; Betreiber trifft
+das Verbot, wenn sie ein System zu diesem Zweck verwenden (Art. 5 Abs. 1a lit. b). Ein Label
+ändert daran nichts — die Erfüllung der Transparenzpflichten *"should not be interpreted as
+indicating that the use of the AI system or its output is lawful"* (Erwägungsgrund 137 KI-VO;
+Leitlinien Rn. 25).
 
 > 🚧 **Merksatz:** Ein Label ist kein Freifahrtschein.
 
@@ -122,7 +133,13 @@ real existierenden Person wirkt, ist deshalb auch mit Vertrag ein Deepfake und h
 kennzeichnen — „Persons" umfasst ausdrücklich *"personal characteristics or expressions, such as
 image, voice, behaviour, performances"* (Rn. 113 iii). Die Gegenprobe steht im Negativ-Kasten
 nach Rn. 116: KI-Stimmreplikation für **fiktive** Figuren, *"when there is no deception as to the
-identity of the narrators"* — dort fehlt die Täuschung, nicht die Einwilligung.
+identity of the narrators"* — dort fehlt die Täuschung, nicht die Einwilligung. Eine eigene
+Funktion bekommt die Einwilligung ab dem 02.12.2026 bei intimen Darstellungen: Art. 5 Abs. 1
+UAbs. 1 lit. ba KI-VO (eingefügt durch VO (EU) 2026/1744) verbietet, mit KI realistische intime
+Darstellungen einer bestimmbaren Person ohne deren *"freely-given, specific, informed,
+unambiguous and explicit consent"* zu erzeugen oder zu manipulieren. Die Einwilligung räumt dieses
+Verbot aus, die Kennzeichnungspflicht nicht — und für Darstellungen von sexuellem Missbrauch von
+Kindern (lit. bb) gibt es keine Einwilligungslösung.
 
 **Weiter:** [Kennzeichnung: Audio](04-kennzeichnung-form.md) · [Fallkatalog](02-fallkatalog.md)
 
@@ -147,8 +164,8 @@ Standard-Farbanpassungen zur Standardbearbeitung, während
 changes meaning and substance"*, Gesichtstausch oder das Verändern der Körperform als semantische
 Änderungen gelistet sind. **Drittens:** Das Lauterkeitsrecht gilt **werkzeugneutral** — die von
 Hand wegretuschierte Stromleitung im Immobilienfoto ist genauso irreführend wie die per KI
-entfernte (§§ 5, 5a UWG), und der DSA verpflichtet sehr große Plattformen ebenfalls unabhängig
-vom Werkzeug (Rn. 126).
+entfernte (§§ 5, 5a UWG), und Art. 35 Abs. 1 lit. k DSA nennt sehr großen Plattformen prominente
+Markierungen als mögliche Risikominderungsmaßnahme, ebenfalls unabhängig vom Werkzeug (Rn. 126).
 
 **Weiter:** [Entscheidungsbaum, Stufe 2](01-entscheidungsbaum.md) · [Fallkatalog](02-fallkatalog.md)
 
@@ -213,8 +230,8 @@ Halluzinationen — nur befreit es nicht vom Label.
 | 1 | KI beteiligt ⇒ Label | Nur Deepfakes und Text von öffentlichem Interesse | Rn. 112, 130–131 |
 | 2 | KI-Bild ⇒ Deepfake | Vier kumulative Kriterien, Bagatellen zählen nicht | Rn. 113, 114, 116 |
 | 3 | Wasserzeichen ⇒ erledigt | Anbieter-Markierung ersetzt nie das eigene Label | Rn. 117 |
-| 4 | Label ⇒ legal | Kein Freifahrtschein: UWG, Urheber-, Persönlichkeitsrechte | Rn. 124, 129; §§ 5, 5a UWG |
-| 5 | Einwilligung ⇒ kein Label | Einwilligung schützt die Person, das Label das Publikum | Rn. 112, 113 iii; Art. 50 Abs. 5 |
+| 4 | Label ⇒ legal | Kein Freifahrtschein: UWG, Urheber-, Persönlichkeitsrechte; Verbote des Art. 5 KI-VO bleiben | Rn. 25, 124, 129; §§ 5, 5a UWG; Art. 5 Abs. 1 UAbs. 1 lit. ba, bb KI-VO |
+| 5 | Einwilligung ⇒ kein Label | Einwilligung schützt die Person, das Label das Publikum | Rn. 112, 113 iii; Art. 50 Abs. 5; Art. 5 Abs. 1 UAbs. 1 lit. ba KI-VO |
 | 6 | Photoshop frei, KI verboten | Tool-interne KI zählt; Ergebnis entscheidet; UWG werkzeugneutral | Rn. 92 (Abs. 2), 116, 126 |
 | 7 | Intern ⇒ nie Label | Nur für Text richtig — interner Deepfake ist pflichtig | Rn. 112, 115, 131 i |
 | 8 | Text geprüft ⇒ Bilder frei | Redaktionelle Ausnahme gilt nur für Text | Art. 50 Abs. 4 UAbs. 2; Rn. 136 |

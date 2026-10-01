@@ -9,8 +9,11 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
 
 Art. 50 Abs. 4 UAbs. 2 KI-VO kennt für Redaktions-, Agentur- und Marketing-Arbeit genau
 eine praktisch nutzbare Tür, durch die ein KI-generierter Text **ohne Kennzeichnung**
@@ -340,8 +343,8 @@ eigenen Betreiber — die Verantwortung bleibt bei der juristischen Person, unte
 Autorität das System genutzt wird (Rn. 14). Entscheidet dagegen die Agentur selbst über
 das Ob und Wie des KI-Einsatzes, ist **sie** Betreiberin und der bloß beauftragende Kunde
 nicht (Beispielabsatz nach Rn. 14). Fundstellen: Leitlinien Rn. 14 (Primärfundstelle);
-ebenso Kommissions-FAQ zu Art. 50 [zu verifizieren: genauer FAQ-Abschnitt zur
-Betreiber-Rolle].
+ebenso Kommissions-FAQ zu Art. 50 (Stand 24.07.2026), Frage „Who is a deployer and what
+transparency obligations apply to them?".
 
 ## 7. Die amtlichen Beispiele (Kasten nach Rn. 138)
 
