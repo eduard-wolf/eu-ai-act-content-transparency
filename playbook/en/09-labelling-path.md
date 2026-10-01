@@ -335,7 +335,8 @@ and renders it, but never sets it itself.
   (section 2) — the label changes nothing about that, and the OLG Hamm's attribution applies
   regardless.
 - **AI literacy** under Article 4 AI Act remains a standing organisational duty, independent of
-  any label ([chapter 08](08-legal-basis.md), section 6).
+  any label — since 27 July 2026 a duty to take measures that support AI literacy, without a
+  prescribed level ([chapter 08](08-legal-basis.md), section 6).
 - **Images, audio and video know no other branch anyway.** The playbook's first rule of thumb:
   the editorial exception applies **to text only** (Article 50(4), second subparagraph; para 133).
   For deepfakes, labelling is the only path in any case — there the deepfake test alone decides

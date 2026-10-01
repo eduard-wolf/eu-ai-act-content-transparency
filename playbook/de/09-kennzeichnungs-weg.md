@@ -315,7 +315,8 @@ und rendert es, setzt es aber nie selbst.
 - **Aussagen über Dritte und über eigene Leistungen** bleiben Prüffeld (Abschnitt 2) — das Label
   ändert daran nichts, und die Zurechnung des OLG Hamm gilt unabhängig davon.
 - **KI-Kompetenz** nach Art. 4 KI-VO bleibt eine organisatorische Dauerpflicht, unabhängig von
-  jeder Kennzeichnung ([Kapitel 08](08-rechtsgrundlagen.md), Abschnitt 6).
+  jeder Kennzeichnung — seit dem 27.07.2026 als Pflicht zu Maßnahmen, die die KI-Kompetenz
+  fördern, ohne vorgeschriebenes Niveau ([Kapitel 08](08-rechtsgrundlagen.md), Abschnitt 6).
 - **Bilder, Audio und Video kennen diesen Zweig gar nicht anders.** Der erste Merksatz des
   Playbooks: Die redaktionelle Ausnahme gilt **nur für Text** (Art. 50 Abs. 4 UAbs. 2; Rn. 133).
   Für Deepfakes ist Kennzeichnen ohnehin der einzige Weg — dort zählt allein der Deepfake-Test
