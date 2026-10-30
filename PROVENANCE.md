@@ -3,7 +3,7 @@
 > 🤖 **Made with AI — no editorial review.** That holds for this repository in full, this file
 > included. What was verified and what was not is set out below.
 
-**As of: 24 August 2026.** German version: [PROVENANCE.de.md](PROVENANCE.de.md).
+**As of: 24 August 2026; updated on 30 October 2026.** German version: [PROVENANCE.de.md](PROVENANCE.de.md).
 
 This document describes how the contents of this repository came about, what was machine-verified
 about them and what was not. It is the evidence behind the label that every content file carries.
@@ -43,9 +43,22 @@ the skill, both Node scripts, the entry pages and this file.
   except for line breaks, whitespace, end-of-line hyphenation, the PDF's footnote numbers and the
   form of the quotation marks) — with no deviation. Quotes from EU documents are therefore kept
   everywhere in their official English wording, including inside German text. Not covered by this
-  check are quotes from the text of the Regulation, the Code of Practice, the Commission's FAQ, the
-  EU icons page and vendor documentation; they carry their source reference but were not checked
-  against a PDF.
+  check were quotes from the text of the Regulation, the Code of Practice, the Commission's FAQ, the
+  EU icons page and vendor documentation.
+- **Repeated on 30 October 2026, with a wider set of sources.** After the corrections described
+  below, a script checked every verbatim quotation (written *"…"*) in the chapters and in the skill
+  against the official texts — the guidelines, the AI Act and Regulation (EU) 2026/1744 as
+  published in the Official Journal, the Code of Practice and the other source texts cited —
+  after normalising whitespace, line-break hyphenation and the form of quotation marks and dashes.
+  Each quotation was split at its ellipses. **Skill:** 35 fragments, all found. **Chapters (German
+  and English):** 606 fragments, 570 found, 36 not found. Of these 36, 18 are quotations from
+  Anthropic's vendor documentation and 6 from the Commission's FAQ — sources that were not part of
+  the check; 10 are not quotations from a source but the playbook's own example sentences (the
+  misconceptions in chapter 06 and the competence question in chapters 01 and 09); and 2 are the
+  same para 12 quotation in chapter 05 (German and English), which a separate comparison showed to
+  differ from the official text only by the PDF's footnote number and the form of the quotation
+  marks. The script checks the wording, not whether a quotation is attributed to the right
+  paragraph.
 - **Every legal statement carries its source anchor** — article and paragraph of the AI Act,
   paragraph number of the guidelines, section or (sub-)measure of the code, section of the KI-MIG.
   Any reader can check any statement against the original. That is the control this repository
@@ -57,6 +70,39 @@ the skill, both Node scripts, the entry pages and this file.
 
 What is verified is therefore the machine: character strings, paths, code. What is not verified is
 the legal assessment.
+
+## Correction of 30 October 2026
+
+On 29 October 2026 an internal audit, likewise carried out by AI agents, went through the skill and
+the English chapters and found errors and imprecise source anchors. Each finding was re-checked against the
+official texts and corrected only where the text supports it; the German and English chapters were
+changed in parallel. The legal position was verified as of 29 October 2026: the AI Act as amended
+by Regulation (EU) 2026/1744, and the guidelines C(2026) 5054 final, whose formal adoption was still
+pending on that date. The main corrections:
+
+- **Roles.** Para 14 is now cited only for what it says — employees are not separate deployers, and
+  the legal person remains the deployer when contractors or freelancers operate the system on its
+  behalf and under its responsibility and control; that those contractors are not deployers themselves is marked as this playbook's reading
+  of paras 12 and 19. Provider status now follows Article 3(3), para 10 and the examples after
+  para 11 (including offering an AI application under one's own name); the transitional period of
+  Article 111(4) is tied to systems placed on the market.
+- **Deepfakes.** The minor-edit rule of para 116 is stated as the guidelines state it — such edits
+  *"may be of minor relevance"*, and context and impact decide; stylised and photorealistic
+  illustrations are distinguished; para 117 is cited as written for deepfakes, with para 132 for
+  text.
+- **Placement and scope.** Para 142 is cited only for a manual, layers of menu options and terms
+  of use; the footer is marked as this playbook's reading, and para 38 is added for interactive
+  systems. The list of matters of public interest uses the original term *"public health"*
+  (para 131 iii).
+- **Code of Practice and neighbouring law.** Statements from the Code of Practice are attributed to
+  its signatories and worded as the code words them (Measure 2.2, Commitment 4); the prohibitions in
+  Article 5(1), first subparagraph, points (ba) and (bb) AI Act and the role of Article 35(1)(k) DSA
+  are stated more precisely.
+
+An earlier update on 1 October 2026 aligned the chapters with Regulation (EU) 2026/1744; it is
+recorded in the as-of lines of the files concerned. **The correction changes nothing about the
+label:** no human editorial review took place this time either, and the exception in Article 50(4),
+second subparagraph is still not claimed.
 
 ## What did not happen
 
@@ -95,8 +141,9 @@ repository went through it — they did not.
 
 ## Currency and ageing
 
-Everything here is **as of 24 August 2026**, three weeks after Article 50 became applicable, with no
-case law and no published administrative practice on it. Statements about the state of the law age.
+Everything here dates from **24 August 2026**, three weeks after Article 50 became applicable, with
+no case law and no published administrative practice on it; the chapters were updated on 1 October and
+30 October 2026, this file on 30 October 2026, with the legal position verified as of 29 October 2026. Statements about the state of the law age.
 The events that would change this repository's conclusions are listed as a benchmark list in
 [chapter 08: legal basis](playbook/en/08-legal-basis.md), section 7.
 

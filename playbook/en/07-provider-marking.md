@@ -13,7 +13,8 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026 (legal position verified
+> as of 29 October 2026; the formal adoption of the guidelines was still pending on that date).**
 
 Two separate transparency layers sit over AI content: the **provider** of the generator marks its
 outputs in a **machine-readable** way (Article 50(2) of Regulation (EU) 2024/1689), the **deployer**
@@ -122,12 +123,30 @@ practice:
 
 ### 1.3 When you become a provider yourself
 
-The layer-1 duty does not normally fall on the publisher. But it can pass to them — guidelines
-para 11: anyone who modifies an existing generative AI system (e.g. with their own training data)
-and then puts it into service **under their own name or trade mark** *"becomes a provider of the
-new system without prejudice to the responsibility of the provider of the initial AI system for the
-latter"*. Merely using a system, integrating it via an API or steering it with prompts, by
-contrast, does not make you a provider.
+The layer-1 duty does not normally fall on the publisher. But it can pass to them. Providers are
+those who develop AI systems, or have them developed, and place them on the Union market or put
+them into service **under their own name or trade mark**, whether for payment or free of charge
+(Article 3(3); para 10). The examples after para 11 show three routes:
+
+- offering *"a generative or interactive AI application (e.g. a chatbot, image generator, AI agent)
+  on the Union market under its own name or trademark"* — provider for Article 50(1) and/or (2),
+  whether free or paid, wherever established;
+- developing an interactive system (e.g. a chatbot) in-house and putting it into service in the
+  Union for one's own use and under one's own name or trade mark;
+- modifying an existing generative AI system (e.g. with new training data) and then putting it
+  into service under one's own name or trade mark — the company *"becomes a provider of the new
+  system without prejudice to the responsibility of the provider of the initial AI system for the
+  latter"*.
+
+Whoever develops a generative system in-house and uses it, for instance for deepfakes, is provider
+**and** deployer (para 15). On the other side of the line, the first example names the provider's
+customers, who *"may directly use the AI system for interaction or content generation (including
+by integrating the system into their existing processes and using it accordingly without the need
+for modifications or additional components)"*: using a system as offered, steering it with prompts
+or integrating it unchanged into your own processes does not by itself make you a provider. The
+access route (app or API) does not decide; Article 3(3) does — building a chatbot, image generator
+or agent on another provider's model and offering it under your own name or trade mark points to
+provider status (Article 3(3); para 10; examples after para 11).
 
 ---
 
@@ -285,7 +304,7 @@ what.** That is exactly what the review record in [gate/](../../gate/README.md) 
 
 **Honest limit:** the gate enforces the **process** and makes it auditable; it does not enforce the
 substantive **quality** of the review. It is a permissible form of documentation that goes beyond
-the legal minimum — in Section 2, Commitment 4 the code expressly does **not** require
+the minimum the code describes — in Section 2, Commitment 4 the code expressly does **not** require
 case-by-case documentation (*"This does not entail having to document
 individual instances of human review or editorial control over individual text publications"*),
 but leaves it open (*"Signatories may record additional information on the nature of the review

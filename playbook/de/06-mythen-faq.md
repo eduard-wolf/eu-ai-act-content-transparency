@@ -13,7 +13,8 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026 (Rechtsstand geprüft am
+> 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 Diese acht Sätze hört man seit dem 02.08.2026 überall — in Webinar-Chats, in Agentur-Meetings,
 in Kommentarspalten. Jeder von ihnen ist falsch oder halb richtig, und jeder produziert einen
@@ -57,9 +58,10 @@ fiktive Spielwelten als **keine** Deepfakes. Fotorealismus erhöht die Wahrschei
 entscheidet aber nicht — *"photorealism alone is not determinative for the assessment"*
 (Rn. 114). Umgekehrt schützt ein Kunst-Look nicht, wenn das Ergebnis täuscht: Ein KI-Produktbild,
 das über Aussehen, Eigenschaften oder Gebrauch des realen Produkts täuschen kann, steht
-ausdrücklich im Positiv-Kasten. Auch Bagatell-Bearbeitungen machen aus einem Foto noch keinen
-Deepfake — Passanten im Hintergrund entfernen, Belichtung, Farbkorrektur, Rauschunterdrückung
-(Rn. 116). Entscheidend ist die Wirkung auf die Authentizitätswahrnehmung im konkreten Kontext,
+ausdrücklich im Positiv-Kasten. Auch Bagatell-Bearbeitungen machen aus einem Foto in der Regel
+noch keinen Deepfake — Passanten im Hintergrund entfernen, Lichtanpassungen, Farbkorrektur,
+Rauschunterdrückung (Rn. 116); ob eine Bearbeitung in diese Kategorie fällt, hängt vom Kontext
+und ihrer Wirkung ab (Rn. 116). Entscheidend ist die Wirkung auf die Authentizitätswahrnehmung im konkreten Kontext,
 nicht das Werkzeug; Grenzfälle sind hier die Regel.
 ⚠️ Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).
 
@@ -77,7 +79,9 @@ Kennzeichnung** nach Art. 50 Abs. 4 trifft den **Betreiber** — also dich. Rn. 
 wörtlich: *"deployers cannot rely on the machine-readable marking embedded in the content by the
 provider under Article 50(2) AI Act, since those markings are not immediately clear and
 distinguishable for the natural persons exposed to the deep fake content."* Die Kommissions-FAQ
-wiederholt das für Deepfakes. Umgekehrt beweist ein gefundener Marker weder einen Rechtsverstoß
+wiederholt das für Deepfakes. Rn. 117 steht im Deepfake-Abschnitt; für Text setzt Rn. 132
+denselben Maßstab: Das Label muss klar und wahrnehmbar sein, ohne dass der Leser ein besonderes
+technisches Hilfsmittel braucht. Umgekehrt beweist ein gefundener Marker weder einen Rechtsverstoß
 noch die Autorenschaft einer KI — je nach Anbieter wird auch bloßes Verarbeiten markiert —, und
 sein Fehlen beweist gar nichts, weil längst nicht jeder Anbieter Text überhaupt markiert (Stand
 je Anbieter: [Kapitel 07](07-anbieter-markierungen.md)). Der belastbare Nachweis ist deshalb
@@ -154,15 +158,15 @@ Kindern (lit. bb) gibt es keine Einwilligungslösung.
 relativieren das Paradoxon aber. **Erstens:** Tool-interne KI-Funktionen — generatives Füllen,
 Objektentfernung, Hintergrund-Generierung, Stimmsynthese — **sind** KI-Einsatz; die Grenze
 verläuft zwischen Funktionen, nicht zwischen Programmen. **Zweitens:** Die Pflicht hängt
-zusätzlich am **Ergebnis**. Auch mit KI bleibt eine Bagatell-Bearbeitung außerhalb der
-Deepfake-Definition (Rn. 116). Der Beispielkatalog nach Rn. 92 — er gehört systematisch zur
+zusätzlich am **Ergebnis**. Auch mit KI bleibt eine Bagatell-Bearbeitung in der Regel außerhalb
+der Deepfake-Definition; Kontext und Wirkung entscheiden (Rn. 116). Der Beispielkatalog nach Rn. 92 — er gehört systematisch zur
 Anbieter-Markierung nach Art. 50 Abs. 2 und taugt als Orientierung für „substanziell oder nicht",
 nicht als Maßstab für den Deepfake-Test des Abs. 4 (siehe [Kapitel 07](07-anbieter-markierungen.md),
 Abschnitt 3.1) — zählt Staubflecken- und Rote-Augen-Entfernung, geringfügigen Zuschnitt und
-Standard-Farbanpassungen zur Standardbearbeitung, während
-*"removal, replacement or insertion of objects or persons in existing images and videos that
-changes meaning and substance"*, Gesichtstausch oder das Verändern der Körperform als semantische
-Änderungen gelistet sind. **Drittens:** Das Lauterkeitsrecht gilt **werkzeugneutral** — die von
+Standard-Farbanpassungen zur Standardbearbeitung, während zu den gelisteten semantischen
+Änderungen *"Removal, replacement or insertion of objects or persons in existing images and videos
+that changes meaning and substance of the content"*, Gesichtstausch oder das Verändern der
+Körperform gehören. **Drittens:** Das Lauterkeitsrecht gilt **werkzeugneutral** — die von
 Hand wegretuschierte Stromleitung im Immobilienfoto ist genauso irreführend wie die per KI
 entfernte (§§ 5, 5a UWG), und Art. 35 Abs. 1 lit. k DSA nennt sehr großen Plattformen prominente
 Markierungen als mögliche Risikominderungsmaßnahme, ebenfalls unabhängig vom Werkzeug (Rn. 126).
@@ -228,8 +232,8 @@ Halluzinationen — nur befreit es nicht vom Label.
 | # | Irrtum | Kurzkorrektur | Anker |
 |---|---|---|---|
 | 1 | KI beteiligt ⇒ Label | Nur Deepfakes und Text von öffentlichem Interesse | Rn. 112, 130–131 |
-| 2 | KI-Bild ⇒ Deepfake | Vier kumulative Kriterien, Bagatellen zählen nicht | Rn. 113, 114, 116 |
-| 3 | Wasserzeichen ⇒ erledigt | Anbieter-Markierung ersetzt nie das eigene Label | Rn. 117 |
+| 2 | KI-Bild ⇒ Deepfake | Vier kumulative Kriterien, Bagatellen zählen in der Regel nicht (Kontext entscheidet) | Rn. 113, 114, 116 |
+| 3 | Wasserzeichen ⇒ erledigt | Anbieter-Markierung ersetzt nie das eigene Label | Rn. 117 (Deepfakes); Rn. 132 (Text) |
 | 4 | Label ⇒ legal | Kein Freifahrtschein: UWG, Urheber-, Persönlichkeitsrechte; Verbote des Art. 5 KI-VO bleiben | Rn. 25, 124, 129; §§ 5, 5a UWG; Art. 5 Abs. 1 UAbs. 1 lit. ba, bb KI-VO |
 | 5 | Einwilligung ⇒ kein Label | Einwilligung schützt die Person, das Label das Publikum | Rn. 112, 113 iii; Art. 50 Abs. 5; Art. 5 Abs. 1 UAbs. 1 lit. ba KI-VO |
 | 6 | Photoshop frei, KI verboten | Tool-interne KI zählt; Ergebnis entscheidet; UWG werkzeugneutral | Rn. 92 (Abs. 2), 116, 126 |

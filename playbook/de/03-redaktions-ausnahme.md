@@ -13,7 +13,7 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026.**
 
 Art. 50 Abs. 4 UAbs. 2 KI-VO kennt für Redaktions-, Agentur- und Marketing-Arbeit genau
 eine praktisch nutzbare Tür, durch die ein KI-generierter Text **ohne Kennzeichnung**
@@ -278,13 +278,18 @@ Typische Schritte **nach** dem Sign-off, die die Ausnahme kosten:
 ⚠️ Wo genau „substanziell" beginnt, sagen die Leitlinien nicht abschließend: Eine reine
 Formatkonvertierung, Minifizierung oder ein Encoding-Fix ändert den Inhalt nicht — eine
 Umformulierung oder Kürzung schon. Grauzone — Einstufung mit kurzer Begründung dokumentieren
-(siehe [gate/](../../gate/README.de.md)).
+(siehe [gate/](../../gate/README.de.md)). Betrieblich laufen solche technischen Schritte **nur auf
+dem Build-Ergebnis, nie auf der gegengelesenen Quelldatei**: Die Hash-Bindung reagiert auf jedes
+Byte, sodass schon ein Encoding-Fix in der gegengelesenen Datei das Gate rot werden lässt, obwohl
+die Substanz unverändert ist. Muss die Quelldatei selbst geändert werden, liest ein Mensch erneut
+gegen, und es entsteht ein neuer Record (Re-Review, unten) — der Hash wird nie ohne Gegenlese
+angepasst.
 
 Zwei Konsequenzen fürs Handwerk:
 
 1. **Reihenfolge umbauen.** Alle KI-Schritte vor die Freigabe ziehen. Was danach noch läuft,
-   ist entweder rein technisch (Minify, Bildkompression, Deploy) — oder der Text fällt in
-   die Kennzeichnungspflicht zurück.
+   ist entweder rein technisch und läuft auf dem Build-Ergebnis (Minify, Bildkompression,
+   Deploy) — oder der Text fällt in die Kennzeichnungspflicht zurück.
 2. **Reihenfolge beweisbar machen.** Genau das leistet die Hash-Bindung des Review-Records:
    Jede spätere Änderung — auch durch KI, auch ein Leerzeichen — invalidiert den Record und
    lässt CI rot werden (→ [gate/](../../gate/README.de.md)).
@@ -423,8 +428,8 @@ Ausnahme **nicht** — Rn. 135 nennt *"cursory editorial approval without substa
 engagement"* ausdrücklich. Ein grünes CI-Gate über einer nicht stattgefundenen Prüfung ist
 ein gut dokumentierter Verstoß. **Ehrliche Grenze:** Das Gate erzwingt den **Prozess** und
 macht ihn nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine
-über das rechtliche Minimum hinausgehende, zulässige Dokumentationsform (CoP Sec. 2,
-Commitment 4), **kein Safe Harbour**.
+über das im Kodex beschriebene Minimum hinausgehende, zulässige Dokumentationsform (CoP Sec. 2,
+Commitment 4: keine Einzelfall-Dokumentation verlangt), **kein Safe Harbour**.
 
 **Wenn die Ausnahme nicht greift**, gilt schlicht die Kennzeichnungspflicht: Rn. 132 legt sie
 für Text ausdrücklich fest — offenzulegen ist, *"that such text has been artificially generated
@@ -439,7 +444,8 @@ stehende Merksätze:
   … without … any specific technical tools or performing dedicated actions"*;
   → [Kapitel 07](07-anbieter-markierungen.md)).
 - 🚧 Ein Label ist kein Freifahrtschein: UWG-Irreführung, Urheber- und Persönlichkeitsrechte
-  bleiben (→ [Kapitel 08](08-rechtsgrundlagen.md)).
+  bleiben, und was Art. 5 KI-VO verbietet, bleibt verboten — ein Label macht es nicht zulässig
+  (ErwG 137 KI-VO; Rn. 25; → [Kapitel 08](08-rechtsgrundlagen.md)).
 
 Verbreitete Irrtümer zu diesem Kapitel — insbesondere „Gegenlesen befreit auch Bilder" und
 „eine KI-Policy reicht" — stehen in der [Mythen-FAQ](06-mythen-faq.md). Die operative

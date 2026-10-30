@@ -13,7 +13,8 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026 (Rechtsstand geprüft am
+> 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 ## Gebrauchsanleitung
 
@@ -79,7 +80,7 @@ flowchart TD
     PH --> S2
     S2 -->|"Bild / Audio / Video"| DF
     S2 -->|"Text"| S3
-    DF -->|"nein — Illustration, Cartoon,<br/>Musikbett, unrealistische Szene"| F1
+    DF -->|"nein — stilisierte Illustration, Cartoon,<br/>Musikbett, unrealistische Szene"| F1
     DF -->|"nur unwesentliche<br/>Bearbeitung, Rn. 116"| F1
     DF -->|"ja"| KU
     KU -->|"ja"| L2
@@ -137,11 +138,15 @@ deshalb führt auch dieser Ast weiter zu **Stufe 7**.
 responsibility over the decision to deploy the system and over the manner of the actual use of the
 system (including its outputs)"*; technische Kontrolle ist nicht nötig (Rn. 12). Daraus folgt:
 
-- Angestellte, Contractor und Freelancer sind **keine eigenen Betreiber**; die Firma bzw. Agentur,
-  unter deren Autorität gearbeitet wird, bleibt es (Rn. 14).
-- Wer eine Agentur nur beauftragt, *"without taking decisions and exercising control over whether
-  and how the advertising agency uses AI in the production process"*, ist **nicht** Betreiber
-  (Beispiel zu Rn. 14). Zuordnung und Vertragsklauseln:
+- Angestellte, die auf Weisung und unter Kontrolle der Firma bzw. Agentur handeln, sind **keine
+  eigenen Betreiber** (Rn. 14). Betreiber bleibt die juristische Person, unter deren Autorität das
+  System genutzt wird, auch wenn Contractor und Freelancer das System *"on its behalf and under its
+  responsibility and control"* bedienen (Rn. 14); dass diese dann selbst keine Betreiber sind, ist
+  die Lesart dieses Playbooks zu Rn. 12 und 19.
+- Entscheidet dagegen die Agentur selbst über das Ob und Wie des KI-Einsatzes, ist **sie**
+  Betreiberin (Rn. 12); wer eine Agentur nur beauftragt, *"without taking decisions and exercising
+  control over whether and how the advertising agency uses AI in the production process"*, ist
+  **nicht** Betreiber (Beispiel nach Rn. 14). Zuordnung und Vertragsklauseln:
   [Kapitel 05](05-agentur-und-vertraege.md).
 
 **Intern ist nicht automatisch frei — nach Modalität unterscheiden:**
@@ -186,7 +191,15 @@ Leitlinien sind bei der Rollenfrage eindeutig: *"Article 50(1) AI Act is address
   Union for its own use and under its name or trademark"*). Wer ein fremdes System verändert —
   im Beispiel der Leitlinien *"with new training data"* — und danach unter eigenem Namen in
   Betrieb nimmt, wird Anbieter des neuen Systems (derselbe Kasten nach Rn. 11). Rollen können
-  zusammenfallen: In-House-System plus eigene Nutzung = Anbieter **und** Betreiber (Rn. 15).
+  zusammenfallen (Rn. 15): Wer ein generatives System selbst entwickelt und selbst nutzt, etwa für
+  Deepfakes, ist Anbieter **und** Betreiber — mit der maschinenlesbaren Markierung nach Art. 50
+  Abs. 2 zusätzlich zum Label nach Art. 50 Abs. 4. Für generative Systeme, die schon vor dem
+  02.08.2026 in Verkehr gebracht waren, haben Anbieter für die Markierung bis zum 02.12.2026 Zeit
+  (Art. 111 Abs. 4 KI-VO, eingefügt durch VO (EU) 2026/1744; Rn. 153); für das Label des Betreibers
+  gibt es keine solche Übergangsfrist. Art. 111 Abs. 4 nennt nur in Verkehr gebrachte Systeme,
+  Rn. 153 auch in Betrieb genommene; für ein nur zur Eigennutzung in Betrieb genommenes
+  In-House-System (Art. 3 Nr. 11 KI-VO) ist die Übergangsfrist daher unsicher, vorsichtig ist die
+  Markierung ab dem 02.08.2026.
 - **Zugekaufter Bot, unverändert eingebunden ⇒ Anbieter ist der Hersteller.** Art. 50 Abs. 1
   trifft dich dann nicht unmittelbar — die Sichtprüfung, ob der Hinweis in der eigenen Einbettung
   wirklich erscheint, ist trotzdem Pflichtprogramm der Praxis und gehört in den Vertrag
@@ -194,7 +207,10 @@ Leitlinien sind bei der Rollenfrage eindeutig: *"Article 50(1) AI Act is address
 - **Hinweis in den Chat, nicht ins Impressum:** Die Information muss spätestens bei der ersten
   Interaktion ankommen (Art. 50 Abs. 5 KI-VO; Rn. 33; Beispiel zu Rn. 143: *"when launching a
   conversation with a chatbot"*). In Handbuch, Menü-Ebenen oder AGB versteckt genügt nicht
-  (Rn. 142). Formulierungsbausteine: [Kapitel 04](04-kennzeichnung-form.md).
+  (Rn. 142). Für interaktive Systeme ergänzt Rn. 38, dass Hinweise *"contained only in terms and
+  conditions, URLs, or documentation"*, maschinenlesbare Markierungen, die im Moment der Interaktion
+  nicht wahrnehmbar sind, und pauschale Hinweise wie *"Services on this website use AI"* für sich
+  allein nicht genügen. Formulierungsbausteine: [Kapitel 04](04-kennzeichnung-form.md).
 - **„Offensichtlich" ist kein Bauchgefühl:** Der Anbieter muss die Offensichtlichkeit *"assess and
   demonstrate"* (Rn. 42), gemessen an einem durchschnittlichen Mitglied des vorhersehbaren
   Publikums (Rn. 43–44).
@@ -224,19 +240,25 @@ erscheinen**? Art. 3 Nr. 60 KI-VO wird in vier kumulative Kriterien zerlegt (Rn.
 | 3 | **Subjekt** | Personen (inkl. digitaler Repliken realer Personen, realistischer KI-Avatare und -Personas, Stimme, Verhalten, Performance), Objekte (inkl. Gebäude, Konsumgüter), Orte, Entitäten (Tiere und andere Lebensformen), Ereignisse (inkl. Darstellung von Dienstleistungen) | Rn. 113 iii |
 | 4 | **Wirkt fälschlich echt** | Gesamtbetrachtung aus Ähnlichkeit, Aussage, Einsatzkontext, Umfeld und vorhersehbarem Publikum; **objektiver Maßstab, keine Täuschungsabsicht nötig**; Fotorealismus macht es wahrscheinlicher, aber *"photorealism alone is not determinative for the assessment"* | Rn. 113 iv; Rn. 114 |
 
-Fehlt eines der vier Kriterien, ist es **kein Deepfake** — Illustration, Cartoon, erkennbar surreale
-Szene, Instrumental-Musikbett ohne Wirklichkeitsabbild. Label-frei heißt aber nicht prüf-frei:
-Faktencheck und Rechte-Klärung bleiben sinnvoll (→ Stufe 7 und [gate/](../../gate/README.de.md)).
+Fehlt eines der vier Kriterien, ist es **kein Deepfake** — stilisierte Illustration, Cartoon,
+erkennbar surreale Szene, Instrumental-Musikbett ohne Wirklichkeitsabbild; eine fotorealistische
+Illustration kann dagegen sehr wohl ein Deepfake sein. Musik im Stil existierender Künstler ist auch
+kein Musikbett: Die Leitlinien führen *"AI-generated music in any kind of genre resembling the
+individual style of existing artists"* als Deepfake in einem künstlerischen Werk —
+kennzeichnungspflichtig in werkgerechter Form (Kasten nach Rn. 124). Label-frei heißt aber nicht
+prüf-frei: Faktencheck und Rechte-Klärung bleiben sinnvoll (→ Stufe 7 und [gate/](../../gate/README.de.md)).
 Kontextbeispiel aus Rn. 114: KI-Hintergründe, Spezialeffekte und technisches Pre-/Postprocessing in
 der normalen Filmproduktion lassen den Inhalt regelmäßig nicht fälschlich echt wirken — voll
 KI-generierte Schauspieler, digitale Repliken, De-Aging und simulierte Darbietungen dagegen schon.
 
-**Bagatell-Weiche (Rn. 116):** Unwesentliche Eingriffe machen aus Bestandsmaterial keinen Deepfake —
-*"editing background details (e.g. removing passerby)"*, Licht, Audio-Parameter, Farbkorrektur,
-Entrauschen, Barrierefreiheits-Verbesserungen, Kompression, kosmetische Anpassungen. In
-Produktwerbung und auf Verpackungen zählen ausdrücklich auch *"background extensions of existing
-content, adjustments or replacements of backgrounds for clearly aesthetic purposes, compositions and
-arrangements of existing products, or re-scaling of images"* dazu. **Die Weiche kippt**, sobald
+**Bagatell-Weiche (Rn. 116):** Unwesentliche Eingriffe *"may be of minor relevance"* und machen aus
+Bestandsmaterial dann keinen Deepfake; ob das zutrifft, *"depends on the context and the impact"* im
+Einzelfall — *"editing background details (e.g. removing passerby)"*, Licht, Audio-Parameter,
+Farbkorrektur, Entrauschen, Barrierefreiheits-Verbesserungen, Kompression, kosmetische Anpassungen.
+In Produktwerbung und auf Verpackungen haben auch *"background extensions of existing content,
+adjustments or replacements of backgrounds for clearly aesthetic purposes, compositions and
+arrangements of existing products, or re-scaling of images"* voraussichtlich nur geringe Wirkung
+(*"likely to have only a minor impact"*). **Die Weiche kippt**, sobald
 
 - die Manipulation das **Produkt oder Subjekt selbst** betrifft — Beispielkatalog: ein KI-Bild eines
   Produkts in Werbung oder Verpackung, das die Wahrnehmung des Publikums beeinflusst und täuscht
@@ -291,7 +313,8 @@ Nein ⇒ keine Text-Kennzeichnungspflicht, weiter zu Stufe 7. Ja ⇒ Stufe 4.
 
 **Prüffrage:** Informiert der Text die Öffentlichkeit über Angelegenheiten von öffentlichem
 Interesse? Rn. 131 iii zählt auf: Politik und demokratische Prozesse, Verwaltung und öffentliche
-Dienstleistungen, Justiz und Strafverfolgung, Grundrechte, öffentliche Sicherheit, **Gesundheit**,
+Dienstleistungen, Justiz und Strafverfolgung, Grundrechte, öffentliche Sicherheit, **öffentliche
+Gesundheit**,
 Umweltschutz, **Verbrauchersicherheit** sowie *"any economic, financial, political, scientific, or
 cultural development that may be relevant subject of public debate"*. Dazu muss der Text überhaupt
 Wissen, Meinungen oder Fakten vermitteln — sehr kurze Texte ohne solchen Gehalt fallen heraus
@@ -300,8 +323,10 @@ Wissen, Meinungen oder Fakten vermitteln — sehr kurze Texte ohne solchen Gehal
 - **In Scope** (Kasten nach Rn. 131): KI-Zusammenfassung eines Zeitungsartikels über einen
   Ratsbeschluss; *"AI-manipulated parts of a lifestyle-website article comparing the effects of
   various diets on a particular disease"*; KI-veränderte Unternehmensberichte mit
-  Investoreninformationen; Unwetterwarnung eines Wetterdienstes im Social-Media-Kanal. Klassischer
-  Ratgeber-Content liegt dieser Liste oft näher, als Marketing-Teams annehmen.
+  Investoreninformationen; Unwetterwarnung eines Wetterdienstes im Social-Media-Kanal. Das
+  Diät-Beispiel zeigt, dass auch Gesundheitsratgeber erfasst sein können, nicht nur öffentliche Gesundheit
+  im engen Sinn; klassischer Ratgeber-Content liegt dieser Liste oft näher, als Marketing-Teams
+  annehmen.
 - **Out of Scope:** KI-generierte Romane; Chatbot-Antworten nur an den Fragenden; Beratungstexte an
   einen Mandanten; Werbe- und Produkttexte — letztere aber mit ausdrücklicher **Rückausnahme**:
   *"not including any claims related to e.g. health, consumer safety or sustainability"* (Kasten
@@ -387,7 +412,7 @@ Zwei **kumulative** Bedingungen (Rn. 133):
 Genau das operationalisiert das [Editorial-Gate](../../gate/README.de.md): ein Review-Record mit
 SHA-256-Bindung an den freigegebenen Stand — jede spätere Änderung, auch durch KI, invalidiert den
 Record und lässt CI rot werden. **Ehrliche Grenze:** Das Gate erzwingt den **Prozess** und macht ihn
-nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche
+nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das im Kodex beschriebene
 Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on Transparency of
 AI-Generated Content, Sec. 2, Commitment 4 — dort ist die Dokumentation einzelner Review-Vorgänge
 ausdrücklich **nicht** verlangt, aber als Zusatzaufzeichnung vorgesehen), kein Safe Harbour.
@@ -407,12 +432,17 @@ Plattformwechsel?
 > 📎 **Merksatz:** Die maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 ersetzt **nie** die
 > eigene wahrnehmbare Kennzeichnung — *"deployers cannot rely on the machine-readable marking
 > embedded in the content by the provider under Article 50(2) AI Act, since those markings are not
-> immediately clear and distinguishable"* (Rn. 117).
+> immediately clear and distinguishable"* (Rn. 117, geschrieben für Deepfakes). Für Text setzt
+> Rn. 132 denselben Maßstab: wahrnehmbar *"without them needing to rely on any specific technical
+> tools"*.
 
 Kurzfassung — alles Weitere in [Kapitel 04](04-kennzeichnung-form.md), zu Wasserzeichen und
 Anbieter-Markierungen in [Kapitel 07](07-anbieter-markierungen.md): Es gibt keinen Pflicht-Wortlaut,
-die EU-Icons sind optional; das Label muss klar und unterscheidbar sein und darf nicht in AGB,
-Metadaten oder Menü-Ebenen verschwinden (Rn. 142). Label-Werkzeuge sehr großer Plattformen (etwa
+die EU-Icons sind optional; das Label muss klar und unterscheidbar sein und darf nicht in einem
+Handbuch, in Menü-Ebenen oder in Nutzungsbedingungen/AGB (Rn. 142) und auch nicht allein in
+Metadaten (Rn. 117, 132) verschwinden. Auch ein Footer oder ein allgemeiner Hinweis an anderer
+Stelle der Website steht nicht beim Inhalt (Lesart dieses Playbooks zu Rn. 142 und zum Beispiel nach
+Rn. 143: *"at the start of an AI-generated or manipulated text publication"*). Label-Werkzeuge sehr großer Plattformen (etwa
 KI-Toggles) können die Offenlegung **innerhalb** der Plattform tragen, wenn das erzeugte Label die
 Anforderungen erfüllt — *"without prejudice to the responsibility of the deployers"*, und für die
 Zweitverwertung außerhalb der Plattform tragen sie nicht (Rn. 126).

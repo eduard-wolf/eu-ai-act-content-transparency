@@ -13,14 +13,16 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; Kopfhinweis aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; Kopfhinweis aktualisiert am 01.10.2026; aktualisiert am 30.10.2026
+> (Rechtsstand geprüft am 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag noch
+> aus).**
 
 ## Lesehilfe
 
 - **Spalten.** „Fall" beschreibt die Situation, „Einstufung" das Ergebnis (✅ frei · 🏷️ kennzeichnungspflichtig · ⚠️ Grauzone), „Warum" den tragenden Grund in einem Satz, „Anker" die Fundstelle. ⚠️ heißt immer: **Grauzone — Einstufung mit kurzer Begründung dokumentieren (siehe [gate/](../../gate/README.de.md)).**
 - **Zwei Prüfungen, nicht eine.** Text fragt „Wer hat's geprüft?" — Bild fragt „Wirkt's echt?". Die redaktionelle Ausnahme gibt es **nur für Text** (Art. 50 Abs. 4 UAbs. 2); bei Bild, Audio und Video entscheidet allein der Deepfake-Test, und die Kunst-Ausnahme lockert lediglich die **Form** der Offenlegung (Rn. 119–123).
 - **Anker-Konvention.** „Rn." = Randnummer der Kommissions-Leitlinien C(2026) 5054 final; „Kasten nach Rn. 116/124/131/138" = die dortigen amtlichen Beispielkataloge; „Kodex" = Code of Practice on Transparency of AI-Generated Content (10.06.2026). Wörtliche Zitate stehen in der englischen Originalfassung; alle Fundstellen gesammelt in [Kapitel 08](08-rechtsgrundlagen.md). `[zu verifizieren: …]` markiert bewusst offene Punkte — dort deckt keine amtliche Quelle den Fall; erfunden wird nichts.
-- **Was ein Label nicht leistet.** Es ist kein Freifahrtschein: UWG-Irreführung, Urheber- und Persönlichkeitsrechte bleiben unberührt (Rn. 124, 127–129). Und die maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 ersetzt die eigene wahrnehmbare Kennzeichnung nie — *"deployers cannot rely on the machine-readable marking"* (Rn. 117; [Kapitel 07](07-anbieter-markierungen.md)).
+- **Was ein Label nicht leistet.** Es ist kein Freifahrtschein: UWG-Irreführung, Urheber- und Persönlichkeitsrechte bleiben unberührt (Rn. 124, 127–129). Und die maschinenlesbare Anbieter-Markierung nach Art. 50 Abs. 2 ersetzt die eigene wahrnehmbare Kennzeichnung nie — *"deployers cannot rely on the machine-readable marking"* (Rn. 117 für Deepfakes; für Text derselbe Maßstab über Rn. 132; [Kapitel 07](07-anbieter-markierungen.md)).
 - **Grenzen des Katalogs.** Jede Zeile ordnet den **typischen** Fall ein, sie sagt kein Ergebnis zu: Kontext, vorhersehbares Publikum und Aufmachung können jeden Fall kippen. Systematisch prüfen: [Entscheidungsbaum](01-entscheidungsbaum.md) · Form der Kennzeichnung: [Kapitel 04](04-kennzeichnung-form.md) · typische Irrtümer: [Kapitel 06](06-mythen-faq.md).
 
 ---
@@ -30,7 +32,7 @@
 | Fall | Einstufung | Warum | Anker |
 |---|---|---|---|
 | Reales Produkt (z. B. Auto) vor KI-generiertem Hintergrund | ✅ frei | Der Hintergrund verändert die Produktwahrnehmung nicht — *"as long as the ad is not likely to mislead the audience about the product's actual representation and its characteristics and use"*. | Kasten nach Rn. 116 |
-| Belichtung, Farbkorrektur, Entrauschen, kosmetische Retusche; vorhandene Produkte freigestellt, arrangiert, skaliert; Hintergrund erweitert | ✅ frei | Rn. 116 zählt genau diese Eingriffe *"applied in product advertisements or packaging"* zu den geringfügigen mit nur minimaler Wirkung auf die Authentizitätswahrnehmung. | Rn. 116 |
+| Belichtung, Farbkorrektur, Entrauschen, kosmetische Retusche; vorhandene Produkte freigestellt, arrangiert, skaliert; Hintergrund erweitert | ✅ frei | Rn. 116 zählt diese Eingriffe zu denen, die *"may be of minor relevance"*, und erwartet für Farbkorrektur, Hintergrunderweiterung, Arrangement und Skalierung *"applied in product advertisements or packaging"* nur geringe Wirkung auf die Authentizitätswahrnehmung (*"only a minor impact"*); ob ein Eingriff geringfügig bleibt, *"depends on the context and the impact"*. | Rn. 116 |
 | KI-Produktbild zeigt das Produkt anders, schöner oder hochwertiger als real — auch: KI-Food-Foto eines Gerichts, das so nicht serviert wird | 🏷️ Label | Es täuscht *"as to the actual product appearance, characteristics or use (e.g. … more appealing or with improved quality than in real life)"*; zusätzlich UWG-Irreführung. | Kasten nach Rn. 116 |
 | Werbe-Porträt: Hintergrund aus rein ästhetischen Gründen ersetzt | ⚠️ Grauzone → i. d. R. frei | *"adjustments or replacements of backgrounds for clearly aesthetic purposes"* sind geringfügig — es kippt, sobald der Ort selbst Teil der Werbeaussage ist („aufgenommen bei uns vor Ort"). Begründung dokumentieren (gate/). | Rn. 116 |
 | Immobilienfoto: Mülleimer oder parkendes Auto entfernt | ⚠️ Grauzone → i. d. R. frei | Reines Hintergrunddetail in der Linie *"editing background details (e.g. removing passerby)"*. Begründung dokumentieren (gate/). | Rn. 116 |
@@ -54,7 +56,7 @@
 | Stilisierte Infografik oder Illustration im Blogbeitrag | ✅ frei | Kein fotorealistisches Abbild einer realen Szene — das vierte Deepfake-Kriterium fehlt. Achtung: label-frei heißt nicht prüf-frei, die Faktenaussage der Grafik bleibt zu prüfen. | Rn. 113 iv; Rn. 114 |
 | Erkennbar unmögliche Bildszene, z. B. eine Sphinx, die über den Eiffelturm fliegt | ✅ frei | Wörtliches Negativbeispiel. Motive, die *"defy the laws of nature or physics"*, haben *"no potential to mislead"* — das Kriterium „existierend/plausibel existierend" fehlt. | Kasten nach Rn. 116; Rn. 113 ii |
 | KI-Cartoon eines vorhandenen Bildes von einem historischen Ereignis | ✅ frei | Wörtliches Negativbeispiel: *"AI-generated cartoon of a pre-existing image depicting a historical event"* — die Cartoon-Form nimmt dem Bild den fotorealistischen Authentizitätsanspruch. Es kippt, sobald die Darstellung wieder fotorealistisch wird (dann Rn. 114). | Kasten nach Rn. 116; Rn. 113 iv |
-| Kolorierung von Schwarz-Weiß-Archivmaterial | ⚠️ Grauzone → im Zweifel kennzeichnen | Rn. 116 nennt nur *"colour correction"* (Farbkorrektur); die Kolorierung von S/W-Material ist amtlich nicht eingestuft — und die Wirkung auf die Authentizitätswahrnehmung spricht für ein Label. Begründung dokumentieren (gate/). | Rn. 116 |
+| Kolorierung von Schwarz-Weiß-Archivmaterial | ⚠️ Grauzone → im Zweifel kennzeichnen | Rn. 116 nennt nur *"colour correction"* (Farbkorrektur). Der Kasten nach Rn. 92 führt *"converting a black & white to colour image or video"* als Standardbearbeitung — aber nur für die Anbieter-Markierung nach Art. 50 Abs. 2, nicht für den Deepfake-Test; für diesen Test ist die Kolorierung amtlich nicht eingestuft, und die Wirkung auf die Authentizitätswahrnehmung spricht für ein Label. Begründung dokumentieren (gate/). | Rn. 116; Kasten nach Rn. 92 |
 | Satirisch verfremdetes Bild einer realen Politikerin, erkennbar humoristische Kritik | 🏷️ Label (werkgerechte Form) | Satire ist Deepfake mit abgeschwächter **Form**, nicht mit Befreiung; fehlt der satirische Zweck (Prominente in nie geschehenen Handlungen), gilt die Standardform. | Kasten nach Rn. 124; Rn. 119, 123 |
 
 ## 3. Audio, Stimme und Musik
@@ -79,7 +81,7 @@
 | Spielfilm: KI-Hintergründe, Spezialeffekte, Pre- und Postproduktion; reale Schauspieler vor KI-Kulisse | ✅ frei | Standard-Produktionsprozesse lassen den Inhalt beim Publikum nicht fälschlich authentisch erscheinen. | Rn. 114; Kasten nach Rn. 116 |
 | Voll KI-generierte Schauspieler, digitale Repliken realer oder verstorbener Personen, De-Aging, simulierte Performances | 🏷️ Label (im evident fiktionalen Werk werkgerechte Form) | Rn. 114 nennt genau diese Eingriffe als wesentlich; im Kino- oder Streaming-Werk genügt eine Offenlegung, die den Werkgenuss nicht beeinträchtigt (z. B. Abspann). | Rn. 114; Kasten nach Rn. 124; Rn. 123 |
 | Fiktive Umgebungen (Wälder, Burgen) im Videospiel | ✅ frei | Wörtliches Negativbeispiel — erkennbar erfundene Spielwelt. | Kasten nach Rn. 116 |
-| Spielgrafik mit Deepfake-Simulationen realer, existierender Personen | 🏷️ Label (werkgerechte Form) | Als *"analogous creative/fictional work"* eingestuft: Erleichterung nur bei der Form. | Kasten nach Rn. 124 |
+| Spielgrafik mit Deepfake-Simulationen realer, existierender Personen | 🏷️ Label (werkgerechte Form) | Eingestuft unter *"Analogous creative/fictional work"*: Erleichterung nur bei der Form. | Kasten nach Rn. 124 |
 | Realistische Nachstellung historischer Gewaltereignisse, verbreitet auf öffentlichen Plattformen | 🏷️ Label (Standardform) | Ausdrücklich kein künstlerisches, satirisches oder fiktionales Werk — die abgeschwächte Form greift nicht. | Kasten nach Rn. 124 |
 | Upload auf eine sehr große Plattform, „KI-generiert"-Schalter gesetzt | ⚠️ Grauzone → trägt nur dort | Stellt die Plattform ein Label-Werkzeug bereit, das eine klare und unterscheidbare Offenlegung erzeugt, darf man sich darauf *"within the context of the VLOP or VLOSE used"* stützen — *"without prejudice to the responsibility of the deployers"*, und für Zweitverwertung außerhalb (eigene Website, Repost, Bildersuche) trägt der Schalter nicht. Begründung dokumentieren (gate/). | Rn. 126 |
 | Label nur am Videoanfang, Beitrag wird als Clip oder Screenshot weiterverbreitet | ⚠️ Grauzone | Jede Person muss spätestens bei **ihrer** ersten Exposition informiert werden; ist absehbar, dass Personen nicht am Anfang einsteigen, reicht der Hinweis dort nicht — Wiederholung in Intervallen, mindestens nach Unterbrechungen. Begründung dokumentieren (gate/). | Rn. 143; Kodex Sub-measure 1.2.2 lit. b |
@@ -91,12 +93,12 @@ Nur hier existiert die redaktionelle Ausnahme (Art. 50 Abs. 4 UAbs. 2; Kriterien
 | Fall | Einstufung | Warum | Anker |
 |---|---|---|---|
 | KI-Zusammenfassung eines menschlichen Artikels über einen Gemeinderatsbeschluss auf einer Zeitungswebsite | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | In-Scope-Beispiel: veröffentlicht, informierend, öffentliches Interesse (Kommunalpolitik). | Kasten nach Rn. 131 |
-| KI-bearbeiteter Lifestyle-Artikel über die Wirkung verschiedener Diäten auf eine Krankheit | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | Gesundheit ist ausdrücklich öffentliches Interesse — auch auf einer Lifestyle-Seite; der typische SEO-Ratgeber liegt näher an dieser Zeile, als Marketing-Teams annehmen. | Kasten nach Rn. 131 |
+| KI-bearbeiteter Lifestyle-Artikel über die Wirkung verschiedener Diäten auf eine Krankheit | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | Der Katalog ordnet genau diesen Gesundheitsratgeber-Fall ausdrücklich in den Anwendungsbereich ein — auch auf einer Lifestyle-Seite (die Liste selbst nennt öffentliche Gesundheit); der typische SEO-Ratgeber liegt näher an dieser Zeile, als Marketing-Teams annehmen. | Kasten nach Rn. 131; Rn. 131 iii |
 | KI-Meldung eines Wetterdienstes mit Unwetterwarnung auf Social Media | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | In-Scope-Beispiel (öffentliche Sicherheit). | Kasten nach Rn. 131 |
 | KI-bearbeiteter Unternehmensbericht mit Investoreninformationen auf der Website eines börsennotierten Unternehmens | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | Wörtliches In-Scope-Beispiel: *"AI-manipulated corporate reports published on a listed company's website containing investor information"*; wirtschaftliche und finanzielle Entwicklungen stehen ausdrücklich in der Liste der Angelegenheiten von öffentlichem Interesse. | Kasten nach Rn. 131; Rn. 131 iii |
 | KI-generierter Fantasy-Roman | ✅ frei | Out-of-Scope-Beispiel: informiert nicht über Angelegenheiten von öffentlichem Interesse. | Kasten nach Rn. 131 |
 | Werbe- oder Produkttext ohne Gesundheits-, Sicherheits- oder Nachhaltigkeitsangaben | ✅ frei | Out-of-Scope-Beispiel — der Klammerzusatz des Katalogs ist zugleich die eingebaute Rückausnahme. | Kasten nach Rn. 131 |
-| Produkttext mit Gesundheits-, Verbrauchersicherheits- oder Nachhaltigkeits-Claim | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | Genau diese Claims nimmt der Out-of-Scope-Katalog aus, und die Themen stehen zugleich in der Liste der Angelegenheiten von öffentlichem Interesse. | Kasten nach Rn. 131; Rn. 131 iii |
+| Produkttext mit Gesundheits-, Verbrauchersicherheits- oder Nachhaltigkeits-Claim | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | Genau diese Claims nimmt der Out-of-Scope-Katalog aus, und die zugehörigen Themen (öffentliche Gesundheit, Verbrauchersicherheit, Umweltschutz) stehen zugleich in der Liste der Angelegenheiten von öffentlichem Interesse. | Kasten nach Rn. 131; Rn. 131 iii |
 | Nachrichtenzusammenfassung eines Chatbots nur für die fragende Person — dieselbe Antwort später als Website-Beitrag | ✅ frei → 🏷️ ab Veröffentlichung | Solange nur die anfragende Person sie sieht, fehlt das Merkmal *"published"*; mit der Veröffentlichung für einen unbestimmten, größeren Leserkreis ist es erfüllt. | Kasten nach Rn. 131; Rn. 131 i |
 | KI-Text eines Beraters für die individuelle Mandanten- oder Kundenberatung | ✅ frei | Out-of-Scope-Beispiel: kein Publikum, keine Veröffentlichung. | Kasten nach Rn. 131 |
 | Sehr kurze KI-Texte: Teaser, Meta-Description, einzelne Phrasen | ⚠️ Grauzone | *"short texts which do not materially communicate knowledge, opinions or facts, cannot be deemed to inform the public"* — trägt der Teaser die Aussage selbst, kippt es; der Kodex lässt für Kurztexte einen kontextuellen Hinweis in der Oberfläche genügen. Begründung dokumentieren (gate/). | Rn. 131 ii; Kodex Sub-measure 1.2.2 lit. f |
@@ -108,17 +110,17 @@ Nur hier existiert die redaktionelle Ausnahme (Art. 50 Abs. 4 UAbs. 2; Kriterien
 | KI-gestützte Übersetzung eines menschlich verfassten Artikels, Übersetzung menschlich geprüft | ✅ kein Label | Wörtliches Positivbeispiel der Ausnahme. | Kasten nach Rn. 138 |
 | KI-Nachhaltigkeitsbericht auf der Website eines börsennotierten Unternehmens, von der Fachfunktion (z. B. Compliance) geprüft | ✅ kein Label | Wörtliches Positivbeispiel: *"human review by professionals in relevant functions"*. | Kasten nach Rn. 138 |
 | KI-generierte Sicherheitswarnung, vor der Verbreitung von einer Amtsperson freigegeben, unter Verantwortung der zuständigen Behörde | ✅ kein Label, Nachweis aufbewahren | Wörtliches Positivbeispiel: *"AI-generated public safety warnings approved by a public official before being distributed to citizens, under the responsibility of the relevant public agency for civil protection"* — dieselbe Meldung ohne diese Freigabe fällt unter die Zeile zur Unwetterwarnung. | Kasten nach Rn. 138 |
-| Website-Chatbot begrüßt Besucher ohne Hinweis auf die KI | 🏷️ eigene Pflicht | Art. 50 Abs. 1 verlangt den Hinweis spätestens bei der ersten Interaktion — in den Chat, nicht ins Impressum oder in die AGB. | Art. 50 Abs. 1; Rn. 142, 143 |
+| Website-Chatbot begrüßt Besucher ohne Hinweis auf die KI | 🏷️ eigene Pflicht | Art. 50 Abs. 1 verlangt den Hinweis spätestens bei der ersten Interaktion — in den Chat, nicht ins Impressum oder in die AGB. | Art. 50 Abs. 1; Rn. 38, 142, 143 |
 
 ## 6. Interne Inhalte und Publikum
 
 | Fall | Einstufung | Warum | Anker |
 |---|---|---|---|
-| Interne Präsentation mit KI-Illustrationen | ✅ frei | Illustrationen sind keine Deepfakes, und für Text fehlt das Merkmal der Veröffentlichung. | Rn. 113 iv; Rn. 131 i |
+| Interne Präsentation mit KI-Illustrationen | ✅ frei | Stilisierte Illustrationen sind keine Deepfakes (eine fotorealistische kann es sein, dann hilft der interne Rahmen nicht, Rn. 112), und für Text fehlt das Merkmal der Veröffentlichung. | Rn. 113 iv; Rn. 131 i |
 | Intranet-Text, interne Rundmail, geschlossene Kleingruppe im Messenger | ✅ frei | *"organisation-internal texts or communications"* und private Korrespondenz gelten nicht als veröffentlicht. | Rn. 131 i |
 | Internes Deepfake-Video: synthetischer CEO-Avatar gratuliert der Belegschaft | 🏷️ Label — auch intern | Der Deepfake-Tatbestand verlangt keine Veröffentlichung (Rn. 112), und der Katalog nennt genau diesen Fall; exponiert sind die Mitarbeitenden. | Rn. 112; Kasten nach Rn. 116 |
 | Deepfake nur im Abo-Bereich oder Firmen-Newsletter | 🏷️ Label (Publikum = dieser Kreis) | Rn. 115 erlaubt nur, keine breite Öffentlichkeit zu unterstellen — gegenüber dem tatsächlichen Publikum bleibt die Pflicht bestehen. | Rn. 115 |
-| Kunden-Newsletter mit KI-Illustration und redaktionell geprüftem Text | ⚠️ Grauzone → i. d. R. frei | Die Illustration ist kein Deepfake; ob ein großer, offener Verteiler schon „veröffentlicht" ist, entscheidet Rn. 131 i — bei offener Anmeldung und Web-Archiv eher ja. Begründung dokumentieren (gate/). | Rn. 115; Rn. 131 i |
+| Kunden-Newsletter mit KI-Illustration und redaktionell geprüftem Text | ⚠️ Grauzone → i. d. R. frei | Eine stilisierte Illustration ist kein Deepfake; ob ein großer, offener Verteiler schon „veröffentlicht" ist, entscheidet Rn. 131 i — bei offener Anmeldung und Web-Archiv eher ja. Begründung dokumentieren (gate/). | Rn. 115; Rn. 131 i |
 | Kinder, ältere Menschen oder Personen mit geringer KI-Kompetenz sind vorhersehbar im Publikum | 🏷️ strengerer Maßstab | Erscheint der Inhalt **diesem Teil** des vernünftigerweise vorhersehbaren Publikums authentisch, genügt das für die Einstufung als Deepfake. | Rn. 115 |
 | Bild auf öffentlicher Website, Label nur in der Bildunterschrift | ⚠️ Grauzone | Unmittelbar mitangezeigt ist die Bildunterschrift wahrnehmbar; Bildersuche, Repost und Zuschnitt trennen sie jedoch vom Bild — im Bild platziert übersteht das Label die Zweitverwertung. Begründung dokumentieren (gate/). | Rn. 117, 142; Kodex Sub-measure 1.2.2 lit. a |
 
@@ -131,7 +133,7 @@ Nur hier existiert die redaktionelle Ausnahme (Art. 50 Abs. 4 UAbs. 2; Kriterien
 | Altmaterial wird nach dem Stichtag erneut mit KI bearbeitet | 🏷️ Label | Die Bearbeitung ist eine neue KI-Manipulation nach Geltungsbeginn — der Altbestandsschutz greift dafür nicht. | Rn. 153, 154 |
 | Vor dem Stichtag erzeugter Text, erst danach veröffentlicht | 🏷️ Label, wenn die Redaktions-Ausnahme nicht greift | *"if texts that have been generated or manipulated before 2 August 2026 are published on or after that date, they need to be labelled."* | Rn. 154 |
 | Bestehendes Archiv ungelabelter KI-Inhalte | ✅ keine Pflicht, freiwillig empfohlen | Nachträgliches Kennzeichnen ist erwünscht, aber ohne *"disproportionate efforts … such as auditing of pre-existing content databases or modifying already printed product packaging"*. | Rn. 154 |
-| Genutztes Bestandsmodell trägt bis 02.12.2026 noch keine maschinenlesbare Markierung | ✅ für den Anbieter — ohne Wirkung auf die eigene Pflicht | Die Übergangsfrist betrifft ausschließlich die Anbieter-Markierung nach Art. 50 Abs. 2 bei vor dem 02.08.2026 in Verkehr gebrachten Systemen; die eigene wahrnehmbare Kennzeichnung schuldet man unabhängig davon ab dem 02.08.2026. | Rn. 153; Rn. 117 |
+| Genutztes Bestandsmodell trägt bis 02.12.2026 noch keine maschinenlesbare Markierung | ✅ für den Anbieter — ohne Wirkung auf die eigene Pflicht | Die Übergangsfrist betrifft ausschließlich die Anbieter-Markierung nach Art. 50 Abs. 2 bei vor dem 02.08.2026 in Verkehr gebrachten generativen Systemen; die eigene wahrnehmbare Kennzeichnung schuldet man unabhängig davon ab dem 02.08.2026. | Art. 111 Abs. 4 (eingefügt durch VO (EU) 2026/1744); Rn. 153; Rn. 117, 132 |
 
 ---
 
@@ -141,9 +143,10 @@ Nur hier existiert die redaktionelle Ausnahme (Art. 50 Abs. 4 UAbs. 2; Kriterien
 In dieser Pauschalität falsch. Rn. 116 zählt *"editing background details (e.g. removing
 passerby)"*, Lichtanpassungen, Farbkorrektur, Entrauschen — und in Produktwerbung und auf
 Verpackungen ausdrücklich *"adjustments or replacements of backgrounds for clearly aesthetic
-purposes"* — zu den geringfügigen Eingriffen. **Die echte Trennlinie verläuft nicht zwischen
-„entfernt" und „nicht entfernt", sondern zwischen Hintergrund-Ästhetik und Produkt bzw. Subjekt.**
-Solange nur die Umgebung aufgeräumt wird, bleibt es geringfügig; sobald der Eingriff das beworbene
+purposes"* — zu den Eingriffen, die *"may be of minor relevance"*. **Die echte Trennlinie verläuft
+nicht zwischen „entfernt" und „nicht entfernt", sondern zwischen Hintergrund-Ästhetik und Produkt
+bzw. Subjekt.**
+Solange nur die Umgebung aufgeräumt wird, bleibt es in der Regel geringfügig; sobald der Eingriff das beworbene
 Objekt selbst betrifft — der Mangel am Haus, die Portion auf dem Teller, das Produkt *"more
 appealing or with improved quality than in real life"* —, ist es ein Deepfake **und** ein UWG-Fall.
 Journalistische Bilder liegen von vornherein am strengen Ende (*"beyond standard technical,

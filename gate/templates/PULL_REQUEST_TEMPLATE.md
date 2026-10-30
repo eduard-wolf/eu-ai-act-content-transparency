@@ -45,8 +45,10 @@ Die Ausnahme gilt **nur für Text**. Alle Punkte sind kumulativ.
 ---
 
 Ehrliche Grenze: Dieses Gate erzwingt den **Prozess** und macht ihn nachweisbar; die inhaltliche
-Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche Minimum hinausgehende,
-zulässige Dokumentationsform (Code of Practice on Transparency of AI-Generated Content, Sec. 2,
-Commitment 4), kein Safe Harbour. **Stand: 24.08.2026.**
+Qualität der Prüfung erzwingt es nicht. Es ist eine über das im Kodex beschriebene Minimum
+hinausgehende, zulässige Dokumentationsform (Code of Practice on Transparency of AI-Generated
+Content, Sec. 2, Commitment 4), kein Safe Harbour. Die Leitlinien C(2026) 5054 final sind
+rechtlich unverbindlich; ihre förmliche Annahme stand am 29.10.2026 noch aus.
+**Stand: 24.08.2026; aktualisiert am 30.10.2026 (Rechtsstand geprüft am 29.10.2026).**
 
 <!-- Beim Kopieren nach .github/PULL_REQUEST_TEMPLATE.md die relativen Links anpassen. -->

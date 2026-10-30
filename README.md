@@ -21,7 +21,8 @@ transparency duties (Article 50).
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026 (legal position verified
+> as of 29 October 2026; the formal adoption of the guidelines was still pending on that date).**
 
 ## Why this exists
 
@@ -30,7 +31,8 @@ applied since 2 August 2026** (Art. 113; guidelines para 153). The duties that b
 publishing side — the deepfake label and the disclosure for published text on matters of public
 interest, both deployer duties under Art. 50(4) (para 19: *"the professional deployer's transparency
 obligations laid down in Article 50(3) and (4) AI Act"*) — apply with **no grace period**. The transitional period until 2 December 2026
-covers only the **provider** marking duty under Art. 50(2) for systems already on the market (para 153;
+covers only the **provider** marking duty under Art. 50(2) for generative systems already placed on the
+market before 2 August 2026 (Art. 111(4), inserted by Regulation (EU) 2026/1744; para 153;
 Commission [FAQ on Article 50](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)).
 
 For **text**, outside law-enforcement use authorised by law (para 139), the law offers exactly one
@@ -52,9 +54,9 @@ The exception is also **order-sensitive**:
 AI-Generated Content states that adhering deployers do not have *"to document individual instances
 of human review or editorial control over individual text publications"* (Sec. 2, Commitment 4) —
 while expressly allowing them to *"record additional information on the nature of the review or the
-type of involvement of the AI system in the published text"*. Anyone who is not a signatory has to
-demonstrate compliance *"through other adequate means"* and is expected to run a gap analysis
-against the code (para 148).
+type of involvement of the AI system in the published text"*. Anyone who is not a signatory is
+expected to demonstrate compliance *"through other adequate means"*, for instance with a gap
+analysis against the code (para 148).
 
 That open space is what this repository fills. The review becomes a **review record bound to the
 reviewed bytes by SHA-256**, the sign-off becomes a **server-attested PR approval**, and the order
@@ -149,8 +151,8 @@ and a fresh review due — before publication, not after.
 **What the gate does and does not do.** It enforces the **process** and makes it auditable; it does
 not enforce the **quality** of the review. A green gate over a review that never really happened is
 a well-documented breach — para 135 rules out *"cursory editorial approval without substantive
-engagement"*. The gate is a documentation form that goes beyond the legal minimum and is expressly
-permitted (Code of Practice, Sec. 2, Commitment 4) — **not a safe harbour**.
+engagement"*. The gate is a documentation form that goes beyond the minimum the code describes and is
+expressly permitted (Code of Practice, Sec. 2, Commitment 4) — **not a safe harbour**.
 
 ## Quickstart
 
@@ -187,8 +189,8 @@ Code — and the instructions themselves are plain Markdown, readable without in
 
 The skill walks the decision tree before content is published, deployed or merged, and prepares the
 review record — it never fills in the reviewer, the review date, the `pruefung` booleans or the
-final hash. A record produced end to end by an agent is precisely the *"automated review process"*
-that para 135 excludes.
+final hash. A record produced end to end by an agent is precisely one of the *"automated review
+processes"* that para 135 excludes.
 
 **The crop check.** `node tools/label-crop-check/check.mjs --image 1600x1200 --label 1150,40,120x60`
 tells you whether a label placed inside an image survives the usual platform crops — 1:1, 4:5, 9:16
@@ -224,12 +226,15 @@ and 16:9 by default, others via `--ratios`; exit 1 if one of them cuts it. Zero 
   unfair-competition law (§§ 5, 5a UWG) applies alongside, label or no label — see
   [`playbook/en/08-legal-basis.md`](playbook/en/08-legal-basis.md). And what Article 5 AI Act
   prohibits stays prohibited — from 2 December 2026 that includes AI systems for non-consensual
-  intimate material and for child sexual abuse material (Article 5(1), first subparagraph,
-  points (ba) and (bb) AI Act).
+  intimate depictions of identifiable persons and for child sexual abuse material (Article 5(1),
+  first subparagraph, points (ba) and (bb) AI Act); deployers are caught where they use a system
+  for that purpose (Article 5(1a), point (b)).
 - **The machine-readable provider marking never replaces your own perceivable label.**
   *"[D]eployers cannot rely on the machine-readable marking embedded in the content by the provider
   under Article 50(2) AI Act, since those markings are not immediately clear and distinguishable for
-  the natural persons exposed to the deep fake content."* (para 117)
+  the natural persons exposed to the deep fake content."* (para 117, written for deepfakes; for text,
+  para 132 sets the same standard: perceivable *"without them needing to rely on any specific
+  technical tools"*)
 - **Grey zones stay grey zones.** Where the sources do not decide a case, the chapters say so and
   ask for a documented classification instead of manufacturing certainty. `[zu verifizieren: …]`
   marks deliberately open points — no official source covers the case there; nothing is invented.
@@ -238,7 +243,11 @@ and 16:9 by default, others via `--ratios`; exit 1 if one of them cuts it. Zero 
 
 **As of: 24 August 2026** — three weeks after Article 50 became applicable, with no case law and no
 published administrative practice on it; **updated on 1 October 2026** (changes made by
-Regulation (EU) 2026/1744, competence of the AI Office, status of the guidelines, updated sources).
+Regulation (EU) 2026/1744, competence of the AI Office, status of the guidelines, updated sources)
+and **on 30 October 2026** (errors and imprecise source anchors found by an internal audit,
+re-checked against the official texts and corrected — see [Provenance](PROVENANCE.md); legal
+position verified as of 29 October 2026, the formal adoption of the guidelines still pending on
+that date).
 Every legal statement in this repository carries a dated stamp and a source; the events that would
 change the conclusions — a first CJEU or BGH ruling, first documented warning letters or
 Bundesnetzagentur proceedings, the formal adoption or a review of the guidelines, an amendment to

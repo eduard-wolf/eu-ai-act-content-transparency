@@ -13,7 +13,7 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026.**
 
 For text, the decision tree has two exits: the editorial exception and the label
 ([chapter 01](01-decision-tree.md), stage 5). The first branch is developed by
@@ -33,7 +33,8 @@ The path begins with the competence test from [chapter 01](01-decision-tree.md),
 [chapter 03](03-editorial-exception.md), section 3. Its question is not "am I an expert?" but
 **"can I review THIS text on the substance?"**. Para 134 ties human review to persons
 *"possessing relevant knowledge and professional judgement pertaining to the subject
-matter under scrutiny"* and makes fact-checking the minimum. If one of the four test questions
+matter under scrutiny"* and calls fact-checking *"a minimum requirement that should be part of that
+review"*. If one of the four test questions
 from chapter 03, section 3.1, comes out "no" — typically in someone else's field; in practice also
 when too many texts land on one person to still notice mistakes (test question 3) — or if the
 exception fails for another reason (AI intervention after sign-off, para 136; automated or cursory
@@ -206,7 +207,7 @@ Article 50(1) (para 38), whose standard carries over to paragraph 4 via paragrap
 |---|---|
 | A sticky banner across the whole website | not specific to the individual content item — para 38: *"Generalised disclosures that are not sufficiently specific to the AI system's outputs and interactions"*, negative example *"Services on this website use AI"*; para 39 (likewise on paragraph 1) warns of *"habituation effects (so-called “banner blindness”)"*; not *"near the headline of the text"* (Code of Practice, lit. f) |
 | A blanket notice in the Impressum (the legally required site notice), in the privacy policy, on an info page | *"part of terms of use that are often not read by users"* (para 142); *"Disclosures contained only in terms and conditions, URLs, or documentation"* (para 38) — such pages may supplement, not replace |
-| The footer of the post or of the page | not at first exposure (Article 50(5)); Code of Practice lit. f names the top and the beginning, not the end |
+| The footer of the post or of the page | on this playbook's reading not at first exposure (Article 50(5)) — para 142 itself names only a manual, layers of menu options and terms of use; Code of Practice lit. f names the top and the beginning, not the end |
 | Metadata only, structured data, an HTML comment | not perceivable without technical tools (para 132); on the provider marking para 117, chapter 04, section 1 |
 
 **Technically: one component, one place.** On websites with a shared layout that is exactly
@@ -360,8 +361,9 @@ with the deployer.
    as-of date. No value judgements, no legal citations (section 3).
 4. **One component, one place:** the line at the head of every affected content item, below the
    title, before the first paragraph; visual check without click, hover or scrolling. Not in the
-   Impressum, not in the banner, not in the footer (section 4; para 142; Code of Practice
-   Sub-measure 1.2.2 lit. f).
+   Impressum, not in the banner, not in the footer (section 4; Impressum para 142; banner
+   para 38; footer on this playbook's reading, Article 50(5) and Code of Practice Sub-measure
+   1.2.2 lit. f).
 5. **Create the provenance page**, link to it from the line, work through the minimum content
    (section 5; model: [Provenance](../../PROVENANCE.md)).
 6. **Set the as-of date** from the actual generation or verification run, name the reference

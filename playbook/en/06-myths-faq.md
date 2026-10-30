@@ -13,7 +13,8 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026 (legal position verified
+> as of 29 October 2026; the formal adoption of the guidelines was still pending on that date).**
 
 These eight sentences have been everywhere since 2 August 2026 — in webinar chats, in agency
 meetings, in comment sections. Every one of them is wrong or half right, and every one produces a
@@ -55,9 +56,10 @@ arguing over cheese in a commercial and fictional game worlds as **not** deepfak
 raises the likelihood but does not decide the matter — *"photorealism alone is not determinative for
 the assessment"* (para 114). Conversely, an artistic look offers no protection where the result
 deceives: an AI product image capable of deceiving as to the appearance, characteristics or use of
-the real product appears expressly in the positive box. Minor edits do not turn a photo into a
-deepfake either — removing passers-by in the background, exposure, colour correction, noise
-reduction (para 116). What decides is the effect on the perception of authenticity in the specific
+the real product appears expressly in the positive box. Minor edits usually do not turn a photo
+into a deepfake either — removing passers-by in the background, lighting adjustments, colour
+correction, noise reduction (para 116); whether an edit falls into that category depends on the
+context and its impact (para 116). What decides is the effect on the perception of authenticity in the specific
 context, not the tool; borderline cases are the rule here.
 ⚠️ Grey zone — document the classification with a brief justification (see [gate/](../../gate/README.md)).
 
@@ -74,7 +76,9 @@ Article 50(2) binds the **provider** of the AI system; the **perceivable labelli
 Article 50(4) binds the **deployer** — that is, you. Para 117 says it verbatim: *"deployers cannot
 rely on the machine-readable marking embedded in the content by the provider under Article 50(2) AI
 Act, since those markings are not immediately clear and distinguishable for the natural persons
-exposed to the deep fake content."* The Commission's FAQ repeats this for deepfakes. Conversely, a
+exposed to the deep fake content."* The Commission's FAQ repeats this for deepfakes. Para 117 sits
+in the deepfake section; for text, para 132 sets the same standard: the label has to be clear and
+perceivable without the reader needing any specific technical tool. Conversely, a
 marker that is found proves neither a legal breach nor authorship by an AI — depending on the
 provider, mere processing is marked too — and its absence proves nothing at all, because by no means
 every provider marks text in the first place (state of play per provider:
@@ -151,14 +155,13 @@ child sexual abuse material (point (bb)) there is no consent route at all.
 the paradox, though. **First:** AI functions inside the tool — generative fill, object removal,
 background generation, voice synthesis — **are** use of AI; the line runs between functions, not
 between programs. **Second:** the duty additionally depends on the **result**. Even with AI, a minor
-edit stays outside the deepfake definition (para 116). The catalogue of examples after para 92 — it
+edit usually stays outside the deepfake definition; context and impact decide (para 116). The catalogue of examples after para 92 — it
 belongs systematically to the provider marking under Article 50(2) and serves as orientation for
 "substantial or not", not as a yardstick for the deepfake test of Article 50(4) (see
 [chapter 07](07-provider-marking.md), section 3.1) — counts dust-spot and red-eye removal, minor
-cropping and standard colour adjustments as standard editing, while
-*"removal, replacement or insertion of objects or persons in existing images and videos that
-changes meaning and substance"*, face swapping or altering body shape are listed as semantic
-changes. **Third:** unfair-competition law applies **regardless of the tool** — the power line
+cropping and standard colour adjustments as standard editing, while the semantic changes listed
+include *"Removal, replacement or insertion of objects or persons in existing images and videos that
+changes meaning and substance of the content"*, face swapping or altering body shape. **Third:** unfair-competition law applies **regardless of the tool** — the power line
 retouched out of a property photo by hand is just as misleading as the one removed by AI
 (§§ 5, 5a UWG), and Article 35(1)(k) DSA names prominent markings as a possible risk-mitigation
 measure for very large platforms, likewise irrespective of the tool (para 126).
@@ -224,8 +227,8 @@ it just does not exempt from the label.
 | # | Misconception | Short correction | Anchor |
 |---|---|---|---|
 | 1 | AI involved ⇒ label | Only deepfakes and text on matters of public interest | paras 112, 130–131 |
-| 2 | AI image ⇒ deepfake | Four cumulative criteria, minor edits do not count | paras 113, 114, 116 |
-| 3 | Watermark ⇒ done | Provider marking never replaces your own label | para 117 |
+| 2 | AI image ⇒ deepfake | Four cumulative criteria, minor edits usually do not count (context decides) | paras 113, 114, 116 |
+| 3 | Watermark ⇒ done | Provider marking never replaces your own label | para 117 (deepfakes); para 132 (text) |
 | 4 | Label ⇒ legal | No free pass: UWG, copyright, personality rights; the Article 5 AI Act prohibitions remain | paras 25, 124, 129; §§ 5, 5a UWG; Article 5(1), first subparagraph, points (ba), (bb) AI Act |
 | 5 | Consent ⇒ no label | Consent protects the person, the label the audience | paras 112, 113 iii; Article 50(5); Article 5(1), first subparagraph, point (ba) AI Act |
 | 6 | Photoshop free, AI prohibited | AI inside the tool counts; the result decides; UWG regardless of tool | paras 92 (Art. 50(2)), 116, 126 |

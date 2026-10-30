@@ -7,14 +7,21 @@ description: "Use before publishing or deploying web content, articles, images, 
 
 > ⚠️ **Not legal advice.** This skill is a technical and editorial working aid. The European Commission's guidelines
 > (C(2026) 5054 final, 20 July 2026) are legally non-binding; only the CJEU can interpret Regulation (EU) 2024/1689
-> with binding effect. There is no case law on Article 50 yet — this builds a defensible position, not a safe
-> harbour. **As of: 24 August 2026.**
+> with binding effect. With C(2026) 5054 final the Commission approved the content of the guidelines; in its own
+> words they become applicable only once formally adopted, when all language versions are available, and that formal
+> adoption was still pending on 29 October 2026. No case law on Article 50 was found when this file was last checked
+> — this builds a defensible position, not a safe harbour. Legal position verified as of 29 October 2026: AI Act as
+> amended by Regulation (EU) 2026/1744. **As of: 24 August 2026; updated on 30 October 2026.**
 
-Article 50 has applied since 2 August 2026 (guidelines para 153). Below, "para" always means a paragraph of
-C(2026) 5054 final. Chapter names refer to files in this repository; if only this skill folder was copied, the tree
-below still stands on its own. Those chapters — and this file — are labelled as AI-generated: they were produced by
-AI agents without editorial review by a human with relevant subject-matter expertise, so the exception of Art. 50(4),
-second subparagraph is not claimed for them; `PROVENANCE.md` records what was verified and what was not.
+Article 50 has applied since 2 August 2026 (guidelines para 153). Deployer duties have no grace period; only
+providers of generative systems placed on the market before that date have until 2 December 2026 for the
+machine-readable marking of Art. 50(2) (Art. 111(4) as amended by Regulation (EU) 2026/1744; para 153). Below,
+"para" always means a paragraph of C(2026) 5054 final. Chapters and files of the source repository are linked by full
+URL (https://github.com/eduard-wolf/eu-ai-act-content-transparency); the tree below stands on its own without them.
+Those chapters — and this file — are labelled as AI-generated: they were produced by AI agents without editorial
+review by a human with relevant subject-matter expertise, so the exception of Art. 50(4), second subparagraph is not
+claimed for them; [PROVENANCE.md](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/PROVENANCE.md)
+records what was verified and what was not.
 
 **Two sentences to carry through every check:**
 
@@ -33,12 +40,16 @@ purely personally **and** non-professionally; provider duties (including the Art
 other Union and national law stay untouched (para 20). So a private use never ends the check here — go on to Step 1
 (are *you* the provider of the system?) and to Step 7. Any activity yielding regular economic benefit or done in a
 professional, business, trade or freelance capacity counts as professional (para 19) — a monetised channel is in
-scope. The duty holder is whoever has authority over the deployment and its outputs; employees, contractors and
-commissioned agencies are not separate deployers (paras 12, 14). Then split by modality: **text** duties require
-publication (Step 3), **deepfake** duties do **not** — para 112 lists only AI system + professional use + deepfake +
-no law-enforcement exception, and the example catalogue expressly includes an internal *"AI-generated video featuring
-a realistic synthetic avatar of a company CEO congratulating employees …"* (box after para 116). So internal deepfakes
-are labelled too. The yardstick is the reasonably foreseeable audience (para 115): a subscriber-only area or a
+scope. The duty holder is whoever has authority over the deployment and its outputs (para 12). Employees acting under
+the deployer's instructions and control are not separate deployers, and a deployer stays the deployer when contractors
+or freelancers work *"on its behalf and under its responsibility and control"* (para 14). But an agency that itself
+decides whether and how AI is used is the deployer (para 12), and a client that *"merely commissions"* it without such
+decisions is not (example after para 14;
+[chapter 05](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/05-agencies-and-contracts.md)).
+Then split by modality: **text** duties require publication (Step 3), **deepfake** duties do **not** — para 112 lists
+only AI system + professional use + deepfake + no law-enforcement exception, and the example catalogue expressly
+includes an internal *"AI-generated video featuring a realistic synthetic avatar of a company CEO congratulating
+employees …"* (box after para 116). So internal deepfakes are labelled too. The yardstick is the reasonably foreseeable audience (para 115): a subscriber-only area or a
 corporate newsletter does not force a broad-public assumption, but if children or people with low AI literacy are
 foreseeably in the audience, deception towards *them* counts.
 
@@ -47,10 +58,17 @@ is obvious to a reasonably well-informed, observant and circumspect person. The 
 28). You are the provider if you developed the bot in-house and put it into service under your own name, or if you
 **modified** a bought-in system (in the example *"with new training data"*) and afterwards put it into service under
 your own name (Art. 3(3); paras 10, 11). An unmodified bought-in bot leaves the duty with its maker — check in your
-own embedding that the notice really appears, and put it in the contract (`playbook/en/05-agencies-and-contracts.md`). The
-notice belongs **in the conversation at first interaction**, not in an imprint, manual or terms of use (Art. 50(5);
-paras 33, 142, 143); agents must disclose both their artificial nature and on whose behalf they act (para 31). This
-step never ends the check — Art. 50(1) and (4) can apply cumulatively (para 8), so continue with the content itself.
+own embedding that the notice really appears, and put it in the contract
+([chapter 05](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/05-agencies-and-contracts.md)).
+The same role test applies to **generative** systems: whoever developed one in-house, or modified one and put it into
+service under their own name, is its provider and owes the Art. 50(2) machine-readable marking of its outputs; using
+it for deepfakes makes them provider **and** deployer at once (para 15; example after para 11;
+[chapter 07](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/07-provider-marking.md)).
+The notice belongs **in the conversation at first interaction**, not in an imprint, manual or terms of use (Art. 50(5);
+paras 33, 142, 143): disclosures *"contained only in terms and conditions, URLs, or documentation"* are insufficient
+on their own (para 38). Where AI answers are blended with human-curated content, the AI-generated outputs need the
+disclosure unless humans properly reviewed them and sent them as the main interlocutors (para 30 iii). Agents must
+disclose both their artificial nature and on whose behalf they act (para 31). This step never ends the check — Art. 50(1) and (4) can apply cumulatively (para 8), so continue with the content itself.
 
 **Step 2 — Image / audio / video: the deepfake test.** Four cumulative criteria (para 113, from Art. 3(60)):
 
@@ -62,8 +80,11 @@ step never ends the check — Art. 50(1) and (4) can apply cumulatively (para 8)
 4. it **would falsely appear authentic or truthful** — judged objectively from resemblance, claim, context and
    foreseeable audience; **no intent to deceive is required**, photorealism alone is *"not determinative"* (para 114).
 
-One criterion missing → no deepfake (illustration, cartoon, evidently surreal scene, instrumental music bed depicting
-no reality). *Trivial-edit gate (para 116):* insignificant interventions on pre-existing material create no deepfake —
+One criterion missing → no deepfake (stylised illustration, cartoon, evidently surreal scene, instrumental music bed
+depicting no reality); a photorealistic "illustration" can still be one. Counter-case: AI music *"resembling the
+individual style of existing artists"* is listed as a deepfake in an artistic work — duty, relaxed form (box after
+para 124). *Trivial-edit gate (para 116):* AI edits of insignificant aspects of pre-existing material *"may be of minor
+relevance"* and then create no deepfake; whether they do *"depends on the context and the impact"*. Listed:
 *"editing background details (e.g. removing passerby)"*, lighting, audio parameters, colour correction, noise removal,
 accessibility improvements, compression, cosmetic adjustments; in product advertising and packaging also background
 extensions, *"replacements of backgrounds for clearly aesthetic purposes"*, arrangements of existing products,
@@ -72,34 +93,57 @@ images** are edited *"beyond standard technical, editorial practices"*. *Art gat
 artistic, creative, satirical or fictional works stay under the duty — only the **form** relaxes to *"an appropriate
 manner that does not hamper the display or enjoyment of the work"*. *"Evidently"* is narrow, ambiguous content falls
 out, on mixed character *"the informative character should always prevail"* (para 122), and Art. 50(5) timing still
-applies (para 123).
+applies (para 123). *Legacy (para 154):* deepfakes generated or manipulated before 2 August 2026 need no retroactive
+label (labelling them is encouraged); a new AI edit on or after that date is a new manipulation under the duty, and
+first publication or reuse of an older deepfake on or after that date is a grey zone (this playbook's reading).
 
 **Step 3 — Text: published?** *"Published"* = accessible to an indeterminate, fairly large number of unrelated
 potential readers, whether or not against payment (para 131 i). Out: private and professional one-to-one
-correspondence, closed small groups, organisation-internal texts, and a chatbot answer seen only by the person who
-asked. The **publication** date decides, not the generation date (para 154). No → no text duty, go to Step 7.
+correspondence, closed small groups, organisation-internal texts (para 131 i), and a chatbot answer seen only by the
+person who asked (box after para 131). The **publication** date decides, not the generation date (para 154). No → no
+text duty, go to Step 7.
 
 **Step 4 — Text: matter of public interest?** Para 131 iii lists politics and democratic processes, administration and
-public services, justice and law enforcement, fundamental rights, public security, **health**, environmental
-protection, **consumer safety**, and any economic, financial, political, scientific or cultural development that may
-be a relevant subject of public debate. Very short texts conveying no knowledge, opinion or fact fall out
-(para 131 ii). Advertising and product copy are out — **but** expressly *"not including any claims related to e.g.
-health, consumer safety or sustainability"*, which puts such copy back in. No → no text duty, go to Step 7.
+public services, justice and law enforcement, fundamental rights, public security, **public health** (health-advice
+content included, box after para 131), environmental protection, **consumer safety**, and any economic, financial,
+political, scientific or cultural development that may be a relevant subject of public debate. Very short texts
+conveying no knowledge, opinion or fact fall out (para 131 ii). Advertising and product copy are out — **but**
+expressly *"not including any claims related to e.g. health, consumer safety or sustainability"*, which puts such copy
+back in (box after para 131). No → no text duty, go to Step 7.
 
-**Step 5 — Text: the editorial exception (Art. 50(4) subpara 2).** Two **cumulative** conditions (para 133): (1) human
-review or editorial control — *"deliberate examination of the substance"* by people with relevant knowledge and
-professional judgement, where *"Fact-checking the accuracy of the content is a minimum requirement"* (para 134); (2) a
-named natural or legal person holding **ultimate legal responsibility**, whose identity and contact details are
-publicly findable (para 138). Not sufficient (para 135): spell- and grammar-checking, the mere existence of an
-editorial policy, automated review ("AI reviews AI"), cursory approval without substantive engagement. Met → no label,
-but keep the evidence (review record below). Not met → label required — for the labelling path as a whole (when it
-is the right choice, the label line, placement, provenance page, as-of date) see `playbook/en/09-labelling-path.md`.
+**Step 5 — Text: the editorial exception (Art. 50(4) subpara 2).** *Competence test first*, per text and before anyone
+signs — para 134 ties the competence to *"the subject matter under scrutiny"*, not to a job title. All four must be
+honestly yes for the person who would review **this** text: (1) can they tell whether the central factual statements
+are right or wrong? (2) can they judge whether the sources hold? (3) would they notice errors, including
+plausible-sounding ones? (4) can they change or reject the text on substantive grounds? One "no" → the exception is
+not available → label path, and **no** review record (this playbook's test, derived from paras 134, 135). Then two
+**cumulative** conditions (para 133): (1) **human review or editorial control** — either route suffices (para 134).
+Human review is the *"deliberate examination of the substance"* by people with relevant knowledge and professional
+judgement, where *"Fact-checking the accuracy of the content is a minimum requirement"*; editorial control is control
+in practice by a responsible editorial entity (e.g. an editor-in-chief) with the *"authority to approve, alter or
+reject the substance of the text based on substantive grounds"*, fact-checking and trustworthy sources included. Media
+service providers may rely on their existing editorial processes and standards (paras 134, 140). (2) a named natural
+or legal person holding **ultimate legal responsibility**, whose identity and contact details are publicly findable
+(para 138). Not sufficient (para 135): spell- and grammar-checking, the mere existence of an editorial policy,
+automated review ("AI reviews AI"), cursory approval without substantive engagement. Met → no label, but keep the
+evidence (review record below). Not met → label required; core rules under "If a label is required" below, the
+labelling path as a whole (when it is the right choice, label line, placement, provenance page, as-of date) in
+[chapter 09](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/09-labelling-path.md).
 
-**Step 6 — Form of the label.** See "If a label is required" below and `playbook/en/04-labelling-form.md`.
+**Step 6 — Form of the label.** See "If a label is required" below and [chapter 04](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/04-labelling-form.md).
 
-**Step 7 — Neighbouring duties.** A label is no free pass: unfair-competition (UWG) misleading claims, copyright, data
-protection and personality rights remain untouched (para 124; footnotes 32, 34). Platform policies and the DSA apply
-alongside. Report these as a note, never as clearance.
+**Step 7 — Neighbouring duties.** A label is no free pass: compliance with Article 50 *"should not be interpreted as
+indicating that the use of the AI system or its output is lawful"* (recital 137; para 25). Unfair-competition (UWG)
+misleading claims, copyright, data protection and personality rights remain untouched (paras 124, 127–129; footnotes
+32, 34). **Prohibited practices:** from 2 December 2026, Art. 5(1), first subparagraph, points (ba) and (bb) AI Act
+(inserted by Regulation (EU) 2026/1744) prohibit AI systems that generate or manipulate realistic intimate depictions
+of an identifiable person without that person's *"freely-given, specific, informed, unambiguous and explicit
+consent"*, or child sexual abuse material; deployers are caught where they use a system for that purpose
+(Art. 5(1a), point (b)). A label does not make a prohibited practice permissible, and before that date the labelling
+duty does not make such material lawful either (para 129) — propose no label; stop and refer the matter to a human
+and to legal advice. Platform policies are contractual duties of their own; Art. 35(1)(k) DSA addresses providers of very
+large online platforms and search engines and names prominent markings only as a possible risk-mitigation measure
+(para 126) — no labelling duty of the deployer follows from that provision. Report these as a note, never as clearance.
 
 ## Output: one verdict per content item
 
@@ -114,17 +158,18 @@ Next step:  concrete label proposal, or review record, or "nothing to do"
 - **DUTY** — name the criterion that is met. **NO DUTY** — name the criterion that fails, e.g. "criterion 4 not met:
   stylised infographic, no claim to authenticity (para 113 iv, 114)".
 - **GREY ZONE** — flag with ⚠️ and the standing sentence: *grey zone — record the classification with a short
-  justification (see `gate/`)*. Never resolve a grey zone silently in either direction; it is a human judgement call
-  and the written justification is what makes it defensible. Recurring ones: object removal and background swaps
-  (para 116), advertising vs. public-interest information (para 131 iii), half-open distribution lists (para 131 i),
-  what counts as a "substantive" AI edit after sign-off (para 136).
+  justification (in the review record's `scope.begruendung`, or in a note filed with the publication)*. Never resolve
+  a grey zone silently in either direction; it is a human judgement call and the written justification is what makes
+  it defensible. Recurring ones: object removal and background swaps (para 116), advertising vs. public-interest
+  information (box after para 131), half-open distribution lists (para 131 i), what counts as a "substantive" AI edit
+  after sign-off (para 136).
 - Anchors must be exact. If no source covers the case, write `[zu verifizieren: …]` and say so — never invent a
   paragraph number, a judgment or a file number.
 
 ## If a label is required
 
 Match the label language to the content language. Full library incl. the optional EU icons:
-`playbook/en/04-labelling-form.md`.
+[chapter 04](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/04-labelling-form.md).
 
 | Case | DE | EN |
 |---|---|---|
@@ -134,14 +179,22 @@ Match the label language to the content language. Full library incl. the optiona
 | Partly manipulated video | „Einzelne Bild- oder Sprachsequenzen dieses Videos wurden mit künstlicher Intelligenz verändert." | "Parts of this video's visuals or speech have been modified using artificial intelligence." |
 | Audio deepfake (audible) | „Dieser Beitrag enthält eine KI-generierte Stimme." | "This recording contains an AI-generated voice." |
 | Labelled text | „Dieser Text wurde mit künstlicher Intelligenz erstellt." | "This text was generated using artificial intelligence." |
+| Labelled part of a text | „Dieser Abschnitt wurde mit künstlicher Intelligenz erstellt." | "This section was generated using artificial intelligence." |
 
-**Label line for text — three rules** (`playbook/en/09-labelling-path.md`, section 3). The line is a statement of
-origin, not a quality verdict; it carries at most three kinds of statement, and only two belong in it.
+Where AI generated or manipulated only part of a text, the label may cover that part; for short text (single words or
+brief phrases) where a label would degrade readability, the labelling still happens, but may take the form of *"a
+contextual notice in the user interface"* (Code of Practice, Sec. 2, Sub-measure 1.2.2 lit. f). Voluntary notes
+("AI-assisted translation, reviewed by a human") must stay distinguishable from mandatory labels — on this playbook's
+reading of para 142, which asks for information *"easy to identify as separate from other information"*.
+
+**Label line for text — three rules** ([chapter 09](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/09-labelling-path.md),
+section 3). The line is a statement of origin, not a quality verdict; it carries at most three kinds of statement, and
+only two belong in it.
 (1) **Mandatory core — the origin statement:** that the text *"has been artificially generated or manipulated"*
 (Art. 50(4) subpara 2), *"clear and perceivable by natural persons (e.g. visible or audible measures) without them
 needing to rely on any specific technical tools or performing dedicated actions"* (para 132) — no wording is
 prescribed and the EU icon is optional. (2) **True process facts are allowed — if true:** "not editorially reviewed",
-"machine-checked against the sources" or "as of <date>" may be added because they shape what readers may legitimately
+"machine-verified against the sources" or "as of <date>" may be added because they shape what readers may legitimately
 expect, but each must be backed by a real run (the date comes from the last substantive generation or check run,
 never from a build, deploy or layout commit), since, on this playbook's reading, an untrue process statement is a
 statement about an essential characteristic of the service and open to attack as misleading (§ 5(2) no. 1 UWG,
@@ -156,19 +209,25 @@ substantive review documents a false statement (this playbook's reading of para 
 sentence instead ("labelled because the competence test for this topic came out negative").
 
 **Placement** — clear and distinguishable, at the latest at first exposure, with no click, hover or tooling required
-(Art. 50(5); para 142): **image** into the image itself where no overlay covers it, then check the responsive crops;
-**video** at the start and repeated, at minimum after interruptions; **audio** audibly before the content starts — a
-note in the description does not label the audio; **text** above or at the top, near the headline. Terms of use,
-footers, metadata and menu layers do not qualify (para 142). Those placement specifics come from the **Code of
-Practice on Transparency of AI-Generated Content**, Sec. 2 — image: Sub-measure 1.2.2 lit. a; video: Sub-measure 1.2.2
-lit. b; audio: Measure 1.1 with Sub-measure 1.2.3; text: Sub-measure 1.2.2 lit. f. The code binds only its
-signatories; non-signatories must demonstrate compliance *"through other adequate means"* and are expected to run a
+(Art. 50(5); paras 117, 132, 142): **image** into the image itself where no overlay covers it, then check the
+responsive crops; **video** at the start and repeated, at minimum after interruptions — a spoken line only adds to the
+visible label; **audio** audibly before the content starts, with reminders in longer pieces and after interruptions,
+and where a screen is available also visibly — a note in the description does not label the audio; **text** above or
+at the top, near the headline; a deepfake used **only in a closed internal professional context** (e.g. employee
+training) may be disclosed in the interface or setting, before exposure. Manuals, menu layers and terms of use do not
+qualify (para 142); a footer or an imprint is not at the content (this playbook's reading of para 142 and of the
+example after para 143: *"at the start of an AI-generated or manipulated text publication"*). Those placement
+specifics come from the **Code of Practice on Transparency of AI-Generated Content**, Sec. 2 — image: Sub-measure 1.2.2
+lit. a; video: lit. b, spoken lines lit. d; audio: Measure 1.1 with Sub-measure 1.2.3, the visible label lit. e;
+closed internal context: lit. c; text: lit. f. The code binds only its signatories; non-signatories must demonstrate
+compliance *"through other adequate means"* and are expected to run a
 gap analysis against it (paras 147, 148). What the guidelines themselves carry is the reason for repeating: where it
 is foreseeable that people do not perceive the content from its beginning, a disclosure at the start alone *"should be
 complemented with disclosure at later moments, where possible"* (para 143). Two standing warnings: the provider's
 machine-readable marking under Art. 50(2) **never** replaces your own perceivable label — deployers *"cannot rely on
-the machine-readable marking"* (para 117); and a platform AI toggle can carry the disclosure only *"within the context
-of the VLOP or VLOSE used"*, never for re-use on your own site or after a repost (para 126).
+the machine-readable marking"* (para 117, for deepfakes; for text the same follows from the perceivability standard of
+para 132); and a platform AI toggle can carry the disclosure only *"within the context of the VLOP or VLOSE used"*,
+never for re-use on your own site or after a repost (para 126).
 
 ## If the editorial exception is claimed: draft the review record
 
@@ -178,7 +237,7 @@ is the expected state, not a bug.**
 
 ```json
 {
-  "content_path": "examples/blog-artikel.md",
+  "content_path": "<path/to/content.md>",
   "content_sha256": "",
   "reviewed_at": "",
   "reviewer": { "name": "", "role": "", "fachkompetenz": "" },
@@ -200,41 +259,53 @@ is the expected state, not a bug.**
 - **Only the human fills in:** `content_sha256`, `reviewed_at`, all `reviewer` fields, both
   `editorial_responsibility` fields (`kontakt_oeffentlich` = the publicly findable location, e.g. the imprint URL,
   para 138) and the whole `pruefung` object. `false` means "not attested" — a human flips a boolean to `true` only
-  after actually doing the work. Field types and patterns: `gate/review-record.schema.json`.
+  after actually doing the work. Field types and patterns:
+  [gate/review-record.schema.json](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/gate/review-record.schema.json).
 
 **Hand the human these instructions:**
 
-1. Review the substance: check the facts (the legal minimum, para 134), verify the sources, change or reject what does
-   not hold. Spell-checking, waving it through, or having a model check the model does not qualify (para 135).
+1. Review the substance: check the facts (the minimum the guidelines set, para 134), verify the sources, change or
+   reject what does not hold. Spell-checking, waving it through, or having a model check the model does not qualify
+   (para 135).
 2. Enter your name, role and the subject-matter competence that qualifies you, the review date, and the bearer of
    editorial responsibility with a publicly findable contact (para 138). Set the `pruefung` booleans to what is true.
 3. Compute the hash **last**, over the raw bytes of the final file, and paste it into `content_sha256`:
    `shasum -a 256 <file> | cut -d' ' -f1` (macOS) · `sha256sum <file> | cut -d' ' -f1` (Linux).
-4. Run the gate: `node gate/scripts/check-review-record.mjs <dir>` — green means the record is complete and bound to
+4. Where the gate is installed
+   ([gate/README.md](https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/gate/README.md)), run it:
+   `node gate/scripts/check-review-record.mjs <dir>` — green means the record is complete and bound to
    exactly this version of the file.
 
 ## Never do these
 
 - **Never attest a human review.** Do not enter a reviewer name, do not fill either `editorial_responsibility` field,
   do not set `faktencheck` or `quellen_geprueft` to `true`, do not fill `reviewed_at`, do not compute the final hash
-  into the record yourself. A record produced end-to-end by an agent is exactly the *"automated review process"* that
-  para 135 rules out — it would document a breach instead of compliance.
+  into the record yourself. A record produced end-to-end by an agent is one of the *"automated review processes"*
+  that para 135 rules out — it would document a breach instead of compliance.
 - **Never edit content after the review.** Para 136: *"Any substantive AI intervention occurring after the human
   review or editorial control process has taken place will therefore cause the exception to become void."* If you
   rewrite, shorten, translate, summarise or regenerate a headline or teaser on a reviewed file, the record is void and
-  a human must review again; the gate's hash binding enforces it by turning CI red. Purely technical steps (minify,
-  format conversion, encoding fix) do not change the substance — where exactly the line runs is a grey zone, so say so
-  instead of deciding it away. If something must change, say so plainly and ask for re-review. Never update the hash
-  to make the gate pass.
+  a human must review again; where the gate is installed, its hash binding enforces it by turning CI red. Purely
+  technical steps (minify, format conversion, encoding fix) do not change the substance — but run them on build output
+  only, never on the reviewed source file: the hash binding reacts to every changed byte. Where exactly the
+  "substantive" line runs is a grey zone, so say so instead of deciding it away. If the source file must change, say
+  so plainly and ask for re-review and a new hash by the human. Never update the hash to make the gate pass.
 - **Never present the result as legal advice or as compliance.** The gate enforces the **process** and makes it
-  auditable; it does not enforce the quality of the review. It is a documentation form going beyond the legal minimum
+  auditable; it does not enforce the quality of the review. It is a documentation form going beyond the minimum the code describes
   and expressly permitted (Code of Practice on Transparency of AI-Generated Content, Sec. 2, Commitment 4) — **not a
   safe harbour**.
 
 ## Where to read further
 
-In this repository: decision tree `playbook/en/01-decision-tree.md` · classified cases `playbook/en/02-case-catalog.md` ·
-editorial exception `playbook/en/03-editorial-exception.md` · label form `playbook/en/04-labelling-form.md` ·
-commissioned work `playbook/en/05-agencies-and-contracts.md` · common errors `playbook/en/06-myths-faq.md` · watermarks
-`playbook/en/07-provider-marking.md` · official sources `playbook/en/08-legal-basis.md` · labelling path
-`playbook/en/09-labelling-path.md` · the gate `gate/README.md`. From this file: [playbook](../../../../playbook/en/01-decision-tree.md) · [gate](../../../../gate/README.md).
+In the source repository:
+
+- decision tree: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/01-decision-tree.md
+- classified cases: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/02-case-catalog.md
+- editorial exception: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/03-editorial-exception.md
+- label form: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/04-labelling-form.md
+- commissioned work: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/05-agencies-and-contracts.md
+- common errors: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/06-myths-faq.md
+- watermarks: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/07-provider-marking.md
+- official sources: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/08-legal-basis.md
+- labelling path: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/playbook/en/09-labelling-path.md
+- the gate: https://github.com/eduard-wolf/eu-ai-act-content-transparency/blob/main/gate/README.md
