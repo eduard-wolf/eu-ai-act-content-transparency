@@ -13,7 +13,7 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026.**
 
 Der Entscheidungsbaum kennt für Text zwei Ausgänge: die redaktionelle Ausnahme und die
 Kennzeichnung ([Kapitel 01](01-entscheidungsbaum.md), Stufe 5). Den ersten Zweig bauen
@@ -33,7 +33,8 @@ Der Weg beginnt mit dem Kompetenz-Test aus [Kapitel 01](01-entscheidungsbaum.md)
 [Kapitel 03](03-redaktions-ausnahme.md), Abschnitt 3. Seine Frage lautet nicht „bin ich Experte?",
 sondern **„kann ich DIESEN Text fachlich prüfen?"**. Rn. 134 bindet die menschliche Überprüfung an
 Personen *"possessing relevant knowledge and professional judgement pertaining to the subject
-matter under scrutiny"* und macht den Faktencheck zum Minimum. Fällt eine der vier Prüffragen aus
+matter under scrutiny"* und nennt den Faktencheck *"a minimum requirement that should be part of
+that review"*. Fällt eine der vier Prüffragen aus
 Kapitel 03, Abschnitt 3.1, mit Nein aus — typisch bei fremdem Fachgebiet; in der Praxis auch, wenn zu
 viele Texte auf eine Person kommen, um Fehler noch zu bemerken (Prüfsatz 3) — oder scheitert die
 Ausnahme aus anderem Grund (KI-Eingriff nach der Freigabe, Rn. 136; automatisierte oder kursorische
@@ -194,7 +195,7 @@ normal exposure or interaction conditions"* wird — ergänzt um die Negativlist
 |---|---|
 | Sticky-Banner über der ganzen Website | nicht spezifisch für den einzelnen Inhalt — Rn. 38: *"Generalised disclosures that are not sufficiently specific to the AI system's outputs and interactions"*, Negativbeispiel *"Services on this website use AI"*; Rn. 39 (ebenfalls zu Abs. 1) warnt vor *"habituation effects (so-called “banner blindness”)"*; nicht *"near the headline of the text"* (Kodex lit. f) |
 | Sammelhinweis im Impressum, in der Datenschutzerklärung, auf einer Info-Seite | *"part of terms of use that are often not read by users"* (Rn. 142); *"Disclosures contained only in terms and conditions, URLs, or documentation"* (Rn. 38) — solche Seiten dürfen ergänzen, nicht ersetzen |
-| Fußzeile des Beitrags oder der Seite | nicht bei erster Exposition (Art. 50 Abs. 5); Kodex lit. f nennt Kopf und Anfang, nicht das Ende |
+| Fußzeile des Beitrags oder der Seite | nach Lesart dieses Playbooks nicht bei erster Exposition (Art. 50 Abs. 5) — Rn. 142 selbst nennt nur Handbuch, Menüebenen und Nutzungsbedingungen; Kodex lit. f nennt Kopf und Anfang, nicht das Ende |
 | nur Metadaten, strukturierte Daten, HTML-Kommentar | nicht ohne technische Hilfsmittel wahrnehmbar (Rn. 132); zur Anbieter-Markierung Rn. 117, Kapitel 04, Abschnitt 1 |
 
 **Technisch: ein Bauteil, eine Stelle.** Bei Websites mit gemeinsamem Layout ist das genau **ein**
@@ -340,7 +341,8 @@ Verantwortung für das Gesagte bleibt beim Betreiber.
    Keine Wertungen, keine Normzitate (Abschnitt 3).
 4. **Ein Bauteil, eine Stelle:** Zeile am Kopf jedes betroffenen Inhalts, unter dem Titel, vor dem
    ersten Absatz; Sichtprüfung ohne Klick, Hover oder Scrollen. Nicht ins Impressum, nicht in den
-   Banner, nicht in die Fußzeile (Abschnitt 4; Rn. 142; Kodex Sub-measure 1.2.2 lit. f).
+   Banner, nicht in die Fußzeile (Abschnitt 4; Impressum Rn. 142; Banner Rn. 38; Fußzeile nach
+   Lesart dieses Playbooks, Art. 50 Abs. 5 und Kodex Sub-measure 1.2.2 lit. f).
 5. **Herkunftsseite** anlegen, aus der Zeile verlinken, Mindestinhalt abarbeiten (Abschnitt 5;
    Muster: [Herkunft und Prüfung](../../PROVENANCE.de.md)).
 6. **Stand-Datum** aus dem tatsächlichen Erzeugungs- oder Prüflauf setzen, Bezugsstand nennen,

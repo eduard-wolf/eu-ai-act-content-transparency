@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Review-Record (Editorial Gate)",
-  "description": "Nachweis einer redaktionellen Gegenlese für eine einzelne Inhaltsdatei. Der Record liegt als Geschwisterdatei \"<name>.review.json\" neben \"<name>.md\" und bindet die Freigabe über SHA-256 an genau die geprüfte Fassung. Ehrliche Grenze: Das Gate erzwingt den Prozess und macht ihn nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on Transparency of AI-Generated Content, Sec. 2, Commitment 4), kein Safe Harbour. Stand: 24.08.2026.",
+  "description": "Nachweis einer redaktionellen Gegenlese für eine einzelne Inhaltsdatei. Der Record liegt als Geschwisterdatei \"<name>.review.json\" neben \"<name>.md\" und bindet die Freigabe über SHA-256 an genau die geprüfte Fassung. Ehrliche Grenze: Das Gate erzwingt den Prozess und macht ihn nachweisbar; die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das im Kodex beschriebene Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on Transparency of AI-Generated Content, Sec. 2, Commitment 4), kein Safe Harbour. Stand: 24.08.2026; aktualisiert am 30.10.2026 (Rechtsstand geprüft am 29.10.2026; die förmliche Annahme der Leitlinien C(2026) 5054 final stand an diesem Tag noch aus).",
   "type": "object",
   "additionalProperties": false,
   "required": [

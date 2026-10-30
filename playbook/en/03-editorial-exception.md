@@ -13,7 +13,7 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026.**
 
 For editorial, agency and marketing work, Article 50(4), second subparagraph, AI Act holds exactly
 one practically usable door through which AI-generated text fits **without a label**: the editorial
@@ -272,13 +272,17 @@ that cost the exception:
 ⚠️ Where exactly "substantive" begins is not settled conclusively by the guidelines: a pure format
 conversion, minification or an encoding fix does not change the content — a rephrasing or a cut
 does. Grey zone — document the classification with a short reason
-(see [gate/](../../gate/README.md)).
+(see [gate/](../../gate/README.md)). Operationally, such technical steps run on the **build output
+only, never on the reviewed source file**: the hash binding reacts to every byte, so even an
+encoding fix in the reviewed file turns the gate red although the substance is unchanged. If the
+source file itself has to change, a human reviews it again and a new record is created (re-review,
+below) — the hash is never updated without a review.
 
 Two consequences for the craft:
 
 1. **Rebuild the order.** Pull all AI steps ahead of the sign-off. Whatever still runs afterwards
-   is either purely technical (minify, image compression, deploy) — or the text falls back under
-   the labelling duty.
+   is either purely technical and runs on the build output (minify, image compression, deploy) —
+   or the text falls back under the labelling duty.
 2. **Make the order provable.** That is exactly what the hash binding of the review record
    delivers: every later change — by AI too, even a single space — invalidates the record and
    turns CI red (→ [gate/](../../gate/README.md)).
@@ -417,7 +421,8 @@ satisfy the exception — para 135 names *"cursory editorial approval without su
 engagement"* expressly. A green CI gate over an examination that never took place is a
 well-documented breach. **Honest limit:** the gate enforces the **process** and makes it auditable;
 it does not enforce the substantive quality of the examination. It is a permissible documentation
-form that goes beyond the legal minimum (CoP Sec. 2, Commitment 4), **not a safe harbour**.
+form that goes beyond the minimum the code describes (CoP Sec. 2, Commitment 4: no per-case
+documentation required), **not a safe harbour**.
 
 **Where the exception does not apply**, the labelling duty simply applies: para 132 lays it down
 expressly for text — what has to be disclosed is *"that such text has been artificially generated
@@ -431,7 +436,9 @@ key points go with that:
   same standard applies to text via para 132: *"clear and perceivable … without … any specific
   technical tools or performing dedicated actions"*; → [chapter 07](07-provider-marking.md)).
 - 🚧 A label is no free pass: misleading advertising under the UWG (German Act against Unfair
-  Competition), copyright and personality rights remain (→ [chapter 08](08-legal-basis.md)).
+  Competition), copyright and personality rights remain, and what Article 5 AI Act prohibits stays
+  prohibited — a label does not make it permissible (recital 137 AI Act; para 25;
+  → [chapter 08](08-legal-basis.md)).
 
 Widespread misconceptions about this chapter — in particular "review also exempts images" and
 "an AI policy is enough" — are in the [myths FAQ](06-myths-faq.md). The operational implementation

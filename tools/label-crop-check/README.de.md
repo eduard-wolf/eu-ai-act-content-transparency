@@ -9,8 +9,12 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 30.10.2026 (Rechtsstand geprüft am 29.10.2026; die
+> förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 Ein Zero-Dependency-CLI (Node ≥ 18), das **geometrisch** prüft, ob ein im Bild platziertes
 KI-Label die gängigen Plattform-Zuschnitte übersteht. Keine Bildverarbeitung, keine Uploads,

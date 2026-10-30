@@ -13,7 +13,8 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; updated on 1 October 2026.**
+> **As of: 24 August 2026; updated on 1 October 2026 and 30 October 2026 (legal position verified
+> as of 29 October 2026; the formal adoption of the guidelines was still pending on that date).**
 
 ## How to use it
 
@@ -80,7 +81,7 @@ flowchart TD
     PH --> S2
     S2 -->|"image / audio / video"| DF
     S2 -->|"text"| S3
-    DF -->|"no — illustration, cartoon,<br/>music bed, unrealistic scene"| F1
+    DF -->|"no — stylised illustration, cartoon,<br/>music bed, unrealistic scene"| F1
     DF -->|"only insubstantial<br/>editing, para 116"| F1
     DF -->|"yes"| KU
     KU -->|"yes"| L2
@@ -139,11 +140,15 @@ which is why this branch too continues to **stage 7**.
 responsibility over the decision to deploy the system and over the manner of the actual use of the
 system (including its outputs)"*; technical control is not required (para 12). It follows that:
 
-- Employees, contractors and freelancers are **not deployers in their own right**; the company or
-  agency under whose authority the work is done remains the deployer (para 14).
-- Anyone who merely commissions an agency, *"without taking decisions and exercising control over
-  whether and how the advertising agency uses AI in the production process"*, is **not** a deployer
-  (example on para 14). Allocation and contract clauses:
+- Employees acting under the instructions and control of the company or agency are **not deployers
+  in their own right** (para 14). The legal person under whose authority the system is used also
+  remains the deployer where contractors and freelancers operate the system *"on its behalf and
+  under its responsibility and control"* (para 14); that those contractors are then not deployers
+  themselves is this playbook's reading of paras 12 and 19.
+- Where, by contrast, the agency itself decides whether and how AI is used, **it** is the deployer
+  (para 12); anyone who merely commissions an agency, *"without taking decisions and exercising
+  control over whether and how the advertising agency uses AI in the production process"*, is
+  **not** a deployer (example after para 14). Allocation and contract clauses:
   [chapter 05](05-agencies-and-contracts.md).
 
 **Internal is not automatically free — distinguish by modality:**
@@ -188,7 +193,15 @@ addressed to providers"* (para 28; likewise paras 29, 32). In practice this mean
   Union for its own use and under its name or trademark"*). Anyone who modifies a third-party
   system — in the guidelines' example *"with new training data"* — and then puts it into service
   under their own name becomes the provider of the new system (same box after para 11). Roles can
-  coincide: in-house system plus own use = provider **and** deployer (para 15).
+  coincide (para 15): whoever develops a generative system in-house and uses it, for instance for
+  deepfakes, is provider **and** deployer — with the machine-readable marking under Article 50(2)
+  on top of the label under Article 50(4). For generative systems already placed on the market
+  before 2 August 2026, providers have until 2 December 2026 to implement the marking
+  (Article 111(4) AI Act, inserted by Regulation (EU) 2026/1744; para 153); the deployer's label
+  has no such transitional period. Article 111(4) names only systems placed on the market, while
+  para 153 also names systems put into service; for an in-house system only put into service for own
+  use (Article 3(11) AI Act) the transitional period is therefore uncertain, and the cautious course
+  is to mark from 2 August 2026.
 - **Bought-in bot, embedded unchanged ⇒ the provider is the vendor.** Article 50(1) then does not
   hit you directly — the visual check of whether the notice really appears in your own embedding is
   nonetheless mandatory in practice and belongs in the contract
@@ -196,8 +209,11 @@ addressed to providers"* (para 28; likewise paras 29, 32). In practice this mean
 - **The notice goes into the chat, not into the Impressum (the legally required site notice):** the
   information has to arrive at the first interaction at the latest (Article 50(5) AI Act; para 33;
   example on para 143: *"when launching a conversation with a chatbot"*). Hidden in a manual, in
-  menu levels or in terms and conditions is not enough (para 142). Wording building blocks:
-  [chapter 04](04-labelling-form.md).
+  menu levels or in terms and conditions is not enough (para 142). For interactive systems para 38
+  adds that disclosures *"contained only in terms and conditions, URLs, or documentation"*,
+  machine-readable markings not perceivable at the point of interaction and generalised notices
+  such as *"Services on this website use AI"* are insufficient on their own. Wording building
+  blocks: [chapter 04](04-labelling-form.md).
 - **"Obvious" is not a gut feeling:** the provider has to *"assess and demonstrate"* that it is
   obvious (para 42), measured against an average member of the foreseeable audience
   (paras 43–44).
@@ -227,20 +243,26 @@ Article 3(60) AI Act is broken down into four cumulative criteria (para 113):
 | 3 | **Subject** | persons (incl. digital replicas of real persons, realistic AI avatars and personas, voice, behaviour, performance), objects (incl. buildings, consumer goods), places, entities (animals and other life forms), events (incl. the depiction of services) | para 113 iii |
 | 4 | **Falsely appears authentic** | an overall assessment of resemblance, statement, context of use, surroundings and foreseeable audience; **an objective benchmark, no intent to deceive required**; photorealism makes it more likely, but *"photorealism alone is not determinative for the assessment"* | para 113 iv; para 114 |
 
-If one of the four criteria is missing, it is **not a deepfake** — an illustration, a cartoon, a
-recognisably surreal scene, an instrumental music bed with no depiction of reality. Label-free does
-not mean check-free, though: fact-checking and rights clearance remain sensible (→ stage 7 and
+If one of the four criteria is missing, it is **not a deepfake** — a stylised illustration, a
+cartoon, a recognisably surreal scene, an instrumental music bed with no depiction of reality; a
+photorealistic illustration, by contrast, can be a deepfake. Music in the style of existing artists
+is no music bed either: the guidelines list *"AI-generated music in any kind of genre resembling the
+individual style of existing artists"* as a deepfake forming part of an artistic work — labelled, in
+a form appropriate to the work (box after para 124). Label-free does not mean check-free, though:
+fact-checking and rights clearance remain sensible (→ stage 7 and
 [gate/](../../gate/README.md)). Contextual example from para 114: AI backgrounds, special effects
 and technical pre-/post-processing in ordinary film production regularly do not make the content
 falsely appear authentic — fully AI-generated actors, digital replicas, de-aging and simulated
 performances, by contrast, do.
 
-**The de-minimis switch (para 116):** insubstantial interventions do not turn existing material into
-a deepfake — *"editing background details (e.g. removing passerby)"*, lighting, audio parameters,
-colour correction, denoising, accessibility improvements, compression, cosmetic adjustments. In
-product advertising and on packaging this expressly also covers *"background extensions of existing
+**The de-minimis switch (para 116):** insubstantial interventions *"may be of minor relevance"* and
+then do not turn existing material into a deepfake; whether that is so *"depends on the context and
+the impact"* in the specific case — *"editing background details (e.g. removing passerby)"*,
+lighting, audio parameters, colour correction, denoising, accessibility improvements, compression,
+cosmetic adjustments. In product advertising and on packaging, *"background extensions of existing
 content, adjustments or replacements of backgrounds for clearly aesthetic purposes, compositions and
-arrangements of existing products, or re-scaling of images"*. **The switch flips** as soon as
+arrangements of existing products, or re-scaling of images"* are also *"likely to have only a minor
+impact"*. **The switch flips** as soon as
 
 - the manipulation concerns the **product or subject itself** — from the list of examples: an AI
   image of a product in advertising or on packaging that influences the audience's perception and
@@ -298,7 +320,7 @@ No ⇒ no text labelling duty, on to stage 7. Yes ⇒ stage 4.
 
 **Test question:** does the text inform the public on matters of public interest? Para 131 iii
 lists: politics and democratic processes, administration and public services, justice and law
-enforcement, fundamental rights, public security, **health**, environmental protection,
+enforcement, fundamental rights, public security, **public health**, environmental protection,
 **consumer safety**, and *"any economic, financial, political, scientific, or cultural development
 that may be relevant subject of public debate"*. On top of that the text has to convey knowledge,
 opinions or facts at all — very short texts without such substance drop out (para 131 ii).
@@ -306,8 +328,9 @@ opinions or facts at all — very short texts without such substance drop out (p
 - **In scope** (box after para 131): an AI summary of a newspaper article about a council decision;
   *"AI-manipulated parts of a lifestyle-website article comparing the effects of various diets on a
   particular disease"*; AI-altered company reports containing investor information; a severe-weather
-  warning from a weather service on its social media channel. Classic advice content often sits
-  closer to this list than marketing teams assume.
+  warning from a weather service on its social media channel. The diets example shows that
+  health-advice content can be covered too, not only public health in the narrow sense; classic advice
+  content often sits closer to this list than marketing teams assume.
 - **Out of scope:** AI-generated novels; chatbot answers seen only by the person asking; advisory
   texts to a single client; advertising and product copy — the latter, though, with an express
   **counter-exception**: *"not including any claims related to e.g. health, consumer safety or
@@ -395,7 +418,7 @@ That is exactly what the [editorial gate](../../gate/README.md) operationalises:
 bound by SHA-256 to the released version — any later change, including one made by AI, invalidates
 the record and turns CI red. **An honest limit:** the gate enforces the **process** and makes it
 auditable; it does not enforce the substantive quality of the review. It is a documentation form
-that goes beyond the legal minimum and is permitted (Code of Practice on Transparency of
+that goes beyond the minimum the code describes and is permitted (Code of Practice on Transparency of
 AI-Generated Content, Sec. 2, Commitment 4 — documentation of individual review events is expressly
 **not** required there, but is provided for as an additional record), not a safe harbour.
 Criteria, roles and evidence in detail: [chapter 03](03-editorial-exception.md).
@@ -414,12 +437,16 @@ of platform?
 > 📎 **Rule of thumb:** the machine-readable provider marking under Article 50(2) **never** replaces
 > your own perceivable label — *"deployers cannot rely on the machine-readable marking
 > embedded in the content by the provider under Article 50(2) AI Act, since those markings are not
-> immediately clear and distinguishable"* (para 117).
+> immediately clear and distinguishable"* (para 117, written for deepfakes). For text, para 132 sets
+> the same standard: perceivable *"without them needing to rely on any specific technical tools"*.
 
 The short version — everything else in [chapter 04](04-labelling-form.md), and on watermarks and
 provider markings in [chapter 07](07-provider-marking.md): there is no mandatory wording, the EU
-icons are optional; the label has to be clear and distinguishable and must not disappear into terms
-and conditions, metadata or menu levels (para 142). Labelling tools of very large platforms (AI
+icons are optional; the label has to be clear and distinguishable and must not disappear into a
+manual, menu levels or terms of use (para 142), nor into metadata alone (paras 117, 132). A footer or
+a general notice elsewhere on the site is not at the content either (this playbook's reading of
+para 142 and of the example after para 143: *"at the start of an AI-generated or manipulated text
+publication"*). Labelling tools of very large platforms (AI
 toggles, for instance) can carry the disclosure **within** the platform where the label they produce
 meets the requirements — *"without prejudice to the responsibility of the deployers"* — and for
 secondary use outside the platform they do not carry it (para 126).

@@ -16,7 +16,7 @@
  *
  * Ehrliche Grenze: Das Gate erzwingt den Prozess und macht ihn nachweisbar; die
  * inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das
- * rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Code of
+ * im Kodex beschriebene Minimum hinausgehende, zulässige Dokumentationsform (Code of
  * Practice on Transparency of AI-Generated Content, Sec. 2, Commitment 4),
  * kein Safe Harbour.
  *
@@ -401,7 +401,7 @@ Fehlermeldung den berechneten Wert.
 
 Ehrliche Grenze: Das Gate erzwingt den Prozess und macht ihn nachweisbar; die
 inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das
-rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice
+im Kodex beschriebene Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice
 on Transparency of AI-Generated Content, Sec. 2, Commitment 4), kein Safe Harbour.`);
 }
 

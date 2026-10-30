@@ -21,7 +21,8 @@ bei KI-Inhalten (Art. 50 der Verordnung (EU) 2024/1689).
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026 (Rechtsstand geprüft am
+> 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 ## Für wen das gedacht ist
 
@@ -37,8 +38,9 @@ Veröffentlichungsseite greifen — Deepfake-Label und Offenlegung bei veröffen
 Angelegenheiten von öffentlichem Interesse, beides **Betreiber**-Pflichten aus Art. 50 Abs. 4
 (Rn. 19: *"the professional deployer's transparency obligations laid down in Article 50(3) and (4)
 AI Act"*) —, gelten **ohne jede Schonfrist**. Die Übergangsfrist bis zum 02.12.2026 betrifft
-ausschließlich die **Anbieter**-Markierungspflicht nach Art. 50 Abs. 2 bei bereits in Verkehr
-gebrachten Systemen (Rn. 153; Kommissions-[FAQ zu Art. 50](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)).
+ausschließlich die **Anbieter**-Markierungspflicht nach Art. 50 Abs. 2 bei generativen Systemen, die
+schon vor dem 02.08.2026 in Verkehr gebracht waren (Art. 111 Abs. 4 KI-VO, eingefügt durch
+VO (EU) 2026/1744; Rn. 153; Kommissions-[FAQ zu Art. 50](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)).
 
 Für **Text** kennt das Gesetz — außerhalb der gesetzlich erlaubten Strafverfolgung (Rn. 139) —
 genau eine Tür: Art. 50 Abs. 4 UAbs. 2 greift nicht, wenn
@@ -61,8 +63,8 @@ dokumentieren müssen — *"This does not entail having to document individual i
 review or editorial control over individual text publications."* (Sec. 2, Commitment 4) —, erlaubt
 zusätzliche Aufzeichnungen aber ausdrücklich: *"Signatories may record additional information on the
 nature of the review or the type of involvement of the AI system in the published text."* Wer nicht
-Signatar ist, muss Compliance über *"other adequate means"* darlegen und soll eine Gap-Analyse gegen
-den Kodex fahren (Rn. 148).
+Signatar ist, soll Compliance über *"other adequate means"* darlegen, etwa mit einer Gap-Analyse
+gegen den Kodex (Rn. 148).
 
 Genau diesen offenen Raum füllt dieses Repo: Aus der Gegenlese wird ein **Review-Record, der per
 SHA-256 an die geprüften Bytes gebunden ist**, aus der Freigabe ein **serverseitig protokolliertes
@@ -159,9 +161,9 @@ Veröffentlichung, nicht danach.
 **Was das Gate leistet — und was nicht.** Es erzwingt den **Prozess** und macht ihn nachweisbar; die
 inhaltliche **Qualität** der Prüfung erzwingt es nicht. Ein grünes Gate über einer nie stattgefundenen
 Prüfung ist ein gut dokumentierter Verstoß — Rn. 135 nennt *"cursory editorial approval without
-substantive engagement"* ausdrücklich als nicht ausreichend. Das Gate ist eine über das rechtliche
-Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice, Sec. 2, Commitment 4) —
-**kein Safe Harbour**.
+substantive engagement"* ausdrücklich als nicht ausreichend. Das Gate ist eine über das im Kodex
+beschriebene Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice, Sec. 2,
+Commitment 4) — **kein Safe Harbour**.
 
 ## Schnellstart
 
@@ -201,8 +203,8 @@ dokumentiert — und die Anweisungen selbst sind reines Markdown, also auch ohne
 
 Der Skill geht vor Veröffentlichung, Deployment oder Merge den Entscheidungsbaum durch und
 **bereitet** den Review-Record vor — Prüfperson, Prüfdatum, die `pruefung`-Booleans und den finalen
-Hash füllt er nie aus. Ein Ende-zu-Ende von einem Agenten erzeugter Record wäre genau der
-*"automated review process"*, den Rn. 135 ausschließt.
+Hash füllt er nie aus. Ein Ende-zu-Ende von einem Agenten erzeugter Record wäre genau einer der
+*"automated review processes"*, die Rn. 135 ausschließt.
 
 **Die Crop-Prüfung.** `node tools/label-crop-check/check.mjs --image 1600x1200 --label 1150,40,120x60`
 zeigt, ob ein im Bild platziertes Label die üblichen Plattform-Zuschnitte überlebt — standardmäßig
@@ -242,13 +244,15 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
   Interesse aus). Daneben laufen §§ 5, 5a UWG — mit oder ohne Label, siehe
   [`playbook/de/08-rechtsgrundlagen.md`](playbook/de/08-rechtsgrundlagen.md). Und was Art. 5 KI-VO
   verbietet, bleibt verboten — ab dem 02.12.2026 auch KI-Systeme für nicht einvernehmlich erstelltes
-  intimes Material und für Darstellungen von sexuellem Missbrauch von Kindern (Art. 5 Abs. 1
-  UAbs. 1 lit. ba und bb KI-VO).
+  intimes Material bestimmbarer Personen und für Darstellungen von sexuellem Missbrauch von Kindern
+  (Art. 5 Abs. 1 UAbs. 1 lit. ba und bb KI-VO); Betreiber erfasst das Verbot, wenn sie ein System zu
+  diesem Zweck verwenden (Art. 5 Abs. 1a lit. b).
 - **Die maschinenlesbare Anbieter-Markierung ersetzt nie die eigene wahrnehmbare Kennzeichnung.**
   Die Leitlinien sind unmissverständlich: *"[D]eployers cannot rely on the machine-readable marking
   embedded in the content by the provider under Article 50(2) AI Act, since those markings are not
   immediately clear and distinguishable for the natural persons exposed to the deep fake content."*
-  (Rn. 117)
+  (Rn. 117, für Deepfakes geschrieben; für Text setzt Rn. 132 denselben Maßstab: wahrnehmbar
+  *"without them needing to rely on any specific technical tools"*)
 - **Grauzonen bleiben Grauzonen.** Wo die Quellen einen Fall nicht entscheiden, sagen die Kapitel
   das — Grauzone: Einstufung mit kurzer Begründung dokumentieren (siehe [`gate/`](gate/README.de.md)) —
   statt Schein-Sicherheit zu erzeugen. `[zu verifizieren: …]` markiert bewusst offene Punkte — dort
@@ -258,7 +262,10 @@ Abhängigkeitsfrei, `--self-test` eingebaut.
 
 **Stand: 24.08.2026** — drei Wochen nach Anwendungsbeginn des Art. 50, ohne Rechtsprechung und ohne
 veröffentlichte Verwaltungspraxis dazu; **aktualisiert am 01.10.2026** (Änderungen durch die
-VO (EU) 2026/1744, Zuständigkeit des AI Office, Status der Leitlinien, aktualisierte Quellen). Jede
+VO (EU) 2026/1744, Zuständigkeit des AI Office, Status der Leitlinien, aktualisierte Quellen) und
+**am 30.10.2026** (Fehler und ungenaue Fundstellen aus einer internen Prüfung, gegen die amtlichen
+Texte nachgeprüft und berichtigt — siehe [Herkunft und Prüfung](PROVENANCE.de.md); Rechtsstand
+geprüft am 29.10.2026, die förmliche Annahme der Leitlinien stand an diesem Tag noch aus). Jede
 Rechtsaussage in diesem Repo trägt einen datierten Stand-Stempel und eine Fundstelle. Welche
 Ereignisse die Schlussfolgerungen ändern würden — ein erstes EuGH- oder BGH-Urteil, erste
 dokumentierte Abmahnungen oder BNetzA-Verfahren, die förmliche Annahme oder eine Review der

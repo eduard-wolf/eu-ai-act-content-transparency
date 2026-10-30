@@ -13,7 +13,8 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; aktualisiert am 01.10.2026 und 30.10.2026 (Rechtsstand geprüft am
+> 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 Über KI-Inhalten liegen **zwei getrennte Transparenz-Ebenen**: Der **Anbieter** des Generators
 markiert seine Ausgaben **maschinenlesbar** (Art. 50 Abs. 2 der Verordnung (EU) 2024/1689), der
@@ -123,11 +124,30 @@ zitiert wird:
 ### 1.3 Wann man selbst zum Anbieter wird
 
 Die Ebene-1-Pflicht trifft normalerweise nicht den Publizierenden. Sie kann aber auf ihn
-übergehen — Leitlinien Rn. 11: Wer ein vorhandenes generatives KI-System modifiziert (z. B. mit
-eigenen Trainingsdaten) und es danach **unter eigenem Namen oder eigener Marke** in Betrieb
-nimmt, *"becomes a provider of the new system without prejudice to the responsibility of the
-provider of the initial AI system for the latter"*. Ein System nur zu nutzen, per API einzubinden
-oder mit Prompts zu steuern, macht dagegen nicht zum Anbieter.
+übergehen. Anbieter ist, wer KI-Systeme entwickelt oder entwickeln lässt und sie **unter eigenem
+Namen oder eigener Marke** in der Union in Verkehr bringt oder in Betrieb nimmt, entgeltlich oder
+unentgeltlich (Art. 3 Nr. 3 KI-VO; Rn. 10). Die Beispiele nach Rn. 11 zeigen drei Wege:
+
+- das Anbieten *"a generative or interactive AI application (e.g. a chatbot, image generator, AI
+  agent) on the Union market under its own name or trademark"* — Anbieter für Art. 50 Abs. 1
+  und/oder Abs. 2, gleich ob kostenlos oder entgeltlich und gleich wo niedergelassen;
+- ein intern entwickeltes interaktives System (z. B. einen Chatbot), das in der Union für den
+  Eigengebrauch und unter eigenem Namen oder eigener Marke in Betrieb genommen wird;
+- das Modifizieren eines vorhandenen generativen KI-Systems (z. B. mit neuen Trainingsdaten), das
+  danach unter eigenem Namen oder eigener Marke in Betrieb genommen wird — das Unternehmen
+  *"becomes a provider of the new system without prejudice to the responsibility of the provider
+  of the initial AI system for the latter"*.
+
+Wer ein generatives System intern entwickelt und selbst nutzt, etwa für Deepfakes, ist Anbieter
+**und** Betreiber (Rn. 15). Auf der anderen Seite der Linie nennt das erste Beispiel die Kunden des
+Anbieters, die *"may directly use the AI system for interaction or content generation (including
+by integrating the system into their existing processes and using it accordingly without the need
+for modifications or additional components)"*: Ein System so zu nutzen, wie es angeboten wird, es
+mit Prompts zu steuern oder unverändert in die eigenen Prozesse einzubinden, macht für sich
+genommen nicht zum Anbieter. Der Zugangsweg (App oder API) entscheidet nicht, sondern
+Art. 3 Nr. 3 — wird auf dem Modell eines anderen Anbieters ein Chatbot, Bildgenerator oder Agent
+gebaut und unter eigenem Namen oder eigener Marke angeboten, spricht das für die Anbieterrolle
+(Art. 3 Nr. 3 KI-VO; Rn. 10; Beispiele nach Rn. 11).
 
 ---
 
@@ -288,7 +308,7 @@ berührt hat und wer was geprüft hat.** Genau das leistet der Review-Record im
   inhaltsändernde Schritt sein ([Kapitel 03](03-redaktions-ausnahme.md)).
 
 **Ehrliche Grenze:** Das Gate erzwingt den **Prozess** und macht ihn nachweisbar; die inhaltliche
-**Qualität** der Prüfung erzwingt es nicht. Es ist eine über das rechtliche Minimum
+**Qualität** der Prüfung erzwingt es nicht. Es ist eine über das im Kodex beschriebene Minimum
 hinausgehende, zulässige Dokumentationsform — der Kodex verlangt in Section 2, Commitment 4
 ausdrücklich **keine** Einzelfall-Dokumentation (*"This does not entail having to document
 individual instances of human review or editorial control over individual text publications"*),

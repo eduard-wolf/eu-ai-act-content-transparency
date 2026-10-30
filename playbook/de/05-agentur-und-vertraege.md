@@ -13,7 +13,9 @@
 > Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
 > alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
 > baut eine begründbare Position, keinen Safe Harbour.
-> **Stand: 24.08.2026; Kopfhinweis aktualisiert am 01.10.2026.**
+> **Stand: 24.08.2026; Kopfhinweis aktualisiert am 01.10.2026; aktualisiert am 30.10.2026
+> (Rechtsstand geprüft am 29.10.2026; die förmliche Annahme der Leitlinien stand an diesem Tag
+> noch aus).**
 
 „Wir bauen Websites mit teilweise KI-generierten Bildern — müssen wir kennzeichnen oder der
 Kunde?" Das ist die häufigste Praxisfrage zu Art. 50, und sie hat **zwei** Antworten, weil zwei
@@ -57,10 +59,12 @@ Daraus folgen drei Prüffragen — in dieser Reihenfolge:
 
 Wer alle drei Fragen auf sich zieht, ist Betreiber. Wer keine davon beantwortet, ist es nicht.
 
-**Was das für Personen im Team bedeutet:** Angestellte und weisungsgebundene Freelancer, die auf
-Anweisung sowie unter Verantwortung und Kontrolle des Auftraggebers arbeiten, sind **keine eigenen
-Betreiber** — die Pflicht bleibt bei der Person oder Firma, unter deren Autorität das System
-genutzt wird:
+**Was das für Personen im Team bedeutet:** Angestellte, die auf Anweisung und unter Kontrolle des
+Auftraggebers handeln, sind **keine eigenen Betreiber**; zieht er Auftragnehmer oder Freelancer
+in seinem Namen sowie unter seiner Verantwortung und Kontrolle zum Betrieb des Systems hinzu,
+**bleibt er selbst Betreiber** (Rn. 14; die Nutzung durch natürliche Personen im Auftrag eines
+beruflich handelnden Betreibers fällt unter dessen Pflichten, Rn. 19) — die Pflicht bleibt bei
+der Person oder Firma, unter deren Autorität das System genutzt wird:
 
 > *"Where the deployer of an AI system is a legal person under whose authority the system is used
 > (e.g. an advertising company), the individual employees that act under the instructions and
@@ -72,14 +76,18 @@ genutzt wird:
 
 Das ist eine Zuordnungs-, keine Entlastungsregel: Die Firma haftet für den KI-Einsatz ihrer Leute
 und muss ihn deshalb **intern** steuern (Anweisung, Prozess, Kompetenz — vgl. Kodex Section 2,
-Measure 2.2, der Schulungs- und Awareness-Maßnahmen ausdrücklich auch für externe Auftragnehmer
-verlangt).
+Measure 2.2: Die Unterzeichner bemühen sich verhältnismäßig darum, das Bewusstsein für die
+Offenlegungspflichten bei ihrem Personal zu sichern, ausdrücklich auch bei externen
+Auftragnehmern, die unmittelbar an der Umsetzung der Offenlegungsmaßnahmen beteiligt sind, und
+werden ermutigt, Schulungen oder gleichwertige Anleitungen anzubieten).
 
 **Wer aus der Rolle fällt:** Wer nur verbreitet oder überträgt — Hosting-Dienste, Online-Plattformen,
 Sender — ist **kein** Betreiber, solange er keine Autorität über den KI-Einsatz hat (Rn. 16). Und
-wer ein System selbst baut oder wesentlich verändert und dann nutzt, ist **beides**: Anbieter und
-Betreiber (Rn. 15) und schuldet dann zusätzlich die maschinenlesbare Markierung nach
-Art. 50 Abs. 2 (→ [Kapitel 07](07-anbieter-markierungen.md)).
+wer ein generatives System selbst entwickelt und nutzt, ist **beides**: Anbieter und Betreiber
+(Rn. 15); wer ein vorhandenes generatives System verändert (z. B. mit neuen Trainingsdaten) und
+unter eigenem Namen oder eigener Marke in Betrieb nimmt, wird Anbieter des neuen Systems
+(Beispiel nach Rn. 11). In beiden Fällen schuldet er zusätzlich die maschinenlesbare Markierung
+nach Art. 50 Abs. 2 (→ [Kapitel 07](07-anbieter-markierungen.md), Abschnitt 1.3).
 
 ```mermaid
 flowchart TD
@@ -103,8 +111,8 @@ flowchart TD
 | 2 | Agentur oder Freelancer bedient das System **auf Weisung und unter Kontrolle** des Kunden (Kunde gibt Tool, Prompt, Freigabe vor) | Kunde | **Kunde** — Dienstleister ist kein eigener Betreiber | Rn. 14 |
 | 3 | Verlag/Sender erhält eine **fertige Anzeige mit unmarkiertem KI-Bild** und schaltet sie | der Anzeigenkunde bzw. dessen Agentur | **nicht** der Verlag, solange seine Rolle sich aufs Verbreiten beschränkt | Rn. 16 (Verbreiter sind keine Betreiber); Rn. 17 (andere Regelwerke können eigene Kennzeichnung verlangen — Beispiel: Sender labelt ein Deepfake im Programm) |
 | 4 | **Content-Produzent liefert**, der Kunde publiziert | wer die KI-Entscheidung getroffen hat — Frage 1–3 aus Abschnitt 1 durchspielen | der Entscheider; das Label muss aber bis zur **ersten Exposition** beim Publikum durchhalten | Rn. 12 (Wertschöpfungsketten); Art. 50 Abs. 5 |
-| 5 | Angestellte, Praktikanten, beauftragte Freelancer im laufenden Betrieb | die Firma, unter deren Aufsicht gearbeitet wird | **die Firma** — nie die einzelne Person | Rn. 14 |
-| 6 | Firma baut/finetunt ein eigenes generatives System und nutzt es selbst | die Firma | **Anbieter *und* Betreiber** — Art. 50 Abs. 2 **und** Abs. 4 | Rn. 15 |
+| 5 | Angestellte und Praktikanten im laufenden Betrieb; Freelancer, die im Namen sowie unter Verantwortung und Kontrolle der Firma arbeiten | die Firma, unter deren Aufsicht gearbeitet wird | **die Firma** — nicht der einzelne Angestellte; ein Freelancer nur, wenn er selbst über den KI-Einsatz entscheidet (Fall 1) | Rn. 14, 19 |
+| 6 | Firma entwickelt ein eigenes generatives System oder verändert ein vorhandenes, nimmt es unter eigenem Namen in Betrieb und nutzt es selbst | die Firma | **Anbieter *und* Betreiber** — Art. 50 Abs. 2 **und** Abs. 4 | Rn. 15; Beispiel nach Rn. 11 |
 
 **Zu Fall 3 — die unangenehme Lücke:** Nach der KI-VO trifft den reinen Verbreiter keine
 Kennzeichnungspflicht; die Leitlinien *ermutigen* ihn aber ausdrücklich, vorhandene Markierungen
@@ -141,6 +149,11 @@ Warum das praktisch schwerer wiegt als das Bußgeld:
   Transparenzpflicht erlaubt keine rechtswidrigen Inhalte: *"does not imply that AI-generated or
   manipulated deep fakes that are harmful and unlawful under the applicable Union or national law
   (e.g. misleading advertising or criminal law …) may be generated and disseminated"* (Rn. 129).
+  Ab dem 02.12.2026 verbietet Art. 5 Abs. 1 UAbs. 1 lit. ba und bb KI-VO (eingefügt durch
+  VO (EU) 2026/1744) zudem KI-Systeme für nicht einvernehmliche intime Darstellungen bestimmbarer
+  Personen und für Darstellungen sexuellen Missbrauchs von Kindern; Betreiber trifft das Verbot,
+  wenn sie ein System zu diesem Zweck verwenden (Art. 5 Abs. 1a lit. b), und ein Label macht das
+  nicht zulässig (ErwG 137 KI-VO; Rn. 25; → [Kapitel 08](08-rechtsgrundlagen.md), Abschnitt 6).
   Kurz: Ein Label ist kein Freifahrtschein — und das Fehlen eines Labels ist nicht das einzige
   Risiko. ⚠️ Ob Art. 50 zusätzlich eine Marktverhaltensregel i. S. v. § 3a UWG ist, ist
   höchstrichterlich offen (→ [Kapitel 08](08-rechtsgrundlagen.md), Abschnitt 4).
@@ -172,9 +185,10 @@ eingebranntem Label liefert, deren Ad-Zuschnitt es abschneidet, hat die Pflicht 
 (Crop-Check → [Kapitel 04](04-kennzeichnung-form.md), Abschnitt 4.1).
 
 Für die **Text-Ausnahme** kommt eine zweite Vertragsfrage dazu: Wer trägt die redaktionelle
-Verantwortung, und wer liest gegen? Der Kodex verlangt von Nicht-Medienunternehmen eine Policy mit
-*"the identification of the natural or legal person with editorial responsibility (name, role and
-contact details)"* (Section 2, Commitment 4); die Leitlinien wollen diese Angaben an leicht
+Verantwortung, und wer liest gegen? Nach dem Kodex verpflichten sich Unterzeichner, die keine
+Mediendiensteanbieter sind, zu einer Policy, die die *"identification of the natural or legal
+person with editorial responsibility (name, role and contact details)"* enthält (Section 2,
+Commitment 4); die Leitlinien wollen diese Angaben an leicht
 auffindbarer Stelle öffentlich sehen (Rn. 138). In einer Agenturkette muss also feststehen, **wessen**
 Name dort steht — Details: [Kapitel 03](03-redaktions-ausnahme.md).
 
@@ -247,7 +261,7 @@ Deepfake-Test ([Mythen-FAQ](06-mythen-faq.md), Mythos 8). Dieser Block betrifft 
       Auskunftsersuchen der Marktüberwachung vor? Nicht-Signatare des Kodex müssen mit mehr
       Auskunftsersuchen rechnen, ausdrücklich auch zu ihrer Labelling-Praxis (Rn. 148).
 - [ ] Ehrliche Grenze mitverhandeln: Das Gate erzwingt den **Prozess** und macht ihn nachweisbar;
-      die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das rechtliche
+      die inhaltliche Qualität der Prüfung erzwingt es nicht. Es ist eine über das im Kodex beschriebene
       Minimum hinausgehende, zulässige Dokumentationsform (Kodex Section 2, Commitment 4), kein
       Safe Harbour.
 
@@ -271,7 +285,7 @@ Deepfake-Test ([Mythen-FAQ](06-mythen-faq.md), Mythos 8). Dieser Block betrifft 
    Kontrolle ist nicht nötig (Rn. 12).
 2. Wer unter Weisung und Kontrolle eines anderen arbeitet — Angestellte, Praktikanten,
    weisungsgebundene Freelancer —, ist **kein** eigener Betreiber; Betreiber bleibt die Person oder
-   Firma, unter deren Autorität das System genutzt wird (Rn. 14). Entscheidet der Dienstleister
+   Firma, unter deren Autorität das System genutzt wird (Rn. 14, 19). Entscheidet der Dienstleister
    dagegen selbst über den KI-Einsatz, ist er es selbst (Beispiel nach Rn. 14 — Punkt 3).
 3. Wer nur beauftragt, ohne über den KI-Einsatz zu entscheiden, ist **nicht** Betreiber — dann
    kennzeichnet die Agentur (Beispiel nach Rn. 14).

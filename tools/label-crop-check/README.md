@@ -9,9 +9,12 @@
 
 > ⚠️ **Not legal advice.** This playbook is a technical and editorial working aid. The European
 > Commission's guidelines (C(2026) 5054 final) are legally non-binding; only the Court of Justice of
-> the European Union can interpret the AI Act with binding effect. There is no case law on
-> Article 50 yet — this playbook builds a defensible position, not a safe harbour.
-> **As of: 24 August 2026.**
+> the European Union can interpret the AI Act with binding effect. With C(2026) 5054 final the
+> Commission approved the content of the draft guidelines; they will be formally adopted once all
+> language versions are available. There is no case law on Article 50 yet — this playbook builds a
+> defensible position, not a safe harbour.
+> **As of: 24 August 2026; updated on 30 October 2026 (legal position verified as of 29 October
+> 2026; the formal adoption of the guidelines was still pending on that date).**
 
 A zero-dependency CLI (Node ≥ 18) that checks **geometrically** whether an AI label placed inside an
 image survives the common platform crops. No image processing, no uploads, no installation — the

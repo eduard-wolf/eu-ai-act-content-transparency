@@ -13,7 +13,9 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; header note updated on 1 October 2026.**
+> **As of: 24 August 2026; header note updated on 1 October 2026; updated on 30 October 2026 (legal
+> position verified as of 29 October 2026; the formal adoption of the guidelines was still pending
+> on that date).**
 
 "We build websites with partly AI-generated images — do we have to label, or does the client?" That
 is the most common practical question on Article 50, and it has **two** answers, because two regimes
@@ -57,10 +59,12 @@ Three test questions follow from this — in this order:
 
 Whoever draws all three questions to themselves is the deployer. Whoever answers none of them is not.
 
-**What that means for people on the team:** employees and freelancers bound by instructions, who
-work on the instructions of and under the responsibility and control of the commissioning party, are
-**not separate deployers** — the duty stays with the person or company under whose authority the
-system is used:
+**What that means for people on the team:** employees who act on the instructions and under the
+control of the commissioning party are **not separate deployers**; where it involves contractors or
+freelancers in the operation of the system on its behalf and under its responsibility and control,
+it **remains the deployer** itself (para 14; use by natural persons on behalf of a professional
+deployer falls under that deployer's duties, para 19) — the duty stays with the person or company
+under whose authority the system is used:
 
 > *"Where the deployer of an AI system is a legal person under whose authority the system is used
 > (e.g. an advertising company), the individual employees that act under the instructions and
@@ -72,14 +76,18 @@ system is used:
 
 That is a rule of allocation, not of relief: the company is liable for its people's use of AI and
 therefore has to steer it **internally** (instruction, process, competence — cf. Code of Practice
-Section 2, Measure 2.2, which expressly requires training and awareness measures for external
-contractors too).
+Section 2, Measure 2.2, under which signatories make proportionate efforts to ensure awareness of
+the disclosure obligations among their personnel, expressly including external contractors
+directly involved in implementing the disclosure measures, and are encouraged to provide training
+or equivalent guidance).
 
 **Who falls out of the role:** whoever merely disseminates or transmits — hosting services, online
 platforms, broadcasters — is **not** a deployer, as long as they have no authority over the use of
-AI (para 16). And whoever builds or substantially modifies a system themselves and then uses it is
-**both**: provider and deployer (para 15), and additionally owes the machine-readable marking under
-Article 50(2) (→ [chapter 07](07-provider-marking.md)).
+AI (para 16). And whoever develops a generative system in-house and uses it is **both**: provider
+and deployer (para 15); whoever modifies an existing generative system (e.g. with new training
+data) and puts it into service under their own name or trade mark becomes the provider of the new
+system (example after para 11). Either way, the machine-readable marking under Article 50(2) is
+owed additionally (→ [chapter 07](07-provider-marking.md), section 1.3).
 
 ```mermaid
 flowchart TD
@@ -103,8 +111,8 @@ flowchart TD
 | 2 | Agency or freelancer operates the system **on the instructions and under the control** of the client (client specifies tool, prompt, sign-off) | Client | **Client** — the service provider is not a separate deployer | Para 14 |
 | 3 | Publisher/broadcaster receives a **finished advertisement with an unlabelled AI image** and runs it | the advertiser or its agency | **not** the publisher, as long as its role is limited to dissemination | Para 16 (disseminators are not deployers); para 17 (other rulebooks can require labelling of their own — example: a broadcaster labels a deepfake in its programming) |
 | 4 | **Content producer delivers**, the client publishes | whoever took the AI decision — work through questions 1–3 from section 1 | the decision-maker; but the label has to hold up through to **first exposure** to the audience | Para 12 (value chains); Article 50(5) |
-| 5 | Employees, interns, contracted freelancers in day-to-day operations | the company under whose supervision the work is done | **the company** — never the individual person | Para 14 |
-| 6 | Company builds/fine-tunes its own generative system and uses it itself | the company | **provider *and* deployer** — Article 50(2) **and** Article 50(4) | Para 15 |
+| 5 | Employees and interns in day-to-day operations; freelancers working on the company's behalf and under its responsibility and control | the company under whose supervision the work is done | **the company** — not the individual employee; a freelancer only where it decides on the use of AI itself (case 1) | Paras 14, 19 |
+| 6 | Company develops its own generative system in-house, or modifies an existing one and puts it into service under its own name, and uses it itself | the company | **provider *and* deployer** — Article 50(2) **and** Article 50(4) | Para 15; example after para 11 |
 
 **On case 3 — the uncomfortable gap:** under the AI Act no labelling duty attaches to the mere
 disseminator; the guidelines do, however, expressly *encourage* it to preserve existing markings
@@ -142,8 +150,13 @@ Why that weighs more heavily in practice than the fine:
   Directive (guidelines footnote 32), and the transparency duty does not permit unlawful content:
   *"does not imply that AI-generated or manipulated deep fakes that are harmful and unlawful under
   the applicable Union or national law (e.g. misleading advertising or criminal law …) may be
-  generated and disseminated"* (para 129). In short: a label is no free pass — and a missing label
-  is not the only risk. ⚠️ Whether Article 50 is additionally a market conduct rule within the
+  generated and disseminated"* (para 129). From 2 December 2026, Article 5(1), first
+  subparagraph, points (ba) and (bb) AI Act (inserted by Regulation (EU) 2026/1744) moreover
+  prohibit AI systems for non-consensual intimate depictions of identifiable persons and for child
+  sexual abuse material; deployers are caught where they use a system for that purpose
+  (Article 5(1a), point (b)), and a label does not make that permissible (recital 137 AI Act;
+  para 25; → [chapter 08](08-legal-basis.md), section 6). In short: a label is no free pass — and
+  a missing label is not the only risk. ⚠️ Whether Article 50 is additionally a market conduct rule within the
   meaning of § 3a UWG has not been settled by the highest courts
   (→ [chapter 08](08-legal-basis.md), section 4).
 - **Recourse comes afterwards and depends on the contract.** The AI Act knows no recourse. Whoever
@@ -175,9 +188,10 @@ file with a burned-in label whose ad crop cuts it off has not discharged the dut
 (crop check → [chapter 04](04-labelling-form.md), section 4.1).
 
 For the **text exception** a second contractual question comes on top: who holds editorial
-responsibility, and who reviews the substance? The Code of Practice requires non-media companies to
-have a policy containing *"the identification of the natural or legal person with editorial
-responsibility (name, role and contact details)"* (Section 2, Commitment 4); the guidelines want
+responsibility, and who reviews the substance? Under the Code of Practice, signatories that are
+not media service providers commit to a policy that includes the *"identification of the natural
+or legal person with editorial responsibility (name, role and contact details)"* (Section 2,
+Commitment 4); the guidelines want
 those details published in an easily findable place (para 138). In a chain of agencies it therefore
 has to be settled **whose** name appears there — details: [chapter 03](03-editorial-exception.md).
 
@@ -253,7 +267,7 @@ counts ([myths FAQ](06-myths-faq.md), myth 8). This block therefore concerns tex
       (para 148).
 - [ ] Negotiate the honest limit as well: the gate enforces the **process** and makes it auditable;
       it does not enforce the substantive quality of the review. It is a permitted documentation
-      form going beyond the legal minimum (Code of Practice Section 2, Commitment 4), not a
+      form going beyond the minimum the code describes (Code of Practice Section 2, Commitment 4), not a
       safe harbour.
 
 ### 5.6 Indemnity and recourse
@@ -276,7 +290,7 @@ counts ([myths FAQ](06-myths-faq.md), myth 8). This block therefore concerns tex
    control is not required (para 12).
 2. Anyone working on the instructions and under the control of another — employees, interns,
    freelancers bound by instructions — is **not** a separate deployer; the deployer remains the
-   person or company under whose authority the system is used (para 14). Where the service provider
+   person or company under whose authority the system is used (paras 14, 19). Where the service provider
    does decide on the use of AI itself, it is the deployer (example after para 14 — point 3).
 3. Whoever merely commissions, without deciding on the use of AI, is **not** a deployer — then the
    agency labels (example after para 14).

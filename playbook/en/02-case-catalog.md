@@ -13,14 +13,16 @@
 > Commission approved the content of the draft guidelines; they will be formally adopted once all
 > language versions are available. There is no case law on Article 50 yet — this playbook builds a
 > defensible position, not a safe harbour.
-> **As of: 24 August 2026; header note updated on 1 October 2026.**
+> **As of: 24 August 2026; header note updated on 1 October 2026; updated on 30 October 2026 (legal
+> position verified as of 29 October 2026; the formal adoption of the guidelines was still pending on
+> that date).**
 
 ## How to read this
 
 - **Columns.** "Case" describes the situation, "Verdict" the outcome (✅ clear · 🏷️ label required · ⚠️ grey zone), "Why" the decisive reason in one sentence, "Anchor" the source. ⚠️ always means: **grey zone — document the classification with a brief rationale (see [gate/](../../gate/README.md)).**
 - **Two tests, not one.** Text asks "who checked it?" — image asks "does it look real?". The editorial exception exists **for text only** (Article 50(4), second subparagraph); for image, audio and video the deepfake test alone decides, and the art exception merely relaxes the **form** of disclosure (paras 119–123).
 - **Anchor convention.** "para" = paragraph number of the Commission's guidelines C(2026) 5054 final; "box after para 116/124/131/138" = the official example catalogs there; "Code of Practice" = Code of Practice on Transparency of AI-Generated Content (10 June 2026). Verbatim quotes are given in their official English wording; all sources collected in [chapter 08](08-legal-basis.md). `[zu verifizieren: …]` marks deliberately open points — no official source covers the case there; nothing is invented.
-- **What a label does not do.** It is no free pass: misleading advertising under the UWG (German Act against Unfair Competition), copyright and personality rights remain untouched (paras 124, 127–129). And the machine-readable provider marking under Art. 50(2) never replaces your own perceivable label — *"deployers cannot rely on the machine-readable marking"* (para 117; [chapter 07](07-provider-marking.md)).
+- **What a label does not do.** It is no free pass: misleading advertising under the UWG (German Act against Unfair Competition), copyright and personality rights remain untouched (paras 124, 127–129). And the machine-readable provider marking under Art. 50(2) never replaces your own perceivable label — *"deployers cannot rely on the machine-readable marking"* (para 117 for deepfakes; for text the same standard via para 132; [chapter 07](07-provider-marking.md)).
 - **Limits of this catalog.** Every row classifies the **typical** case; it promises no outcome: context, foreseeable audience and presentation can tip any case. To check systematically: [decision tree](01-decision-tree.md) · form of the label: [chapter 04](04-labelling-form.md) · common misconceptions: [chapter 06](06-myths-faq.md).
 
 ---
@@ -30,7 +32,7 @@
 | Case | Verdict | Why | Anchor |
 |---|---|---|---|
 | Real product (e.g. a car) in front of an AI-generated background | ✅ clear | The background does not change how the product is perceived — *"as long as the ad is not likely to mislead the audience about the product's actual representation and its characteristics and use"*. | box after para 116 |
-| Exposure, colour correction, denoising, cosmetic retouching; existing products cut out, arranged, scaled; background extended | ✅ clear | Para 116 counts precisely these edits *"applied in product advertisements or packaging"* among the minor ones, with only minimal effect on the perception of authenticity. | para 116 |
+| Exposure, colour correction, denoising, cosmetic retouching; existing products cut out, arranged, scaled; background extended | ✅ clear | Para 116 lists these edits among those that *"may be of minor relevance"*, and for colour correction, background extensions, arrangements and re-scaling *"applied in product advertisements or packaging"* expects *"only a minor impact"* on the perception of authenticity; whether an edit stays minor *"depends on the context and the impact"*. | para 116 |
 | AI product image shows the product differently, more attractively or of higher quality than in reality — including an AI food photo of a dish that is not served that way | 🏷️ label | It deceives *"as to the actual product appearance, characteristics or use (e.g. … more appealing or with improved quality than in real life)"*; plus misleading advertising under the UWG. | box after para 116 |
 | Advertising portrait: background replaced for purely aesthetic reasons | ⚠️ grey zone → clear as a rule | *"adjustments or replacements of backgrounds for clearly aesthetic purposes"* are minor — it tips as soon as the place itself is part of the advertising message ("shot on our own premises"). Document the rationale (gate/). | para 116 |
 | Property photo: bin or parked car removed | ⚠️ grey zone → clear as a rule | Pure background detail, in line with *"editing background details (e.g. removing passerby)"*. Document the rationale (gate/). | para 116 |
@@ -54,7 +56,7 @@
 | Stylised infographic or illustration in a blog post | ✅ clear | Not a photorealistic depiction of a real scene — the fourth deepfake criterion is missing. Note: free of the label is not free of checking; the factual statement the graphic makes still has to be verified. | para 113 iv; para 114 |
 | Recognisably impossible image scene, e.g. a sphinx flying over the Eiffel Tower | ✅ clear | Verbatim negative example. Motifs that *"defy the laws of nature or physics"* have *"no potential to mislead"* — the "existing / plausibly existing" criterion is missing. | box after para 116; para 113 ii |
 | AI cartoon of a pre-existing image of a historical event | ✅ clear | Verbatim negative example: *"AI-generated cartoon of a pre-existing image depicting a historical event"* — the cartoon form takes the photorealistic claim to authenticity away from the image. It tips as soon as the depiction becomes photorealistic again (then para 114). | box after para 116; para 113 iv |
-| Colourisation of black-and-white archive material | ⚠️ grey zone → label if in doubt | Para 116 names only *"colour correction"*; the colourisation of black-and-white material is not officially classified — and the effect on the perception of authenticity speaks for a label. Document the rationale (gate/). | para 116 |
+| Colourisation of black-and-white archive material | ⚠️ grey zone → label if in doubt | Para 116 names only *"colour correction"*. The box after para 92 lists *"converting a black & white to colour image or video"* as standard editing — but only for the provider marking under Art. 50(2), not for the deepfake test; for that test colourisation is not officially classified, and the effect on the perception of authenticity speaks for a label. Document the rationale (gate/). | para 116; box after para 92 |
 | Satirically altered image of a real politician, recognisably humorous criticism | 🏷️ label (work-appropriate form) | Satire is a deepfake with an attenuated **form**, not with an exemption; where the satirical purpose is missing (celebrities in acts that never happened), the standard form applies. | box after para 124; paras 119, 123 |
 
 ## 3. Audio, voice and music
@@ -79,7 +81,7 @@
 | Feature film: AI backgrounds, special effects, pre- and post-production; real actors in front of an AI set | ✅ clear | Standard production processes do not make the content falsely appear authentic to the audience. | para 114; box after para 116 |
 | Fully AI-generated actors, digital replicas of real or deceased persons, de-aging, simulated performances | 🏷️ label (work-appropriate form in an evidently fictional work) | Para 114 names precisely these interventions as substantial; in a cinema or streaming work a disclosure that does not hamper the enjoyment of the work suffices (e.g. the closing credits). | para 114; box after para 124; para 123 |
 | Fictional environments (forests, castles) in a video game | ✅ clear | Verbatim negative example — a recognisably invented game world. | box after para 116 |
-| Game graphics with deepfake simulations of real, existing persons | 🏷️ label (work-appropriate form) | Classified as an *"analogous creative/fictional work"*: the relaxation applies to the form only. | box after para 124 |
+| Game graphics with deepfake simulations of real, existing persons | 🏷️ label (work-appropriate form) | Listed under *"Analogous creative/fictional work"*: the relaxation applies to the form only. | box after para 124 |
 | Realistic re-enactment of historical acts of violence, distributed on public platforms | 🏷️ label (standard form) | Expressly not an artistic, satirical or fictional work — the attenuated form does not apply. | box after para 124 |
 | Upload to a very large platform with the "AI-generated" toggle set | ⚠️ grey zone → carries only there | Where the platform provides a labelling tool that produces a clear and distinguishable disclosure, you may rely on it *"within the context of the VLOP or VLOSE used"* — *"without prejudice to the responsibility of the deployers"*, and for secondary use elsewhere (your own website, a repost, image search) the toggle does not carry. Document the rationale (gate/). | para 126 |
 | Label only at the start of the video, the piece redistributed as a clip or screenshot | ⚠️ grey zone | Every person has to be informed at **their** first exposure at the latest; where it is foreseeable that people will not join at the start, a notice there is not enough — repeat it at intervals, at least after interruptions. Document the rationale (gate/). | para 143; Code of Practice Sub-measure 1.2.2(b) |
@@ -91,12 +93,12 @@ Only here does the editorial exception exist (Article 50(4), second subparagraph
 | Case | Verdict | Why | Anchor |
 |---|---|---|---|
 | AI summary of a human-written article about a local council decision on a newspaper website | 🏷️ label if the editorial exception does not apply | In-scope example: published, informing, public interest (local politics). | box after para 131 |
-| AI-edited lifestyle article on the effect of various diets on an illness | 🏷️ label if the editorial exception does not apply | Health is expressly a matter of public interest — on a lifestyle site too; the typical SEO advice piece sits closer to this row than marketing teams assume. | box after para 131 |
-| AI report from a weather service carrying a severe-weather warning on social media | 🏷️ label if the editorial exception does not apply | In-scope example (public safety). | box after para 131 |
+| AI-edited lifestyle article on the effect of various diets on an illness | 🏷️ label if the editorial exception does not apply | The catalog expressly places this health-advice case in scope — on a lifestyle site too (the list itself names public health); the typical SEO advice piece sits closer to this row than marketing teams assume. | box after para 131; para 131 iii |
+| AI report from a weather service carrying a severe-weather warning on social media | 🏷️ label if the editorial exception does not apply | In-scope example (public security). | box after para 131 |
 | AI-edited corporate report containing investor information on the website of a listed company | 🏷️ label if the editorial exception does not apply | Verbatim in-scope example: *"AI-manipulated corporate reports published on a listed company's website containing investor information"*; economic and financial developments are expressly in the list of matters of public interest. | box after para 131; para 131 iii |
 | AI-generated fantasy novel | ✅ clear | Out-of-scope example: it does not inform on matters of public interest. | box after para 131 |
 | Advertising or product copy with no health, safety or sustainability information | ✅ clear | Out-of-scope example — the catalog's parenthetical is at the same time the built-in counter-exception. | box after para 131 |
-| Product copy with a health, consumer-safety or sustainability claim | 🏷️ label if the editorial exception does not apply | These are precisely the claims the out-of-scope catalog carves out, and the topics are at the same time in the list of matters of public interest. | box after para 131; para 131 iii |
+| Product copy with a health, consumer-safety or sustainability claim | 🏷️ label if the editorial exception does not apply | These are precisely the claims the out-of-scope catalog carves out, and the related topics (public health, consumer safety, environmental protection) are at the same time in the list of matters of public interest. | box after para 131; para 131 iii |
 | News summary from a chatbot, seen only by the person asking — the same answer later as a website post | ✅ clear → 🏷️ once published | As long as only the person asking sees it, the *"published"* element is missing; publishing it to an indeterminate, larger readership meets it. | box after para 131; para 131 i |
 | AI text written by a consultant for individual client advice | ✅ clear | Out-of-scope example: no audience, no publication. | box after para 131 |
 | Very short AI texts: teasers, meta descriptions, individual phrases | ⚠️ grey zone | *"short texts which do not materially communicate knowledge, opinions or facts, cannot be deemed to inform the public"* — if the teaser carries the statement itself, it tips; for short texts the Code of Practice lets a contextual notice in the interface suffice. Document the rationale (gate/). | para 131 ii; Code of Practice Sub-measure 1.2.2(f) |
@@ -108,17 +110,17 @@ Only here does the editorial exception exist (Article 50(4), second subparagraph
 | AI-assisted translation of a human-written article, the translation reviewed by a human | ✅ no label | Verbatim positive example of the exception. | box after para 138 |
 | AI sustainability report on the website of a listed company, reviewed by the relevant function (e.g. compliance) | ✅ no label | Verbatim positive example: *"human review by professionals in relevant functions"*. | box after para 138 |
 | AI-generated safety warning approved by a public official before distribution, under the responsibility of the competent authority | ✅ no label, keep the evidence | Verbatim positive example: *"AI-generated public safety warnings approved by a public official before being distributed to citizens, under the responsibility of the relevant public agency for civil protection"* — the same message without that approval falls under the severe-weather-warning row. | box after para 138 |
-| Website chatbot greets visitors with no notice about the AI | 🏷️ a duty of its own | Art. 50(1) requires the notice at the first interaction at the latest — in the chat, not in the legal notice or the terms and conditions. | Art. 50(1); paras 142, 143 |
+| Website chatbot greets visitors with no notice about the AI | 🏷️ a duty of its own | Art. 50(1) requires the notice at the first interaction at the latest — in the chat, not in the legal notice or the terms and conditions. | Art. 50(1); paras 38, 142, 143 |
 
 ## 6. Internal content and audience
 
 | Case | Verdict | Why | Anchor |
 |---|---|---|---|
-| Internal presentation with AI illustrations | ✅ clear | Illustrations are not deepfakes, and for text the publication element is missing. | para 113 iv; para 131 i |
+| Internal presentation with AI illustrations | ✅ clear | Stylised illustrations are not deepfakes (a photorealistic one can be, and then the internal setting does not help, para 112), and for text the publication element is missing. | para 113 iv; para 131 i |
 | Intranet text, internal circular email, closed small group in a messenger app | ✅ clear | *"organisation-internal texts or communications"* and private correspondence do not count as published. | para 131 i |
 | Internal deepfake video: a synthetic CEO avatar congratulating the workforce | 🏷️ label — internally too | The deepfake provision does not require publication (para 112), and the catalog names precisely this case; those exposed are the employees. | para 112; box after para 116 |
 | Deepfake only in a subscriber area or a company newsletter | 🏷️ label (audience = that circle) | Para 115 only allows you not to assume a broad public — towards the actual audience the duty remains. | para 115 |
-| Customer newsletter with an AI illustration and editorially reviewed text | ⚠️ grey zone → clear as a rule | The illustration is not a deepfake; whether a large, open distribution list already counts as "published" is decided by para 131 i — with open sign-up and a web archive, rather yes. Document the rationale (gate/). | para 115; para 131 i |
+| Customer newsletter with an AI illustration and editorially reviewed text | ⚠️ grey zone → clear as a rule | A stylised illustration is not a deepfake; whether a large, open distribution list already counts as "published" is decided by para 131 i — with open sign-up and a web archive, rather yes. Document the rationale (gate/). | para 115; para 131 i |
 | Children, older people or people with low AI literacy are foreseeably in the audience | 🏷️ stricter standard | If the content appears authentic to **that part** of the reasonably foreseeable audience, that is enough for it to be classified as a deepfake. | para 115 |
 | Image on a public website, label only in the caption | ⚠️ grey zone | Displayed directly alongside, the caption is perceivable; image search, reposting and cropping, however, separate it from the image — placed inside the image, the label survives secondary use. Document the rationale (gate/). | paras 117, 142; Code of Practice Sub-measure 1.2.2(a) |
 
@@ -131,7 +133,7 @@ Only here does the editorial exception exist (Article 50(4), second subparagraph
 | Legacy material is edited with AI again after the cut-off date | 🏷️ label | The edit is a new AI manipulation after the date of application — the legacy protection does not cover it. | paras 153, 154 |
 | Text generated before the cut-off date, published only after it | 🏷️ label if the editorial exception does not apply | *"if texts that have been generated or manipulated before 2 August 2026 are published on or after that date, they need to be labelled."* | para 154 |
 | Existing archive of unlabelled AI content | ✅ no duty, voluntary labelling recommended | Retroactive labelling is welcome, but without *"disproportionate efforts … such as auditing of pre-existing content databases or modifying already printed product packaging"*. | para 154 |
-| A legacy model in use still carries no machine-readable marking until 2 December 2026 | ✅ for the provider — no effect on your own duty | The transitional period concerns only the provider marking under Art. 50(2) for systems placed on the market before 2 August 2026; your own perceivable label is owed independently of that from 2 August 2026. | para 153; para 117 |
+| A legacy model in use still carries no machine-readable marking until 2 December 2026 | ✅ for the provider — no effect on your own duty | The transitional period concerns only the provider marking under Art. 50(2) for generative systems placed on the market before 2 August 2026; your own perceivable label is owed independently of that from 2 August 2026. | Art. 111(4) (inserted by Regulation (EU) 2026/1744); para 153; paras 117, 132 |
 
 ---
 
@@ -141,9 +143,10 @@ Only here does the editorial exception exist (Article 50(4), second subparagraph
 Wrong in that sweeping form. Para 116 counts *"editing background details (e.g. removing
 passerby)"*, lighting adjustments, colour correction and denoising — and, in product advertising and
 on packaging, expressly *"adjustments or replacements of backgrounds for clearly aesthetic
-purposes"* — among the minor edits. **The real dividing line does not run between "removed" and
-"not removed", but between background aesthetics and the product or subject.**
-As long as only the surroundings are tidied up, it stays minor; as soon as the edit affects the
+purposes"* — among the edits that *"may be of minor relevance"*. **The real dividing line does not
+run between "removed" and "not removed", but between background aesthetics and the product or
+subject.**
+As long as only the surroundings are tidied up, it usually stays minor; as soon as the edit affects the
 advertised object itself — the defect on the house, the portion on the plate, the product *"more
 appealing or with improved quality than in real life"* — it is a deepfake **and** a UWG case.
 Journalistic images sit at the strict end from the outset (*"beyond standard technical,

@@ -9,8 +9,12 @@
 
 > ⚠️ **Kein Rechtsrat.** Dieses Playbook ist eine technische und redaktionelle Arbeitshilfe.
 > Die Leitlinien der EU-Kommission (C(2026) 5054 final) sind rechtlich unverbindlich; verbindlich
-> auslegen kann die KI-Verordnung nur der EuGH. Zu Art. 50 gibt es noch keine Rechtsprechung —
-> dieses Playbook baut eine begründbare Position, keinen Safe Harbour. **Stand: 24.08.2026.**
+> auslegen kann die KI-Verordnung nur der EuGH. Mit C(2026) 5054 final hat die Kommission den
+> Inhalt des Leitlinien-Entwurfs gebilligt; förmlich angenommen werden die Leitlinien erst, wenn
+> alle Sprachfassungen vorliegen. Zu Art. 50 gibt es noch keine Rechtsprechung — dieses Playbook
+> baut eine begründbare Position, keinen Safe Harbour.
+> **Stand: 24.08.2026; aktualisiert am 30.10.2026 (Rechtsstand geprüft am 29.10.2026; die
+> förmliche Annahme der Leitlinien stand an diesem Tag noch aus).**
 
 Das Editorial-Gate macht aus der redaktionellen Gegenlese einen Schritt, den die Pipeline
 **erzwingt** und der Server **bezeugt**. Es besteht aus drei Teilen: einem **Review-Record**
@@ -259,8 +263,8 @@ Gate wird auf das Repo angewendet, das es beschreibt.
 | Liefert einen vorlegbaren Nachweis: Record + Approval + CI-Lauf | Es ersetzt keine Kennzeichnung, wo eine nötig ist |
 
 **Die ehrliche Grenze, in einem Satz:** Das Gate erzwingt den **Prozess** und macht ihn
-nachweisbar; die inhaltliche **Qualität** der Prüfung erzwingt es nicht. Es ist eine über das
-rechtliche Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on
+nachweisbar; die inhaltliche **Qualität** der Prüfung erzwingt es nicht. Es ist eine über das im
+Kodex beschriebene Minimum hinausgehende, zulässige Dokumentationsform (Code of Practice on
 Transparency of AI-Generated Content, Sec. 2, Commitment 4) — **kein Safe Harbour**.
 
 Vier Punkte, die daraus folgen:
